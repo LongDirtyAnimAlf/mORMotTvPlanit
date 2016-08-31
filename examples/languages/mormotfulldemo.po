@@ -1,0 +1,131 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: demomain.rs10min
+msgid "10 min"
+msgstr ""
+
+#: demomain.rs12hours
+msgid "12 hours AM/PM"
+msgstr ""
+
+#: demomain.rs15min
+msgid "15 min"
+msgstr ""
+
+#: demomain.rs20min
+msgid "20 min"
+msgstr ""
+
+#: demomain.rs24hours
+msgid "24 hours"
+msgstr ""
+
+#: demomain.rs30min
+msgid "30 min"
+msgstr ""
+
+#: demomain.rs3d
+msgid "3D"
+msgstr ""
+
+#: demomain.rs5min
+msgid "5 min"
+msgstr ""
+
+#: demomain.rs60min
+msgid "60 min"
+msgstr ""
+
+#: demomain.rs6min
+msgid "6 min"
+msgstr ""
+
+#: demomain.rsborderless
+msgid "no border"
+msgstr ""
+
+#: demomain.rsconfirmdeleteres
+msgid "Do you really want to delete resource %s?"
+msgstr ""
+
+#: demomain.rscontacts
+msgid "Contacts"
+msgstr ""
+
+#: demomain.rseventsoverview
+msgid "Events overview"
+msgstr ""
+
+#: demomain.rseventsperday
+msgid "Events per day"
+msgstr ""
+
+#: demomain.rseventspermonth
+msgid "Events per month"
+msgstr ""
+
+#: demomain.rseventsperweek
+msgid "Events per week"
+msgstr ""
+
+#: demomain.rsflat
+msgid "flat"
+msgstr ""
+
+#: demomain.rsfriday
+msgid "Friday"
+msgstr ""
+
+#: demomain.rsmaintenance
+msgid "Maintenance"
+msgstr ""
+
+#: demomain.rsmonday
+msgid "Monday"
+msgstr ""
+
+#: demomain.rsplanner
+msgid "Planner"
+msgstr ""
+
+#: demomain.rsresources
+msgid "Resources"
+msgstr ""
+
+#: demomain.rssaturday
+msgid "Saturday"
+msgstr ""
+
+#: demomain.rssettings
+msgid "Program settings"
+msgstr ""
+
+#: demomain.rssettings_short
+msgid "Settings"
+msgstr ""
+
+#: demomain.rssunday
+msgid "Sunday"
+msgstr ""
+
+#: demomain.rstasks
+msgid "Tasks"
+msgstr ""
+
+#: demomain.rsthursday
+msgid "Thursday"
+msgstr ""
+
+#: demomain.rstuesday
+msgid "Tuesday"
+msgstr ""
+
+#: demomain.rswednesday
+msgid "Wednesday"
+msgstr ""
+
+#: demomain.rsxmlfiles
+msgid "XML files (*.xml)"
+msgstr ""
+

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="VpRESTserver.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mORMot-master\SynCrtSock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6076"/>
+        <CursorPos Y="6092"/>
+        <UsageCount Value="10"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="RESTData.pas"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="mORMot-master\SynDprUses.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="RESTServerClass.pas"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="mORMot-master\SQLite3\mORMot.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9177"/>
+        <CursorPos X="17" Y="9205"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="mORMot-master\SQLite3\mORMotSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="509"/>
+        <CursorPos X="17" Y="524"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="mORMot\SynSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2234"/>
+        <CursorPos X="26" Y="2259"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="mORMot\SynCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14679"/>
+        <CursorPos X="18" Y="14694"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="mORMot\SQLite3\Samples\26 - RESTful ORM\RESTserver.dpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="7" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="mORMot\SQLite3\Samples\21 - HTTP Client-Server performance\Project21HttpServer.dpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="9" Y="62"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="mORMot\SQLite3\Samples\20 - DTO interface based service\Project20ServerInMemory.dpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <CursorPos X="9" Y="68"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="mORMot\SQLite3\Samples\16 - Execute SQL via services\Project16ServerHttp.dpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11" Y="9"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\fpc\rtl\win\wininc\func.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="973"/>
+        <CursorPos X="10" Y="990"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="210" Column="12" TopLine="192"/>
+      </Position1>
+      <Position2>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="16" Column="32" TopLine="7"/>
+      </Position2>
+      <Position3>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="44" Column="3" TopLine="34"/>
+      </Position3>
+      <Position4>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="12" Column="20"/>
+      </Position4>
+      <Position5>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="55" Column="24" TopLine="42"/>
+      </Position5>
+      <Position6>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="220" Column="25" TopLine="205"/>
+      </Position6>
+      <Position7>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="55" Column="16" TopLine="42"/>
+      </Position7>
+      <Position8>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="57" Column="29" TopLine="42"/>
+      </Position8>
+      <Position9>
+        <Filename Value="VpRESTserver.lpr"/>
+        <Caret Line="26" Column="7" TopLine="7"/>
+      </Position9>
+      <Position10>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="225" Column="11" TopLine="205"/>
+      </Position10>
+      <Position11>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="75" Column="62" TopLine="48"/>
+      </Position11>
+      <Position12>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="81" Column="3" TopLine="50"/>
+      </Position12>
+      <Position13>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="64" Column="23" TopLine="57"/>
+      </Position13>
+      <Position14>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="208" Column="22" TopLine="206"/>
+      </Position14>
+      <Position15>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="64" Column="23" TopLine="57"/>
+      </Position15>
+      <Position16>
+        <Filename Value="VpRESTserver.lpr"/>
+        <Caret Line="35" Column="22" TopLine="9"/>
+      </Position16>
+      <Position17>
+        <Filename Value="VpRESTserver.lpr"/>
+        <Caret Line="37" Column="7" TopLine="9"/>
+      </Position17>
+      <Position18>
+        <Filename Value="VpRESTserver.lpr"/>
+        <Caret Line="35" TopLine="7"/>
+      </Position18>
+      <Position19>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="63" Column="22" TopLine="43"/>
+      </Position19>
+      <Position20>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="65" TopLine="39"/>
+      </Position20>
+      <Position21>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="36" Column="18" TopLine="25"/>
+      </Position21>
+      <Position22>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="251" TopLine="238"/>
+      </Position22>
+      <Position23>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="241" Column="44" TopLine="224"/>
+      </Position23>
+      <Position24>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="240" Column="29" TopLine="223"/>
+      </Position24>
+      <Position25>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="64" Column="11" TopLine="47"/>
+      </Position25>
+      <Position26>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="240" Column="7" TopLine="223"/>
+      </Position26>
+      <Position27>
+        <Filename Value="RESTData.pas"/>
+        <Caret Line="253" Column="39" TopLine="241"/>
+      </Position27>
+      <Position28>
+        <Filename Value="RESTServerClass.pas"/>
+        <Caret Line="14" Column="11"/>
+      </Position28>
+      <Position29>
+        <Filename Value="VpRESTserver.lpr"/>
+        <Caret Line="18" Column="25"/>
+      </Position29>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

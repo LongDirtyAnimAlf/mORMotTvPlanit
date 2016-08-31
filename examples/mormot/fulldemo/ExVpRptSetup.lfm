@@ -1,0 +1,96 @@
+object frmReportSetup: TfrmReportSetup
+  Left = 380
+  Height = 138
+  Top = 138
+  Width = 291
+  BorderStyle = bsDialog
+  Caption = 'Report Setup'
+  ClientHeight = 138
+  ClientWidth = 291
+  Color = clBtnFace
+  Font.Color = clWindowText
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '1.7'
+  object lblStartDate: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 54
+    Caption = 'Start Date:'
+    FocusControl = edStartDate
+    ParentColor = False
+  end
+  object lblEndDate: TLabel
+    Left = 20
+    Height = 15
+    Top = 40
+    Width = 50
+    Caption = 'End Date:'
+    FocusControl = edEndDate
+    ParentColor = False
+  end
+  object lblFormat: TLabel
+    Left = 29
+    Height = 15
+    Top = 75
+    Width = 41
+    Caption = 'Format:'
+    FocusControl = VpPrintFormatComboBox1
+    ParentColor = False
+  end
+  object btnOK: TButton
+    Left = 128
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object btnCancel: TButton
+    Left = 208
+    Height = 25
+    Top = 104
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object VpPrintFormatComboBox1: TVpPrintFormatComboBox
+    Left = 76
+    Height = 23
+    Top = 72
+    Width = 207
+    ItemHeight = 15
+    Sorted = True
+    TabOrder = 2
+  end
+  object edStartDate: TDateEdit
+    Left = 76
+    Height = 23
+    Top = 12
+    Width = 207
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doNone
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object edEndDate: TDateEdit
+    Left = 76
+    Height = 23
+    Top = 36
+    Width = 207
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doNone
+    ButtonWidth = 23
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 1
+  end
+end

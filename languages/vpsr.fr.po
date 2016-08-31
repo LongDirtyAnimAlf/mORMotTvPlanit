@@ -105,13 +105,25 @@ msgstr "Poignée de déclenchement non valide"
 msgid "Birth date:"
 msgstr "Date de naissance:"
 
-#: vpsr.rsbrowsererror
-msgid ""
-"Unable to start web browser. Make sure you have it properly setup on your "
-"system."
+#: vpsr.rsbltotrline
+msgid "bottom-left to top-right line"
 msgstr ""
-"Échec de démarrage de votre browser internet. Veuillez verifier que vous l'"
-"avez bien configuré sur votre système."
+
+#: vpsr.rsbottomline
+msgid "bottom line"
+msgstr ""
+
+#: vpsr.rsbrowsererror
+msgid "Unable to start web browser. Make sure you have it properly setup on your system."
+msgstr "Échec de démarrage de votre browser internet. Veuillez verifier que vous l'avez bien configuré sur votre système."
+
+#: vpsr.rsbrushcaption
+msgid "Brush"
+msgstr ""
+
+#: vpsr.rscalendarelement
+msgid "Calendar"
+msgstr ""
 
 #: vpsr.rscalendarnextmonth
 msgctxt "vpsr.rscalendarnextmonth"
@@ -182,6 +194,16 @@ msgctxt "vpsr.rscancelbtn"
 msgid "Cancel"
 msgstr "Annuler"
 
+#: vpsr.rscaption
+msgctxt "vpsr.rscaption"
+msgid "Caption"
+msgstr ""
+
+#: vpsr.rscaptionelement
+msgctxt "vpsr.rscaptionelement"
+msgid "Caption"
+msgstr ""
+
 #: vpsr.rscategory
 msgid "Category"
 msgstr "Catégorie"
@@ -223,6 +245,10 @@ msgstr "Ville:"
 msgid "&Close"
 msgstr "&Fermer"
 
+#: vpsr.rscolorlbl
+msgid "Color:"
+msgstr ""
+
 #: vpsr.rscompany
 msgctxt "vpsr.rscompany"
 msgid "Company"
@@ -260,6 +286,10 @@ msgstr "Supprimer un contact..."
 #: vpsr.rscontactpopupedit
 msgid "Edit Contact..."
 msgstr "Modifier un contact..."
+
+#: vpsr.rscontactselement
+msgid "Contacts"
+msgstr ""
 
 #: vpsr.rscountry
 msgid "Country"
@@ -377,6 +407,10 @@ msgstr "Hier"
 msgid "Days"
 msgstr "Jours"
 
+#: vpsr.rsdayviewelement
+msgid "Day view"
+msgstr ""
+
 #: vpsr.rsdbposterror
 msgid "Error posting data to the database."
 msgstr "Erreur lors de l'enregistrement des données dans la base des données"
@@ -386,12 +420,21 @@ msgid "Use the default sound"
 msgstr "Utilisez le son par défaut"
 
 #: vpsr.rsdelete
+msgctxt "vpsr.rsdelete"
+msgid "Delete"
+msgstr "Supprimer"
+
+#: vpsr.rsdeletebtn
+#, fuzzy
+msgctxt "vpsr.rsdeletebtn"
 msgid "Delete"
 msgstr "Supprimer"
 
 #: vpsr.rsdescriptionlbl
+#, fuzzy
+#| msgid "Subject:"
 msgctxt "vpsr.rsdescriptionlbl"
-msgid "Subject:"
+msgid "Description:"
 msgstr "Sujet:"
 
 #: vpsr.rsdetails
@@ -436,6 +479,18 @@ msgstr "Date d'échéance:"
 msgid "Error: Duplicate Resource."
 msgstr "Erreur: ressource en doublon"
 
+#: vpsr.rseditbtn
+msgid "Edit"
+msgstr ""
+
+#: vpsr.rseditelementcaption
+msgid "Edit element"
+msgstr ""
+
+#: vpsr.rseditformatcaption
+msgid "Edit format"
+msgstr ""
+
 #: vpsr.rseditingfolders
 msgid "Folder Editor."
 msgstr "Editeur de dossier."
@@ -447,6 +502,22 @@ msgstr "Editeur d'éléments de dossier"
 #: vpsr.rseditprintformat
 msgid "Edit Print Formats..."
 msgstr "Modifier les formats d'impression"
+
+#: vpsr.rseditshapecaption
+msgid "Edit shape"
+msgstr ""
+
+#: vpsr.rselements
+msgid "Elements:"
+msgstr ""
+
+#: vpsr.rselementtypelbl
+msgid "Element type"
+msgstr ""
+
+#: vpsr.rsellipse
+msgid "ellipse"
+msgstr ""
 
 #: vpsr.rsemail
 msgid "E-Mail"
@@ -485,6 +556,18 @@ msgstr ""
 msgid "First name:"
 msgstr "Prénom:"
 
+#: vpsr.rsfontbtn
+msgid "Font..."
+msgstr ""
+
+#: vpsr.rsformatlbl
+msgid "Format:"
+msgstr ""
+
+#: vpsr.rsformats
+msgid "Formats:"
+msgstr ""
+
 #: vpsr.rsfriday
 msgid "Friday"
 msgstr "Vendredi"
@@ -492,6 +575,10 @@ msgstr "Vendredi"
 #: vpsr.rsfromschedule
 msgid "from your schedule?"
 msgstr "de votre agenda?"
+
+#: vpsr.rsheight
+msgid "Height"
+msgstr ""
 
 #: vpsr.rshintnextday
 msgid "Next day"
@@ -530,6 +617,10 @@ msgstr "Hier"
 msgid "Hours"
 msgstr "Heures"
 
+#: vpsr.rsinches
+msgid "Inches"
+msgstr ""
+
 #: vpsr.rsinifilestructure
 msgid "Incorrect structure of ini file."
 msgstr "Structure du fichier d'ini incorrect"
@@ -566,6 +657,14 @@ msgstr "Erreur: année non valide"
 msgid "Last name:"
 msgstr "Nom:"
 
+#: vpsr.rsleft
+msgid "Left"
+msgstr ""
+
+#: vpsr.rsleftline
+msgid "left line"
+msgstr ""
+
 #: vpsr.rslfriday
 msgctxt "vpsr.rslfriday"
 msgid "F"
@@ -573,6 +672,10 @@ msgstr ""
 
 #: vpsr.rslmonday
 msgid "M"
+msgstr ""
+
+#: vpsr.rsloadfilebtn
+msgid "Load file..."
 msgstr ""
 
 #: vpsr.rslocationlbl
@@ -607,9 +710,17 @@ msgstr ""
 msgid "Master data"
 msgstr "Données de base"
 
+#: vpsr.rsmeasurementcaption
+msgid "Measurement"
+msgstr ""
+
 #: vpsr.rsminutes
 msgid "Minutes"
 msgstr "Minutes"
+
+#: vpsr.rsmodelbl
+msgid "Mode:"
+msgstr ""
 
 #: vpsr.rsmonday
 msgid "Monday"
@@ -656,9 +767,21 @@ msgctxt "vpsr.rsmonthpopuptoday"
 msgid "Today"
 msgstr "Aujourd'hui"
 
+#: vpsr.rsmonths
+msgid "Months"
+msgstr ""
+
+#: vpsr.rsmonthviewelement
+msgid "Month view"
+msgstr ""
+
 #: vpsr.rsnameisrequired
 msgid "Error: Name cannot be empty."
 msgstr "Erreur: le nom ne peut pas être vide. "
+
+#: vpsr.rsnamelbl
+msgid "Name:"
+msgstr ""
 
 #: vpsr.rsneedelementname
 msgid "Please supply an Element Name"
@@ -667,6 +790,14 @@ msgstr "Veuillez fournir un nom d'élément"
 #: vpsr.rsneedformatname
 msgid "FormatName cannot be blank"
 msgstr "Nom du format ne peut pas être vide"
+
+#: vpsr.rsnewbtn
+msgid "New"
+msgstr ""
+
+#: vpsr.rsnewfilebtn
+msgid "New file"
+msgstr ""
 
 #: vpsr.rsno
 msgid "N"
@@ -746,6 +877,14 @@ msgstr "EN RETARD!"
 msgid "Owner must be a TWinControl descendent"
 msgstr "Le propriétaire doit être un descendant de TWinControl"
 
+#: vpsr.rspencaption
+msgid "Pen"
+msgstr ""
+
+#: vpsr.rspercent
+msgid "Percent"
+msgstr ""
+
 #: vpsr.rspermanent
 msgid "This operation cannot be undone!"
 msgstr "Ce processus est irreversible!"
@@ -820,6 +959,10 @@ msgctxt "vpsr.rsphonetypelabel9"
 msgid "Other"
 msgstr "Autre"
 
+#: vpsr.rspixels
+msgid "Pixels"
+msgstr ""
+
 #: vpsr.rsposition
 msgid "Position"
 msgstr "Position"
@@ -832,6 +975,14 @@ msgstr "Position:"
 msgctxt "vpsr.rsprintbtn"
 msgid "&Print"
 msgstr "&Imprimer"
+
+#: vpsr.rsprintformatdesigner
+msgid "Print format designer"
+msgstr ""
+
+#: vpsr.rsprintorder
+msgid "Print order"
+msgstr ""
 
 #: vpsr.rsprintprvcancel
 msgctxt "vpsr.rsprintprvcancel"
@@ -887,6 +1038,10 @@ msgstr "Imprimer"
 msgid "Print controller is not owned by a TVpControlLink!"
 msgstr "Le contrôleur d'impression n'est pas la propriété d'un TVpControlLink!"
 
+#: vpsr.rsrectangle
+msgid "rectangle"
+msgstr ""
+
 #: vpsr.rsrecurrenceendslbl
 msgid "Repeat until:"
 msgstr "Répétez jusqu'au"
@@ -899,13 +1054,29 @@ msgstr "Rendevous à répéter:"
 msgid "Reminder"
 msgstr "Rappel"
 
+#: vpsr.rsreportsetup
+msgid "Report setup"
+msgstr ""
+
 #: vpsr.rsresource
 msgid "Resource"
 msgstr "Resource"
 
+#: vpsr.rsrightline
+msgid "right line"
+msgstr ""
+
+#: vpsr.rsrotationcaption
+msgid "Rotation"
+msgstr ""
+
 #: vpsr.rssaturday
 msgid "Saturday"
 msgstr "Samedi"
+
+#: vpsr.rssavefilebtn
+msgid "Save file..."
+msgstr ""
 
 #: vpsr.rsselectasound
 msgid "Select A Sound"
@@ -913,9 +1084,21 @@ msgstr "Choissisez un son"
 
 #: vpsr.rsselectresource
 msgid "No resource has been selected. Would you like to select one now?"
+msgstr "Aucune resource selectionnez. Voulez-vous séléctionnez une resource maintenant?"
+
+#: vpsr.rsshapebtn
+msgid "Shape..."
 msgstr ""
-"Aucune resource selectionnez. Voulez-vous séléctionnez une resource "
-"maintenant?"
+
+#: vpsr.rsshapecaption
+msgctxt "vpsr.rsshapecaption"
+msgid "Shape"
+msgstr ""
+
+#: vpsr.rsshapeelement
+msgctxt "vpsr.rsshapeelement"
+msgid "Shape"
+msgstr ""
 
 #: vpsr.rssnoozebtn
 msgid "&Snooze"
@@ -945,6 +1128,10 @@ msgstr "Début"
 msgid "State:"
 msgstr "Etat:"
 
+#: vpsr.rsstylelbl
+msgid "Style:"
+msgstr ""
+
 #: vpsr.rssubjectcaption
 msgctxt "vpsr.rssubjectcaption"
 msgid "Subject:"
@@ -953,10 +1140,6 @@ msgstr "Sujet:"
 #: vpsr.rssunday
 msgid "Sunday"
 msgstr "Dimanche"
-
-#: vpsr.rstallshortchars
-msgid "Wy"
-msgstr ""
 
 #: vpsr.rstaskcomplete
 msgctxt "vpsr.rstaskcomplete"
@@ -975,6 +1158,10 @@ msgstr "Supprimer un tâche..."
 msgid "Edit Task..."
 msgstr "Modifier un tâche..."
 
+#: vpsr.rstaskselement
+msgid "Tasks"
+msgstr ""
+
 #: vpsr.rstasktitlenoresource
 msgid "Task List"
 msgstr "Liste des tâches"
@@ -982,6 +1169,10 @@ msgstr "Liste des tâches"
 #: vpsr.rstasktitleresource
 msgid "Task List - "
 msgstr "Liste des tâches -"
+
+#: vpsr.rstextcaption
+msgid "Text"
+msgstr ""
 
 #: vpsr.rsthrough
 msgid "Through"
@@ -991,6 +1182,14 @@ msgstr "Par"
 msgid "Thursday"
 msgstr "Jeudi"
 
+#: vpsr.rstimeinclbl
+msgid "Time increment:"
+msgstr ""
+
+#: vpsr.rstimeincunits
+msgid "Time increment units:"
+msgstr ""
+
 #: vpsr.rstitle
 msgid "Title"
 msgstr "Titre"
@@ -998,6 +1197,18 @@ msgstr "Titre"
 #: vpsr.rstitlelbl
 msgid "Title:"
 msgstr "Titre:"
+
+#: vpsr.rstltobrline
+msgid "top-left to bottom-right line"
+msgstr ""
+
+#: vpsr.rstop
+msgid "Top"
+msgstr ""
+
+#: vpsr.rstopline
+msgid "top line"
+msgstr ""
 
 #: vpsr.rstrue
 msgctxt "vpsr.rstrue"
@@ -1015,6 +1226,14 @@ msgstr "Erreur: Incapable d'ouvrir"
 #: vpsr.rsuntitled
 msgid "Untitled"
 msgstr "Sans titre"
+
+#: vpsr.rsvisible
+msgid "Visible"
+msgstr ""
+
+#: vpsr.rsvisualcaption
+msgid "Visual"
+msgstr ""
 
 #: vpsr.rswednesday
 msgid "Wednesday"
@@ -1082,6 +1301,22 @@ msgctxt "vpsr.rsweekpopupnavtoday"
 msgid "Today"
 msgstr "Aujourd'hui"
 
+#: vpsr.rsweeks
+msgid "Weeks"
+msgstr ""
+
+#: vpsr.rsweekviewelement
+msgid "Week view"
+msgstr ""
+
+#: vpsr.rswidth
+msgid "Width"
+msgstr ""
+
+#: vpsr.rswidthlbl
+msgid "Width:"
+msgstr ""
+
 #: vpsr.rsxdays
 msgid "%d days"
 msgstr "%d jours"
@@ -1105,6 +1340,10 @@ msgstr "Annuel par date"
 #: vpsr.rsyearlybyday
 msgid "Yearly By Day"
 msgstr "Annuel par jour"
+
+#: vpsr.rsyears
+msgid "Years"
+msgstr ""
 
 #: vpsr.rsyes
 msgid "Y"
@@ -1139,11 +1378,8 @@ msgid "Circular reference to: "
 msgstr "Référence circulaire vers:"
 
 #: vpsr.scommentbeforexmldecl
-msgid ""
-"Document cannot start with a comment if it also contains an XML declaration"
-msgstr ""
-"Le document ne peut pas commencer par un commentaire si elle contient "
-"également une déclaration XML"
+msgid "Document cannot start with a comment if it also contains an XML declaration"
+msgstr "Le document ne peut pas commencer par un commentaire si elle contient également une déclaration XML"
 
 #: vpsr.sdataaftervaldoc
 msgid "There is invalid data after valid XML document"
@@ -1326,9 +1562,7 @@ msgid "Comments can not be placed within other markup"
 msgstr "Les commentaires ne peuvent pas être placés dans un autre balisage"
 
 #: vpsr.snointconditional
-msgid ""
-"Conditional sections not allowed in internal subset of document type "
-"declaration"
+msgid "Conditional sections not allowed in internal subset of document type declaration"
 msgstr ""
 
 #: vpsr.snondatainpedecl
@@ -1402,3 +1636,4 @@ msgstr "Spécificateur d'axe inconnu"
 #: vpsr.sxmldecnotatbeg
 msgid "The XML declaration must appear before the first element"
 msgstr "La déclaration XML doit apparaître avant le premier élément"
+

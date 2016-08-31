@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="34">
+      <Unit0>
+        <Filename Value="mormotfulldemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\..\fulldemo\demomain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="demoMain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="369"/>
+        <CursorPos X="28" Y="373"/>
+        <UsageCount Value="27"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\fulldemo\sound.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="27"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\fulldemo\ExVpRptSetup.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmReportSetup"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="27"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\source\vpmormotds.pas"/>
+        <UnitName Value="VpmORMotDS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="856"/>
+        <CursorPos Y="873"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="3" Y="47"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\source\vpdata.pas"/>
+        <UnitName Value="VpData"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="803"/>
+        <CursorPos Y="817"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="demomain.pas"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="demoMain"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="687"/>
+        <CursorPos X="3" Y="695"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\mormotruntime\mORMot\SynCrtSock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2504"/>
+        <CursorPos Y="2521"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\vpmormotds.pas"/>
+        <UnitName Value="VpmORMotDS"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="22"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\mORMotSourceHere\SynSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3873"/>
+        <CursorPos Y="3889"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\fpc\rtl\objpas\sysutils\finah.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5"/>
+        <CursorPos X="25" Y="23"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\mORMotSourceHere\SQLite3\mORMot.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25556"/>
+        <CursorPos X="23" Y="25572"/>
+        <UsageCount Value="11"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\source\vpdbds.pas"/>
+        <UnitName Value="VpDBDS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1872"/>
+        <CursorPos Y="1895"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\source\vpflxds.pas"/>
+        <UnitName Value="VpFlxDS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="980"/>
+        <CursorPos X="28" Y="982"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\source\vpinids.pas"/>
+        <UnitName Value="VpIniDs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="228"/>
+        <CursorPos X="9" Y="245"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\source\vpxmlds.pas"/>
+        <UnitName Value="VpXmlDs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="379"/>
+        <CursorPos X="9" Y="396"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\source\vpbaseds.pas"/>
+        <UnitName Value="VpBaseDS"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="261"/>
+        <CursorPos X="14" Y="275"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\lazarus\lcl\include\customcombobox.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="181"/>
+        <CursorPos Y="187"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\mORMotSourceHere\SQLite3\mORMotVCL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="42" Y="75"/>
+        <UsageCount Value="11"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="62"/>
+        <CursorPos X="33" Y="79"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\fpc\packages\fcl-db\src\base\db.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1711"/>
+        <CursorPos X="52" Y="1725"/>
+        <UsageCount Value="11"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\fpc\packages\fcl-db\src\base\dataset.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2325"/>
+        <CursorPos X="25" Y="2341"/>
+        <UsageCount Value="11"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\source\vpbufds.pas"/>
+        <UnitName Value="VpBufDS"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="10"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\fpc\packages\fcl-db\src\base\bufdataset.pas"/>
+        <UnitName Value="BufDataset"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3513"/>
+        <CursorPos X="10" Y="3540"/>
+        <UsageCount Value="11"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\mORMotSourceHere\SynSelfTests.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12513"/>
+        <CursorPos X="59" Y="12561"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\mORMotSourceHere\SQLite3\mORMotSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="247"/>
+        <CursorPos X="9" Y="254"/>
+        <UsageCount Value="10"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\lazarus\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
+        <CursorPos X="39" Y="34"/>
+        <UsageCount Value="10"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="359"/>
+        <CursorPos X="3" Y="376"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\mORMotSourceHere\SynCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42268"/>
+        <CursorPos Y="42283"/>
+        <UsageCount Value="10"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="demomain.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\..\source\vpmonthview.pas"/>
+        <UnitName Value="VpMonthView"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="551"/>
+        <CursorPos Y="578"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\..\source\vpweekview.pas"/>
+        <UnitName Value="VpWeekView"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit33>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="demomain.pas"/>
+        <Caret Line="13" Column="7"/>
+      </Position1>
+      <Position2>
+        <Filename Value="demomain.pas"/>
+        <Caret Line="459" TopLine="443"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
+        <Caret Line="7" Column="17"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\vpmormotds.pas"/>
+        <Caret Line="889" TopLine="861"/>
+      </Position4>
+      <Position5>
+        <Filename Value="demomain.pas"/>
+        <Caret Line="459" TopLine="443"/>
+      </Position5>
+      <Position6>
+        <Filename Value="demomain.pas"/>
+        <Caret Line="14" Column="21"/>
+      </Position6>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
