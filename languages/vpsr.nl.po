@@ -1,0 +1,1633 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: TvPlanIt\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: vpsr.rs1day
+msgid "1 day"
+msgstr "1 dag"
+
+#: vpsr.rs1hour
+msgid "1 hour"
+msgstr "1 uur"
+
+#: vpsr.rs1minute
+msgid "1 minute"
+msgstr "1 minuut"
+
+#: vpsr.rs1week
+msgid "1 week"
+msgstr "1 week"
+
+#: vpsr.rsaddnewresource
+msgid "No resources have been defined. Would you like to add one now?"
+msgstr "Er is nog geen hulpmiddel gedefinieerd. Wilt u er nu een toevoegen?"
+
+#: vpsr.rsaddresslbl
+msgid "Address:"
+msgstr "Adres:"
+
+#: vpsr.rsafriday
+msgid "Fri"
+msgstr "Vr"
+
+#: vpsr.rsalarmset
+msgid "&Reminder"
+msgstr "He&rinnering"
+
+#: vpsr.rsalldayevent
+msgid "&All Day Event"
+msgstr "Hele D&ag Gebeurtenis"
+
+#: vpsr.rsamonday
+msgid "Mon"
+msgstr "Ma"
+
+#: vpsr.rsappointmentgroupbox
+msgid "Appointment"
+msgstr "Afspraak"
+
+#: vpsr.rsasaturday
+msgid "Sat"
+msgstr "Za"
+
+#: vpsr.rsasunday
+msgid "Sun"
+msgstr "Zo"
+
+#: vpsr.rsathursday
+msgid "Thu"
+msgstr "Do"
+
+#: vpsr.rsatuesday
+msgid "Tue"
+msgstr "Di"
+
+#: vpsr.rsawednesday
+msgid "Wed"
+msgstr "Wo"
+
+#: vpsr.rsbackwardtimeserror
+msgid "The end time cannot precede the start time."
+msgstr "De eindtijd mag niet voor de starttijd liggen."
+
+#: vpsr.rsbaditemtype
+msgid "Invalid item type "
+msgstr "Ongeldig item type"
+
+#: vpsr.rsbadmeasurement
+msgid "Invalid measurement"
+msgstr "Ongeldige afmeting"
+
+#: vpsr.rsbadprintformat
+msgid "Invalid print format "
+msgstr "Ongeldig afdrukformaat"
+
+#: vpsr.rsbadtriggerhandle
+msgid "Invalid trigger handle."
+msgstr "Ongeldige trigger handle"
+
+#: vpsr.rsbirthdatelbl
+msgid "Birth date:"
+msgstr "Geboortedatum:"
+
+#: vpsr.rsbltotrline
+msgid "bottom-left to top-right line"
+msgstr ""
+
+#: vpsr.rsbottomline
+msgid "bottom line"
+msgstr ""
+
+#: vpsr.rsbrowsererror
+msgid "Unable to start web browser. Make sure you have it properly setup on your system."
+msgstr "Webbrowser kan niet gestart worden. Controleer uw systeeminstellingen."
+
+#: vpsr.rsbrushcaption
+msgid "Brush"
+msgstr ""
+
+#: vpsr.rscalendarelement
+msgid "Calendar"
+msgstr ""
+
+#: vpsr.rscalendarnextmonth
+msgctxt "vpsr.rscalendarnextmonth"
+msgid "Next Month"
+msgstr "Volgende Maand"
+
+#: vpsr.rscalendarnextyear
+msgctxt "vpsr.rscalendarnextyear"
+msgid "Next Year"
+msgstr "Volgende Jaar"
+
+#: vpsr.rscalendarpopupnextmonth
+msgctxt "vpsr.rscalendarpopupnextmonth"
+msgid "Next Month"
+msgstr "Volgende Maand"
+
+#: vpsr.rscalendarpopupnextyear
+msgctxt "vpsr.rscalendarpopupnextyear"
+msgid "Next Year"
+msgstr "Volgende Jaar"
+
+#: vpsr.rscalendarpopupprevmonth
+msgctxt "vpsr.rscalendarpopupprevmonth"
+msgid "Previous Month"
+msgstr "Vorige Maand"
+
+#: vpsr.rscalendarpopupprevyear
+msgctxt "vpsr.rscalendarpopupprevyear"
+msgid "Previous Year"
+msgstr "Vorige Jaar"
+
+#: vpsr.rscalendarpopuprevert
+msgctxt "vpsr.rscalendarpopuprevert"
+msgid "Revert"
+msgstr "Terug"
+
+#: vpsr.rscalendarpopuptoday
+msgctxt "vpsr.rscalendarpopuptoday"
+msgid "Today"
+msgstr "Vandaag"
+
+#: vpsr.rscalendarprevmonth
+msgctxt "vpsr.rscalendarprevmonth"
+msgid "Previous Month"
+msgstr "Vorige Maand"
+
+#: vpsr.rscalendarprevyear
+msgctxt "vpsr.rscalendarprevyear"
+msgid "Previous Year"
+msgstr "Vorig Jaar"
+
+#: vpsr.rscalendarrevert
+msgctxt "vpsr.rscalendarrevert"
+msgid "Revert"
+msgstr "Terug"
+
+#: vpsr.rscalendartoday
+msgctxt "vpsr.rscalendartoday"
+msgid "Today"
+msgstr "Vandaag"
+
+#: vpsr.rscalendarweekabbr
+msgid "CW"
+msgstr "KW"
+
+#: vpsr.rscancelbtn
+msgctxt "vpsr.rscancelbtn"
+msgid "Cancel"
+msgstr "Afbreken"
+
+#: vpsr.rscaption
+msgctxt "vpsr.rscaption"
+msgid "Caption"
+msgstr ""
+
+#: vpsr.rscaptionelement
+msgctxt "vpsr.rscaptionelement"
+msgid "Caption"
+msgstr ""
+
+#: vpsr.rscategory
+msgid "Category"
+msgstr "Categorie"
+
+#: vpsr.rscategorydesc
+msgid "Category %d"
+msgstr "Categorie %d"
+
+#: vpsr.rscategorylabel1
+msgid "Business"
+msgstr "Zakelijk"
+
+#: vpsr.rscategorylabel2
+msgid "Clients"
+msgstr "Klanten"
+
+#: vpsr.rscategorylabel3
+msgid "Family"
+msgstr "Familie"
+
+#: vpsr.rscategorylabel4
+msgid "Personal"
+msgstr "Persoonlijk"
+
+#: vpsr.rscategorylabel5
+msgctxt "vpsr.rscategorylabel5"
+msgid "Other"
+msgstr "Anders"
+
+#: vpsr.rscategorylbl
+msgid "Category:"
+msgstr "Categorie:"
+
+#: vpsr.rscitylbl
+msgid "City:"
+msgstr "Plaats:"
+
+#: vpsr.rsclosebtn
+msgid "&Close"
+msgstr "&Sluiten"
+
+#: vpsr.rscolorlbl
+msgid "Color:"
+msgstr ""
+
+#: vpsr.rscompany
+msgctxt "vpsr.rscompany"
+msgid "Company"
+msgstr "Firma"
+
+#: vpsr.rscompanylbl
+msgid "Company:"
+msgstr "Firma:"
+
+#: vpsr.rscompletedon
+msgid "Completed on"
+msgstr "Voltooid op"
+
+#: vpsr.rsconfirmdeletecontact
+msgid "Delete contact %s?"
+msgstr "Contact %s wissen?"
+
+#: vpsr.rsconfirmdeleteevent
+msgctxt "vpsr.rsconfirmdeleteevent"
+msgid "Delete event from schedule?"
+msgstr "Gebeurtenis wissen uit de kalender?"
+
+#: vpsr.rsconfirmdeletetask
+msgid "Delete this task from your list?"
+msgstr "Deze taak uit de lijst wissen?"
+
+#: vpsr.rscontactpopupadd
+msgid "Add Contact..."
+msgstr "Contact toevoegen..."
+
+#: vpsr.rscontactpopupdelete
+msgid "Delete Contact..."
+msgstr "Contact wissen..."
+
+#: vpsr.rscontactpopupedit
+msgid "Edit Contact..."
+msgstr "Contact bewerken..."
+
+#: vpsr.rscontactselement
+msgid "Contacts"
+msgstr ""
+
+#: vpsr.rscountry
+msgid "Country"
+msgstr "Land"
+
+#: vpsr.rscountrylbl
+msgid "Country:"
+msgstr "Land:"
+
+#: vpsr.rscreatedon
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#: vpsr.rscustom
+msgid "Custom"
+msgstr "Aangepast"
+
+#: vpsr.rscustom1
+msgid "Custom 1"
+msgstr "Aangepast 1"
+
+#: vpsr.rscustom2
+msgid "Custom 2"
+msgstr "Aangepast 2"
+
+#: vpsr.rscustom3
+msgid "Custom 3"
+msgstr "Aangepast 3"
+
+#: vpsr.rscustom4
+msgid "Custom 4"
+msgstr "Aangepast 4"
+
+#: vpsr.rsdaily
+msgid "Daily"
+msgstr "Dagelijks"
+
+#: vpsr.rsdayisrequired
+msgid "Error: Day is required."
+msgstr "Fout: Dag is verplicht"
+
+#: vpsr.rsdaypopupadd
+msgctxt "vpsr.rsdaypopupadd"
+msgid "Add Event..."
+msgstr "Gebeurtenis toevoegen..."
+
+#: vpsr.rsdaypopupdelete
+msgid "Delete Event..."
+msgstr "Gebeurtenis wissen..."
+
+#: vpsr.rsdaypopupedit
+msgctxt "vpsr.rsdaypopupedit"
+msgid "Edit Event..."
+msgstr "Gebeurtenis bewerken..."
+
+#: vpsr.rsdaypopupnav
+msgctxt "vpsr.rsdaypopupnav"
+msgid "Change Date"
+msgstr "Datum wijzigen"
+
+#: vpsr.rsdaypopupnavnextday
+msgid "Next Day"
+msgstr "Volgende Dag"
+
+#: vpsr.rsdaypopupnavnextmonth
+msgctxt "vpsr.rsdaypopupnavnextmonth"
+msgid "Next Month"
+msgstr "Volgende Maand"
+
+#: vpsr.rsdaypopupnavnextweek
+msgctxt "vpsr.rsdaypopupnavnextweek"
+msgid "Next Week"
+msgstr "Volgende Week"
+
+#: vpsr.rsdaypopupnavnextyear
+msgctxt "vpsr.rsdaypopupnavnextyear"
+msgid "Next Year"
+msgstr "Volgende Jaar"
+
+#: vpsr.rsdaypopupnavprevday
+msgid "Previous Day"
+msgstr "Vorige Dag"
+
+#: vpsr.rsdaypopupnavprevmonth
+msgctxt "vpsr.rsdaypopupnavprevmonth"
+msgid "Previous Month"
+msgstr "Vorige Maand"
+
+#: vpsr.rsdaypopupnavprevweek
+msgctxt "vpsr.rsdaypopupnavprevweek"
+msgid "Previous Week"
+msgstr "Vorige Week"
+
+#: vpsr.rsdaypopupnavprevyear
+msgctxt "vpsr.rsdaypopupnavprevyear"
+msgid "Previous Year"
+msgstr "Vorige Jaar"
+
+#: vpsr.rsdaypopupnavtoday
+msgctxt "vpsr.rsdaypopupnavtoday"
+msgid "Today"
+msgstr "Vandaag"
+
+#: vpsr.rsdaypopupnavtomorrow
+msgctxt "vpsr.rsdaypopupnavtomorrow"
+msgid "Tomorrow"
+msgstr "Morgen"
+
+#: vpsr.rsdaypopupnavyesterday
+msgctxt "vpsr.rsdaypopupnavyesterday"
+msgid "Yesterday"
+msgstr "Gisteren"
+
+#: vpsr.rsdays
+msgid "Days"
+msgstr "Dagen"
+
+#: vpsr.rsdayviewelement
+msgid "Day view"
+msgstr ""
+
+#: vpsr.rsdbposterror
+msgid "Error posting data to the database."
+msgstr "Fout bij opslaan in de database."
+
+#: vpsr.rsdefaultsound
+msgid "Use the default sound"
+msgstr "Standaard geluid gebruiken"
+
+#: vpsr.rsdelete
+msgctxt "vpsr.rsdelete"
+msgid "Delete"
+msgstr "Wissen"
+
+#: vpsr.rsdeletebtn
+#, fuzzy
+msgctxt "vpsr.rsdeletebtn"
+msgid "Delete"
+msgstr "Wissen"
+
+#: vpsr.rsdescriptionlbl
+#, fuzzy
+#| msgid "Subject:"
+msgctxt "vpsr.rsdescriptionlbl"
+msgid "Description:"
+msgstr "Onderwerp:"
+
+#: vpsr.rsdetails
+msgid "Details:"
+msgstr "Details:"
+
+#: vpsr.rsdismissbtn
+msgid "&Dismiss"
+msgstr "Negeren"
+
+#: vpsr.rsdlgcontactedit
+msgctxt "vpsr.rsdlgcontactedit"
+msgid "Contact"
+msgstr "Contact"
+
+#: vpsr.rsdlgeventedit
+msgid "Event"
+msgstr "Gebeurtenis"
+
+#: vpsr.rsdlgprintpreview
+msgid "Print preview"
+msgstr "Afdruk voorbeeld"
+
+#: vpsr.rsdlgreseditcaption
+msgid "Resource Edit"
+msgstr "Middel bewerken"
+
+#: vpsr.rsdlgreseditdescription
+msgctxt "vpsr.rsdlgreseditdescription"
+msgid "Description"
+msgstr "Omschrijving"
+
+#: vpsr.rsdlgtaskedit
+msgid "Task"
+msgstr "Taak"
+
+#: vpsr.rsduedate
+msgid "Due Date:"
+msgstr "Vervaldatum:"
+
+#: vpsr.rsduplicateresource
+msgid "Error: Duplicate Resource."
+msgstr "Fout: Duplicaat Hulpmiddel."
+
+#: vpsr.rseditbtn
+msgid "Edit"
+msgstr ""
+
+#: vpsr.rseditelementcaption
+msgid "Edit element"
+msgstr ""
+
+#: vpsr.rseditformatcaption
+msgid "Edit format"
+msgstr ""
+
+#: vpsr.rseditingfolders
+msgid "Folder Editor."
+msgstr "Map Editor."
+
+#: vpsr.rseditingitems
+msgid "Folder Items Editor."
+msgstr "Map Items Editor."
+
+#: vpsr.rseditprintformat
+msgid "Edit Print Formats..."
+msgstr "Afdrukformaten bewerken..."
+
+#: vpsr.rseditshapecaption
+msgid "Edit shape"
+msgstr ""
+
+#: vpsr.rselements
+msgid "Elements:"
+msgstr ""
+
+#: vpsr.rselementtypelbl
+msgid "Element type"
+msgstr ""
+
+#: vpsr.rsellipse
+msgid "ellipse"
+msgstr ""
+
+#: vpsr.rsemail
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: vpsr.rsendtimelbl
+msgid "End time:"
+msgstr "Eind tijd:"
+
+#: vpsr.rsexclusiveeventconflict
+msgid "Conflicts with another exclusive event."
+msgstr "Conflict met een andere gebeurtenis."
+
+#: vpsr.rsfailtocreatecontact
+msgid "Error: Failure while creating Contact."
+msgstr "Fout bij het aanmaken van een Contact."
+
+#: vpsr.rsfailtocreateevent
+msgid "Error: Failure while creating Event."
+msgstr "Fout bij het aanmaken van een Gebeurtenis."
+
+#: vpsr.rsfailtocreateresource
+msgid "Error: Failure while creating Resource."
+msgstr "Fout bij het aanmaken van een Hulpmiddel."
+
+#: vpsr.rsfailtocreatetask
+msgid "Error: Failure while creating Task."
+msgstr "Fout bij het aanmaken van een Taak."
+
+#: vpsr.rsfalse
+msgctxt "vpsr.rsfalse"
+msgid "F"
+msgstr "F"
+
+#: vpsr.rsfirstnamelbl
+msgid "First name:"
+msgstr "Voornaam:"
+
+#: vpsr.rsfontbtn
+msgid "Font..."
+msgstr ""
+
+#: vpsr.rsformatlbl
+msgid "Format:"
+msgstr ""
+
+#: vpsr.rsformats
+msgid "Formats:"
+msgstr ""
+
+#: vpsr.rsfriday
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: vpsr.rsfromschedule
+msgid "from your schedule?"
+msgstr "van uw tijdschema?"
+
+#: vpsr.rsheight
+msgid "Height"
+msgstr ""
+
+#: vpsr.rshintnextday
+msgid "Next day"
+msgstr "Volgende dag"
+
+#: vpsr.rshintnextweek
+msgctxt "vpsr.rshintnextweek"
+msgid "Next week"
+msgstr "Volgende week"
+
+#: vpsr.rshintprevday
+msgid "Previous day"
+msgstr "Vorige dag"
+
+#: vpsr.rshintprevweek
+msgctxt "vpsr.rshintprevweek"
+msgid "Previous week"
+msgstr "Vorige week"
+
+#: vpsr.rshinttoday
+msgctxt "vpsr.rshinttoday"
+msgid "Today"
+msgstr "Vandaag"
+
+#: vpsr.rshinttomorrow
+msgctxt "vpsr.rshinttomorrow"
+msgid "Tomorrow"
+msgstr "Morgen"
+
+#: vpsr.rshintyesterday
+msgctxt "vpsr.rshintyesterday"
+msgid "Yesterday"
+msgstr "Gisteren"
+
+#: vpsr.rshours
+msgid "Hours"
+msgstr "Uren"
+
+#: vpsr.rsinches
+msgid "Inches"
+msgstr ""
+
+#: vpsr.rsinifilestructure
+msgid "Incorrect structure of ini file."
+msgstr "Incorrecte structuur van ini bestand."
+
+#: vpsr.rsintervallbl
+msgid "Interval (days):"
+msgstr "Interval (dagen):"
+
+#: vpsr.rsinvaliddate
+msgid "Error: Invalid Date."
+msgstr "Fout: Ongeldige Datum."
+
+#: vpsr.rsinvalidday
+msgid "Error: Invalid Day."
+msgstr "Fout: Ongeldige Dag."
+
+#: vpsr.rsinvalidmonth
+msgid "Error: Invalid Month."
+msgstr "Fout: Omgeldige Maand."
+
+#: vpsr.rsinvalidmonthname
+msgid "Error: Invalid Month Name."
+msgstr "Fout: Ongeldige Maandnaam."
+
+#: vpsr.rsinvalidtablespecified
+msgid "Error: Invalid table specified."
+msgstr "Fout: Ongeldige tabel opgegeven."
+
+#: vpsr.rsinvalidyear
+msgid "Error: Invalid Year."
+msgstr "Fout: Ongeldig Jaar."
+
+#: vpsr.rslastnamelbl
+msgid "Last name:"
+msgstr "Achternaam:"
+
+#: vpsr.rsleft
+msgid "Left"
+msgstr ""
+
+#: vpsr.rsleftline
+msgid "left line"
+msgstr ""
+
+#: vpsr.rslfriday
+msgctxt "vpsr.rslfriday"
+msgid "F"
+msgstr "V"
+
+#: vpsr.rslmonday
+msgid "M"
+msgstr "M"
+
+#: vpsr.rsloadfilebtn
+msgid "Load file..."
+msgstr ""
+
+#: vpsr.rslocationlbl
+msgid "Location:"
+msgstr "Plaats:"
+
+#: vpsr.rslsaturday
+msgctxt "vpsr.rslsaturday"
+msgid "S"
+msgstr "Z"
+
+#: vpsr.rslsunday
+msgctxt "vpsr.rslsunday"
+msgid "S"
+msgstr "Z"
+
+#: vpsr.rslthursday
+msgctxt "vpsr.rslthursday"
+msgid "T"
+msgstr "D"
+
+#: vpsr.rsltuesday
+msgctxt "vpsr.rsltuesday"
+msgid "T"
+msgstr "D"
+
+#: vpsr.rslwednesday
+msgid "W"
+msgstr "W"
+
+#: vpsr.rsmasterdata
+msgid "Master data"
+msgstr "Master data"
+
+#: vpsr.rsmeasurementcaption
+msgid "Measurement"
+msgstr ""
+
+#: vpsr.rsminutes
+msgid "Minutes"
+msgstr "Minuten"
+
+#: vpsr.rsmodelbl
+msgid "Mode:"
+msgstr ""
+
+#: vpsr.rsmonday
+msgid "Monday"
+msgstr "Maandag"
+
+#: vpsr.rsmonthconverterror
+msgid "Error converting the month number."
+msgstr "Fout bij converteren van het maandnummer."
+
+#: vpsr.rsmonthisrequired
+msgid "Error: Month Is Required."
+msgstr "Fout: Maand is verplicht."
+
+#: vpsr.rsmonthlybydate
+msgid "Monthly By Date"
+msgstr "Maandelijks, op Datum"
+
+#: vpsr.rsmonthlybyday
+msgid "Monthly By Day"
+msgstr "Maandelijks, op Dag"
+
+#: vpsr.rsmonthpopupnextmonth
+msgctxt "vpsr.rsmonthpopupnextmonth"
+msgid "Next Month"
+msgstr "Volgende Maand"
+
+#: vpsr.rsmonthpopupnextyear
+msgctxt "vpsr.rsmonthpopupnextyear"
+msgid "Next Year"
+msgstr "Volgende Jaar"
+
+#: vpsr.rsmonthpopupprevmonth
+msgctxt "vpsr.rsmonthpopupprevmonth"
+msgid "Previous Month"
+msgstr "Vorige Maand"
+
+#: vpsr.rsmonthpopupprevyear
+msgctxt "vpsr.rsmonthpopupprevyear"
+msgid "Previous Year"
+msgstr "Vorige Jaar"
+
+#: vpsr.rsmonthpopuptoday
+msgctxt "vpsr.rsmonthpopuptoday"
+msgid "Today"
+msgstr "Vandaag"
+
+#: vpsr.rsmonths
+msgid "Months"
+msgstr ""
+
+#: vpsr.rsmonthviewelement
+msgid "Month view"
+msgstr ""
+
+#: vpsr.rsnameisrequired
+msgid "Error: Name cannot be empty."
+msgstr "Fout: Naam mag niet leeg zijn."
+
+#: vpsr.rsnamelbl
+msgid "Name:"
+msgstr ""
+
+#: vpsr.rsneedelementname
+msgid "Please supply an Element Name"
+msgstr "Geeft u aub een Element Naam op"
+
+#: vpsr.rsneedformatname
+msgid "FormatName cannot be blank"
+msgstr "Formaat Naam mag niet blanko zijn"
+
+#: vpsr.rsnewbtn
+msgid "New"
+msgstr ""
+
+#: vpsr.rsnewfilebtn
+msgid "New file"
+msgstr ""
+
+#: vpsr.rsno
+msgid "N"
+msgstr "N"
+
+#: vpsr.rsnocanvas
+msgid "TCanvas not assigned"
+msgstr "TCanvas is niet toegewezen."
+
+#: vpsr.rsnocontrollink
+msgid "Component must be linked to a TVpControlLink"
+msgstr "Component moet moet met een TVpControlLink verbonden zijn"
+
+#: vpsr.rsnolocalizationfile
+msgid "Localization file not found."
+msgstr "Vertalingenbestand niet gevonden."
+
+#: vpsr.rsnone
+msgid "None"
+msgstr "Geen"
+
+#: vpsr.rsnonestr
+msgid "(None)"
+msgstr "(Geen)"
+
+#: vpsr.rsnoprintformats
+msgid "No print formats have been defined"
+msgstr "Er zijn geen afdrukformaten gedefinieerd."
+
+#: vpsr.rsnotdoneyet
+msgid "This feature is not implemented at this time."
+msgstr "Dit onderdeel is nog niet geimplementeerd."
+
+#: vpsr.rsnotes
+msgid "Notes"
+msgstr "Notities"
+
+#: vpsr.rsnotescaption
+msgctxt "vpsr.rsnotescaption"
+msgid "Notes:"
+msgstr "Notities:"
+
+#: vpsr.rsnoteslbl
+msgctxt "vpsr.rsnoteslbl"
+msgid "Notes:"
+msgstr "Notities:"
+
+#: vpsr.rsnothingtoselectfrom
+msgid "There is nothing to select if default sound is used."
+msgstr "Er kan niets worden gekozen indien standaard geluid in gebruik is."
+
+#: vpsr.rsnotimersavail
+msgid "No Window's timers are available."
+msgstr "Er zijn geen Windows timers beschikbaar."
+
+#: vpsr.rsnotsupported
+msgid "not supported"
+msgstr "niet ondersteund"
+
+#: vpsr.rsokbtn
+msgid "OK"
+msgstr "OK"
+
+#: vpsr.rsopenitembtn
+msgid "&Open Item"
+msgstr "&Open Item"
+
+#: vpsr.rsoutofrange
+msgid "Out of range"
+msgstr "Buiten geldig bereik"
+
+#: vpsr.rsoverdue
+msgid "OVERDUE!"
+msgstr "OVER TIJD!"
+
+#: vpsr.rsownernotwinctrl
+msgid "Owner must be a TWinControl descendent"
+msgstr "Owner moet van TWinControl afstammen"
+
+#: vpsr.rspencaption
+msgid "Pen"
+msgstr ""
+
+#: vpsr.rspercent
+msgid "Percent"
+msgstr ""
+
+#: vpsr.rspermanent
+msgid "This operation cannot be undone!"
+msgstr "Deze operatie kan niet ongedaan gemaakt worden!"
+
+#: vpsr.rsphonetypelabel1
+msgid "Assistant"
+msgstr "Assistent"
+
+#: vpsr.rsphonetypelabel10
+msgid "Other Fax"
+msgstr "Andere Fax"
+
+#: vpsr.rsphonetypelabel11
+msgid "Pager"
+msgstr "Pieper"
+
+#: vpsr.rsphonetypelabel12
+msgid "Primary"
+msgstr "Primair"
+
+#: vpsr.rsphonetypelabel13
+msgid "Radio"
+msgstr "Radio"
+
+#: vpsr.rsphonetypelabel14
+msgid "Telex"
+msgstr "Telex"
+
+#: vpsr.rsphonetypelabel15
+msgid "TTY/TDD"
+msgstr "TTY/TDD"
+
+#: vpsr.rsphonetypelabel16
+msgid "Work"
+msgstr "Werk"
+
+#: vpsr.rsphonetypelabel17
+msgid "Work Fax"
+msgstr "Werk Fax"
+
+#: vpsr.rsphonetypelabel2
+msgid "Callback"
+msgstr "Terugbellen"
+
+#: vpsr.rsphonetypelabel3
+msgid "Car"
+msgstr "Auto"
+
+#: vpsr.rsphonetypelabel4
+msgctxt "vpsr.rsphonetypelabel4"
+msgid "Company"
+msgstr "Firma"
+
+#: vpsr.rsphonetypelabel5
+msgid "Home"
+msgstr "Thuis"
+
+#: vpsr.rsphonetypelabel6
+msgid "Home Fax"
+msgstr "Thuis Fax"
+
+#: vpsr.rsphonetypelabel7
+msgid "ISDN"
+msgstr "ISDN"
+
+#: vpsr.rsphonetypelabel8
+msgid "Mobile"
+msgstr "Mobiel"
+
+#: vpsr.rsphonetypelabel9
+msgctxt "vpsr.rsphonetypelabel9"
+msgid "Other"
+msgstr "Andere"
+
+#: vpsr.rspixels
+msgid "Pixels"
+msgstr ""
+
+#: vpsr.rsposition
+msgid "Position"
+msgstr "Positie"
+
+#: vpsr.rspositionlbl
+msgid "Position:"
+msgstr "Positie:"
+
+#: vpsr.rsprintbtn
+msgctxt "vpsr.rsprintbtn"
+msgid "&Print"
+msgstr "&Printen"
+
+#: vpsr.rsprintformatdesigner
+msgid "Print format designer"
+msgstr ""
+
+#: vpsr.rsprintorder
+msgid "Print order"
+msgstr ""
+
+#: vpsr.rsprintprvcancel
+msgctxt "vpsr.rsprintprvcancel"
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: vpsr.rsprintprvcancelhint
+msgid "Cancel preview"
+msgstr "Annuleer afdrukvoorbeeld"
+
+#: vpsr.rsprintprvfirstpage
+msgid "&First page"
+msgstr "&Eerste pagina"
+
+#: vpsr.rsprintprvfirstpagehint
+msgid "Go to first page"
+msgstr "Ga naar eerste pagina"
+
+#: vpsr.rsprintprvlastpage
+msgid "&Last page"
+msgstr "&Laatste pagina"
+
+#: vpsr.rsprintprvlastpagehint
+msgid "Go to last page"
+msgstr "Ga naar laatste pagina"
+
+#: vpsr.rsprintprvnextpage
+msgid "&Next page"
+msgstr "&Volgende pagina"
+
+#: vpsr.rsprintprvnextpagehint
+msgid "Go to next page"
+msgstr "Ga naar volgende pagina"
+
+#: vpsr.rsprintprvprevpage
+msgid "Pre&vious page"
+msgstr "&Vorige pagina"
+
+#: vpsr.rsprintprvprevpagehint
+msgid "Go to previous page"
+msgstr "Ga naar vorige pagina"
+
+#: vpsr.rsprintprvprint
+msgctxt "vpsr.rsprintprvprint"
+msgid "&Print"
+msgstr "&Afdrukken"
+
+#: vpsr.rsprintprvprinthint
+msgid "Print"
+msgstr "Afdrukken"
+
+#: vpsr.rsprtcontrolowner
+msgid "Print controller is not owned by a TVpControlLink!"
+msgstr "Print Controller heeft niet TVpControlLink als Owner"
+
+#: vpsr.rsrectangle
+msgid "rectangle"
+msgstr ""
+
+#: vpsr.rsrecurrenceendslbl
+msgid "Repeat until:"
+msgstr "Herhalen totdat:"
+
+#: vpsr.rsrecurringlbl
+msgid "Appointment recurrence:"
+msgstr "Afspraak herhaling:"
+
+#: vpsr.rsreminder
+msgid "Reminder"
+msgstr "Herinnering"
+
+#: vpsr.rsreportsetup
+msgid "Report setup"
+msgstr ""
+
+#: vpsr.rsresource
+msgid "Resource"
+msgstr "Hulpmiddel"
+
+#: vpsr.rsrightline
+msgid "right line"
+msgstr ""
+
+#: vpsr.rsrotationcaption
+msgid "Rotation"
+msgstr ""
+
+#: vpsr.rssaturday
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: vpsr.rssavefilebtn
+msgid "Save file..."
+msgstr ""
+
+#: vpsr.rsselectasound
+msgid "Select A Sound"
+msgstr "Kies een geluid"
+
+#: vpsr.rsselectresource
+msgid "No resource has been selected. Would you like to select one now?"
+msgstr "Er is geen hulpmiddel gekozen. Wilt u er nu een kiezen?"
+
+#: vpsr.rsshapebtn
+msgid "Shape..."
+msgstr ""
+
+#: vpsr.rsshapecaption
+msgctxt "vpsr.rsshapecaption"
+msgid "Shape"
+msgstr ""
+
+#: vpsr.rsshapeelement
+msgctxt "vpsr.rsshapeelement"
+msgid "Shape"
+msgstr ""
+
+#: vpsr.rssnoozebtn
+msgid "&Snooze"
+msgstr "&Uitstellen"
+
+#: vpsr.rssnoozecaption
+msgid "Click &Snooze to be reminded again in:"
+msgstr "Klik op \"Uitstellen\" om nogmaals herinnerd te worden in:"
+
+#: vpsr.rssoundfinder
+msgid "Sound Finder"
+msgstr "Geluid Zoeker"
+
+#: vpsr.rssqlupdateerror
+msgid "Error: Unable to update "
+msgstr "Fout: Updaten niet mogelijk "
+
+#: vpsr.rsstartendtimeerror
+msgid "Incorrect order of start and end times. Do you want to flip them?"
+msgstr "Incorrecte volgorde van start- en eindtijden. Wilt u ze verwisselen?"
+
+#: vpsr.rsstarttimelbl
+msgid "Start time:"
+msgstr "Starttijd:"
+
+#: vpsr.rsstatelbl
+msgid "State:"
+msgstr "Provincie:"
+
+#: vpsr.rsstylelbl
+msgid "Style:"
+msgstr ""
+
+#: vpsr.rssubjectcaption
+msgctxt "vpsr.rssubjectcaption"
+msgid "Subject:"
+msgstr "Onderwerp:"
+
+#: vpsr.rssunday
+msgid "Sunday"
+msgstr "Zondag"
+
+#: vpsr.rstaskcomplete
+msgctxt "vpsr.rstaskcomplete"
+msgid "Task complete"
+msgstr "Taak afgerond"
+
+#: vpsr.rstaskpopupadd
+msgid "Add Task..."
+msgstr "Taak toevoegen..."
+
+#: vpsr.rstaskpopupdelete
+msgid "Delete Task..."
+msgstr "Taak wissen..."
+
+#: vpsr.rstaskpopupedit
+msgid "Edit Task..."
+msgstr "Taak bewerken..."
+
+#: vpsr.rstaskselement
+msgid "Tasks"
+msgstr ""
+
+#: vpsr.rstasktitlenoresource
+msgid "Task List"
+msgstr "Taaklijst"
+
+#: vpsr.rstasktitleresource
+msgid "Task List - "
+msgstr "Taaklijst - "
+
+#: vpsr.rstextcaption
+msgid "Text"
+msgstr ""
+
+#: vpsr.rsthrough
+msgid "Through"
+msgstr "t/m"
+
+#: vpsr.rsthursday
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: vpsr.rstimeinclbl
+msgid "Time increment:"
+msgstr ""
+
+#: vpsr.rstimeincunits
+msgid "Time increment units:"
+msgstr ""
+
+#: vpsr.rstitle
+msgid "Title"
+msgstr "Titel"
+
+#: vpsr.rstitlelbl
+msgid "Title:"
+msgstr "Titel:"
+
+#: vpsr.rstltobrline
+msgid "top-left to bottom-right line"
+msgstr ""
+
+#: vpsr.rstop
+msgid "Top"
+msgstr ""
+
+#: vpsr.rstopline
+msgid "top line"
+msgstr ""
+
+#: vpsr.rstrue
+msgctxt "vpsr.rstrue"
+msgid "T"
+msgstr "W"
+
+#: vpsr.rstuesday
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: vpsr.rsunabletoopen
+msgid "Error: Unable to open "
+msgstr "Fout: Openen niet mogelijk "
+
+#: vpsr.rsuntitled
+msgid "Untitled"
+msgstr "Zonder titel"
+
+#: vpsr.rsvisible
+msgid "Visible"
+msgstr ""
+
+#: vpsr.rsvisualcaption
+msgid "Visual"
+msgstr ""
+
+#: vpsr.rswednesday
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: vpsr.rsweekly
+msgid "Weekly"
+msgstr "Wekelijks"
+
+#: vpsr.rsweekof
+msgid "Week of"
+msgstr "Week van"
+
+#: vpsr.rsweekpopupadd
+msgctxt "vpsr.rsweekpopupadd"
+msgid "Add Event..."
+msgstr "Gebeurtenis toevoegen..."
+
+#: vpsr.rsweekpopupdelete
+msgid "&Delete Event..."
+msgstr "Gebeurtenis wissen..."
+
+#: vpsr.rsweekpopupedit
+msgctxt "vpsr.rsweekpopupedit"
+msgid "Edit Event..."
+msgstr "Gebeurtenis bewerken..."
+
+#: vpsr.rsweekpopupnav
+msgctxt "vpsr.rsweekpopupnav"
+msgid "Change Date"
+msgstr "Datum wijzigen"
+
+#: vpsr.rsweekpopupnavnextmonth
+msgctxt "vpsr.rsweekpopupnavnextmonth"
+msgid "Next Month"
+msgstr "Volgende Maand"
+
+#: vpsr.rsweekpopupnavnextweek
+msgctxt "vpsr.rsweekpopupnavnextweek"
+msgid "Next Week"
+msgstr "Volgende Week"
+
+#: vpsr.rsweekpopupnavnextyear
+msgctxt "vpsr.rsweekpopupnavnextyear"
+msgid "Next Year"
+msgstr "Volgende Jaar"
+
+#: vpsr.rsweekpopupnavprevmonth
+msgctxt "vpsr.rsweekpopupnavprevmonth"
+msgid "Previous Month"
+msgstr "Vorige Maand"
+
+#: vpsr.rsweekpopupnavprevweek
+msgctxt "vpsr.rsweekpopupnavprevweek"
+msgid "Previous Week"
+msgstr "Vorige Week"
+
+#: vpsr.rsweekpopupnavprevyear
+msgctxt "vpsr.rsweekpopupnavprevyear"
+msgid "Previous Year"
+msgstr "Vorige Jaar"
+
+#: vpsr.rsweekpopupnavtoday
+msgctxt "vpsr.rsweekpopupnavtoday"
+msgid "Today"
+msgstr "Vandaag"
+
+#: vpsr.rsweeks
+msgid "Weeks"
+msgstr ""
+
+#: vpsr.rsweekviewelement
+msgid "Week view"
+msgstr ""
+
+#: vpsr.rswidth
+msgid "Width"
+msgstr ""
+
+#: vpsr.rswidthlbl
+msgid "Width:"
+msgstr ""
+
+#: vpsr.rsxdays
+msgid "%d days"
+msgstr "%d dagen"
+
+#: vpsr.rsxhours
+msgid "%d hours"
+msgstr "%d uren"
+
+#: vpsr.rsxminutes
+msgid "%d minutes"
+msgstr "%d minuten"
+
+#: vpsr.rsyearisrequired
+msgid "Error: Year is required."
+msgstr "Fout: Jaar is verplicht."
+
+#: vpsr.rsyearlybydate
+msgid "Yearly By Date"
+msgstr "Jaarlijks, op Datum"
+
+#: vpsr.rsyearlybyday
+msgid "Yearly By Day"
+msgstr "Jaarlijks, op dag"
+
+#: vpsr.rsyears
+msgid "Years"
+msgstr ""
+
+#: vpsr.rsyes
+msgid "Y"
+msgstr "Y"
+
+#: vpsr.rszipcodelbl
+msgid "Zip code:"
+msgstr "Postkode:"
+
+#: vpsr.sallocsrcmemfailed
+msgid "Unable to allocate memory for XML source"
+msgstr "Kan geen geheugen toewijzen voor XML bron"
+
+#: vpsr.sattrnotnum
+msgid "Attribute %s of element %s does not have an integer value."
+msgstr "Attribuut %s van element %s heeft geen integer waarde."
+
+#: vpsr.sbadparamentnesting
+msgid "Parameter-entity text must be properly nested: "
+msgstr "Parameter-Entity moet correct genest zijn: "
+
+#: vpsr.sbadsepinmodel
+msgid "Bad separator in content model: "
+msgstr "Ongeldig scheidingsteken in content model: "
+
+#: vpsr.sbadutf8char
+msgid "Badly formed UTF-8 character in stream"
+msgstr "Onjuist geformatteerd UTF-8 teken im stream"
+
+#: vpsr.scircularentref
+msgid "Circular reference to: "
+msgstr "Kringverwijzing naar: "
+
+#: vpsr.scommentbeforexmldecl
+msgid "Document cannot start with a comment if it also contains an XML declaration"
+msgstr "Document kan niet met commentaar beginnen als het ook een XML declaratie bevat"
+
+#: vpsr.sdataaftervaldoc
+msgid "There is invalid data after valid XML document"
+msgstr "Ongeldige data gevonden na geldig XML document"
+
+#: vpsr.serrendofdocument
+msgid "Unexpected end of document stream"
+msgstr "Onverwacht einde van document stream"
+
+#: vpsr.sexpcommentorcdata
+msgid "Expected comment or CDATA section "
+msgstr "Verwacht commentaar of CDATA sectie "
+
+#: vpsr.sexpectedstring
+msgid "Expected String: "
+msgstr "Verwachtte String: "
+
+#: vpsr.sexpmarkupdecl
+msgid "Expected markup declaration, but found: "
+msgstr "Markup declaratie verwacht, maar gevonden: "
+
+#: vpsr.sextmodifmissing
+msgid "External modifier missing: "
+msgstr "Externe modifier mist: "
+
+#: vpsr.sfilenotfound
+msgid "File %s could not be found"
+msgstr "Bestand %s kan niet worden gevonden"
+
+#: vpsr.sfmterrormsg
+msgid "Line: %d Col: %d Error: %s"
+msgstr "Regel: %d, Kolom: %d, Fout: %s"
+
+#: vpsr.sftpdatanotavail
+msgid "Ftp data not available"
+msgstr "Ftp data niet beschikbaar"
+
+#: vpsr.sftpopenfilefailed
+msgid "Unable to open ftp file"
+msgstr "Kan ftp bestand niet openen"
+
+#: vpsr.sftpputfilefailed
+msgid "Could not save file via ftp to %s"
+msgstr "Kon bestand niet opslaan via ftp als %s"
+
+#: vpsr.sftpreadreqfailed
+msgid "Ftp read request failed"
+msgstr "Ftp leesopdracht is mislukt"
+
+#: vpsr.shttpdatanotavail
+msgid "Http data not available"
+msgstr "Http data niet beschikbaar"
+
+#: vpsr.shttpreadreqfailed
+msgid "Http read request failed"
+msgstr "Http leesopdracht is mislukt"
+
+#: vpsr.shttpreqopenfailed
+msgid "Unable to open http request"
+msgstr "Kan http verzoek niet openen"
+
+#: vpsr.shttpreqsendfailed
+msgid "Unable to send http request"
+msgstr "Kan http verzoek niet verzenden"
+
+#: vpsr.sienotinstalled
+msgid "Cannot open WININET, Microsoft IE required"
+msgstr "Kan WININET niet openen zonder Microsoft IE"
+
+#: vpsr.sillattrdefkeyw
+msgid "Illegal keyword for attribute default value: "
+msgstr "Ongeldig trefwoord als attribuut standaard waarde: "
+
+#: vpsr.sillattrtype
+msgid "Illegal attribute type: "
+msgstr "Ongeldig attribuut type: "
+
+#: vpsr.sillcharinref
+msgid "Illegal character in reference"
+msgstr "Ongeldig teken in referentie"
+
+#: vpsr.sillcondsectstart
+msgid "Conditional section must begin with INCLUDE or IGNORE"
+msgstr "Conditionele sectie moet beginnen met INCLUDE of IGNORE"
+
+#: vpsr.sindexoutofbounds
+msgid "ERROR INDEX OUT OF BOUNDS"
+msgstr "FOUT INDEX BUITEN GELDIG BEREIK"
+
+#: vpsr.sinetconnectfailed
+msgid "Unable to make Internet connection"
+msgstr "Kan geen internet verbinding maken"
+
+#: vpsr.sinetopenfailed
+msgid "Unable to open Internet"
+msgstr "Kan Internet niet openen"
+
+#: vpsr.sinvalidbechar
+msgid "Invalid (big-endian) UTF-16 character encoding"
+msgstr "Ongeldige (big-endian) UTF-16 teken codering"
+
+#: vpsr.sinvalidcdatasection
+msgid "Invalid characters in CDATA section"
+msgstr "Ongeldig teken in CDATA sectie"
+
+#: vpsr.sinvalidcharencoding
+msgid "Invalid character encoding specified."
+msgstr "Ongeldige teken codering opgegeven."
+
+#: vpsr.sinvalidcommenttext
+msgid "Invalid comment text"
+msgstr "Ongeldige commentaar tekst"
+
+#: vpsr.sinvalidelementname
+msgid "Invalid element name: "
+msgstr "Ongeldige element Naam: "
+
+#: vpsr.sinvalidftpdir
+msgid "Invalid ftp directory"
+msgstr "Ongeldige ftp map"
+
+#: vpsr.sinvalidftploc
+msgid "Invalid ftp location"
+msgstr "Ongeldige ftp locatie"
+
+#: vpsr.sinvalidlechar
+msgid "Invalid (little-endian) UTF-16 character encoding"
+msgstr "Ongeldige (little-endian) UTF-16 teken codering"
+
+#: vpsr.sinvalidmemptr
+msgid "Invalid memory Pointer"
+msgstr "Ongeldige memory Pointer"
+
+#: vpsr.sinvalidname
+msgid "Invalid XML name: "
+msgstr "Ongeldige XML Naam: "
+
+#: vpsr.sinvalidxmlchar
+msgid "Invalid XML Character found"
+msgstr "Ongeldig XML teken gevonden"
+
+#: vpsr.sinvalidxmlversion
+msgid "XMLPartner does not support XML specification greater than %s"
+msgstr "XMLPartner ondersteunt geen XML specificatie hoger dan %s"
+
+#: vpsr.sinvattrchar
+msgid "Invalid character in attribute value: "
+msgstr "Ongeldig teken in attribuut waarde: "
+
+#: vpsr.sinvencname
+msgid "Invalid encoding declaration: "
+msgstr "Ongeldige coderings declaratie: "
+
+#: vpsr.sinventityvalue
+msgid "Invalid character in entity value: "
+msgstr "Ongeldig teken in entiteit waarde: "
+
+#: vpsr.sinvpcdata
+msgid "Invalid characters in element's character data: "
+msgstr "Ongeldige tekens in de data van het element: "
+
+#: vpsr.sinvpubidchar
+msgid "Invalid PublicID character: "
+msgstr "Ongeldig teken in PublicID"
+
+#: vpsr.sinvstandaloneval
+msgid "Standalone value must equal 'yes' or 'no'"
+msgstr "Zelfstandige waarde moet 'yes' of 'no' zijn"
+
+#: vpsr.sinvvernum
+msgid "Invalid XML version number: "
+msgstr "Ongeldig XML Versie nummer: "
+
+#: vpsr.smismatchendtag
+msgid "Mismatched end tag: "
+msgstr "Niet matchende einde markering"
+
+#: vpsr.snocommentinmarkup
+msgid "Comments can not be placed within other markup"
+msgstr "Commentaar kan niet worden geplaatst binnen andere markup"
+
+#: vpsr.snointconditional
+msgid "Conditional sections not allowed in internal subset of document type declaration"
+msgstr "Conditionele secties niet toegestaan in interne subset van een document type declaratie"
+
+#: vpsr.snondatainpedecl
+msgid "NDATA not allowed in parameter entity declaration"
+msgstr "NDATA niet toegestaan in parameter entiteit declaratie"
+
+#: vpsr.snopeinintdtd
+msgid "Parameter entities not allowed in DTD internal subset"
+msgstr "Parameter entiteiten zijn niet toegstaan in interne DTD subset"
+
+#: vpsr.snotationnotdeclared
+msgid "Notation not declared: "
+msgstr "Notatie niet gedeclareerd: "
+
+#: vpsr.sopenfilefailed
+msgid "Unable to open file "
+msgstr "Bestand kan niet worden geopend "
+
+#: vpsr.squoteexpected
+msgid "Expected \" or '"
+msgstr "Verwacht wordt \" of '"
+
+#: vpsr.sredefinedattr
+msgid "Attributes cannot be redefined in a start tag"
+msgstr "Attributen kunnen in een start tag niet hergedefinieerd worden"
+
+#: vpsr.sspaceexpectedat
+msgid "Whitespace expected at byte "
+msgstr "Spatie verwacht bij byte "
+
+#: vpsr.ssrcloadfailed
+msgid "Unable to load source "
+msgstr "Bron kan niet geladen worden"
+
+#: vpsr.ssysidmissing
+msgid "System identifier missing "
+msgstr "Systeem identifier mist "
+
+#: vpsr.sucs_isoconverterr
+msgid "Cannot convert UCS-4 character to ISO-8859-1"
+msgstr "UCS-4 teken kan niet worden geconverteerd naar ISO-8859-1"
+
+#: vpsr.sucs_u16converterr
+msgid "Cannot convert UCS-4 character to UTF-16"
+msgstr "UCS-4 teken kan niet worden geconverteerd naar UTF-16"
+
+#: vpsr.sucs_u8convererr
+msgid "Cannot convert UCS-4 character to UTF-8"
+msgstr "UCS-4 teken kan niet worden geconverteerd naar UTF-8"
+
+#: vpsr.sunablecreatestr
+msgid "Unable to create stream for input."
+msgstr "Stream voor invoer kan niet worden aangemaakt."
+
+#: vpsr.sundeclaredentity
+msgid "Reference to undeclared entity: "
+msgstr "Referentie naar niet gedeclareerde entiteit: "
+
+#: vpsr.sunexpectedeof
+msgid "Unexpected end of file "
+msgstr "Onverwacht einde van bestand "
+
+#: vpsr.sunexpendofinput
+msgid "End of input while looking for delimiter: "
+msgstr "Einde van invoer gevonden terwijl wordt gezocht naar scheidingsteken: "
+
+#: vpsr.sunknownaxis
+msgid "Unknown axis specifier: %s"
+msgstr "Onbekende as specificatie: %s"
+
+#: vpsr.sxmldecnotatbeg
+msgid "The XML declaration must appear before the first element"
+msgstr "De XML declaratie moet voor het eerste element staan"
+

@@ -1,0 +1,311 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"Language: de\n"
+
+#: demomain.rs10min
+msgid "10 min"
+msgstr "10 Min."
+
+#: demomain.rs12hours
+msgctxt "demomain.rs12hours"
+msgid "12 hours AM/PM"
+msgstr "12 Std. AM/PM"
+
+#: demomain.rs15min
+msgid "15 min"
+msgstr "15 Min."
+
+#: demomain.rs20min
+msgid "20 min"
+msgstr "20 Min."
+
+#: demomain.rs24hours
+msgid "24 hours"
+msgstr "24 Std."
+
+#: demomain.rs30min
+msgid "30 min"
+msgstr "30 Min."
+
+#: demomain.rs3d
+msgid "3D"
+msgstr "3D"
+
+#: demomain.rs5min
+msgid "5 min"
+msgstr "5 Min."
+
+#: demomain.rs60min
+msgid "60 min"
+msgstr "60 Min."
+
+#: demomain.rs6min
+msgid "6 min"
+msgstr "6 Min."
+
+#: demomain.rsborderless
+msgid "no border"
+msgstr "ohne Rahmen"
+
+#: demomain.rsconfirmdeleteres
+msgid "Do you really want to delete resource %s?"
+msgstr "Wollen Sie wirklich die Ressource %s löschen?"
+
+#: demomain.rscontacts
+msgctxt "demomain.rscontacts"
+msgid "Contacts"
+msgstr "Kontakte"
+
+#: demomain.rseventsoverview
+msgid "Events overview"
+msgstr "Termin-Übersicht"
+
+#: demomain.rseventsperday
+msgid "Events per day"
+msgstr "Termine pro Tag"
+
+#: demomain.rseventspermonth
+msgid "Events per month"
+msgstr "Termine pro Monat"
+
+#: demomain.rseventsperweek
+msgid "Events per week"
+msgstr "Termine pro Woche"
+
+#: demomain.rsflat
+msgid "flat"
+msgstr "flach"
+
+#: demomain.rsfriday
+msgid "Friday"
+msgstr "Freitag"
+
+#: demomain.rsmaintenance
+msgctxt "demomain.rsmaintenance"
+msgid "Maintenance"
+msgstr "Wartung"
+
+#: demomain.rsmonday
+msgid "Monday"
+msgstr "Montag"
+
+#: demomain.rsplanner
+msgid "Planner"
+msgstr "Planer"
+
+#: demomain.rsresources
+msgctxt "demomain.rsresources"
+msgid "Resources"
+msgstr "Ressourcen"
+
+#: demomain.rssaturday
+msgid "Saturday"
+msgstr "Samstag"
+
+#: demomain.rssettings
+msgid "Program settings"
+msgstr "Programm-Einstellungen"
+
+#: demomain.rssettings_short
+msgctxt "demomain.rssettings_short"
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: demomain.rssunday
+msgid "Sunday"
+msgstr "Sonntag"
+
+#: demomain.rstasks
+msgctxt "demomain.rstasks"
+msgid "Tasks"
+msgstr "Aufgaben"
+
+#: demomain.rsthursday
+msgid "Thursday"
+msgstr "Donnerstag"
+
+#: demomain.rstuesday
+msgid "Tuesday"
+msgstr "Dienstag"
+
+#: demomain.rswednesday
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+#: demomain.rsxmlfiles
+msgid "XML files (*.xml)"
+msgstr "XML-Dateien (*.XML)"
+
+#: tfrmreportsetup.btncancel.caption
+msgctxt "tfrmreportsetup.btncancel.caption"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: tfrmreportsetup.btnok.caption
+msgctxt "tfrmreportsetup.btnok.caption"
+msgid "OK"
+msgstr "OK"
+
+#: tfrmreportsetup.caption
+msgid "Report Setup"
+msgstr "Ausdruck einrichten"
+
+#: tfrmreportsetup.lblenddate.caption
+msgctxt "tfrmreportsetup.lblenddate.caption"
+msgid "End Date:"
+msgstr "Enddatum:"
+
+#: tfrmreportsetup.lblformat.caption
+msgctxt "tfrmreportsetup.lblformat.caption"
+msgid "Format:"
+msgstr "Format:"
+
+#: tfrmreportsetup.lblstartdate.caption
+msgctxt "tfrmreportsetup.lblstartdate.caption"
+msgid "Start Date:"
+msgstr "Startdatum:"
+
+#: tmainform.btndeleteres.caption
+msgid "Delete"
+msgstr "Löschen"
+
+#: tmainform.btneditres.caption
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: tmainform.btnnewres.caption
+msgid "New"
+msgstr "Neu"
+
+#: tmainform.caption
+msgid "Turbo Power VisualPlanIt Demo"
+msgstr "Turbo Power VisualPlanIt Demo"
+
+#: tmainform.cbaddressbuilder.text
+msgid "(default)"
+msgstr "(Standard)"
+
+#: tmainform.cballowdraganddrop.caption
+msgid "Allow drag and drop of events"
+msgstr "\"Ziehen und Fallenlassen\" (Drag&&Drop) von Ereignissen erlauben"
+
+#: tmainform.cballowinplaceediting.caption
+msgid "Allow inplace editing"
+msgstr "Editieren an Ort und Stelle erlauben"
+
+#: tmainform.cbdragdroptransparent.caption
+msgid "Transparent drag and drop"
+msgstr "\"Ziehen und Fallenlassen\" (Drag&&Drop)  mit transparentem Hintergrund"
+
+#: tmainform.cbgranularity.text
+msgid "30 Min"
+msgstr "30 Min"
+
+#: tmainform.lbladdressbuilder.caption
+msgid "Address builder"
+msgstr "Aufbau der Adresse:"
+
+#: tmainform.lbldrawingstyle.caption
+msgid "Drawing style:"
+msgstr "Darstellungs-Stil:"
+
+#: tmainform.lblfirstdayofweek.caption
+msgid "First day of week"
+msgstr "Die Woche beginnt am"
+
+#: tmainform.lblgranularity.caption
+msgid "Granularity"
+msgstr "Raster"
+
+#: tmainform.lbllanguage.caption
+msgctxt "tmainform.lbllanguage.caption"
+msgid "Language"
+msgstr "Sprache"
+
+#: tmainform.lbltimeformat.caption
+msgid "Time format"
+msgstr "Zeitformat"
+
+#: tmainform.lblvisibledays.caption
+msgid "Visible days"
+msgstr "Sichtbare Tage"
+
+#: tmainform.menuitem1.caption
+msgid "File"
+msgstr "Datei"
+
+#: tmainform.menuitem2.caption
+msgid "Help"
+msgstr "Hilfe"
+
+#: tmainform.menuitem3.caption
+msgctxt "tmainform.menuitem3.caption"
+msgid "-"
+msgstr ""
+
+#: tmainform.menuitem4.caption
+msgctxt "tmainform.menuitem4.caption"
+msgid "-"
+msgstr ""
+
+#: tmainform.mnuabout.caption
+msgid "About Visual PlanIt"
+msgstr "Über Visual PlanIt"
+
+#: tmainform.mnueditprintformats.caption
+msgid "Edit print formats..."
+msgstr "Druckformate bearbeiten..."
+
+#: tmainform.mnuloadprintformats.caption
+msgid "Load print formats..."
+msgstr "Druckformate laden..."
+
+#: tmainform.mnumaintenance.caption
+msgctxt "tmainform.mnumaintenance.caption"
+msgid "Maintenance"
+msgstr "Wartung"
+
+#: tmainform.mnuprint.caption
+msgid "Print..."
+msgstr "Drucken..."
+
+#: tmainform.mnuprintpreview.caption
+msgid "Print preview..."
+msgstr "Druckvorschau..."
+
+#: tmainform.mnuquit.caption
+msgid "Quit"
+msgstr "Beenden"
+
+#: tmainform.mnuresources.caption
+msgctxt "tmainform.mnuresources.caption"
+msgid "Resources"
+msgstr "Ressourcen"
+
+#: tmainform.mnusettings.caption
+msgctxt "tmainform.mnusettings.caption"
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: tmainform.rballtasks.caption
+msgid "All tasks"
+msgstr "Alle Aufgaben"
+
+#: tmainform.rbhidecompletedtasks.caption
+msgid "Hide completed tasks"
+msgstr "Fertiggestellte Aufgaben ausblenden"
+
+# No need to translate
+#: tmainform.titlelbl.caption
+msgid "TitleLbl"
+msgstr ""
+

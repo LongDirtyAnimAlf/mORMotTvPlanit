@@ -1,0 +1,1404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2016-08-28 01:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: vpsr.rs1day
+msgid "1 day"
+msgstr "1 jour"
+
+#: vpsr.rs1hour
+msgid "1 hour"
+msgstr "1 heure"
+
+#: vpsr.rs1minute
+msgid "1 minute"
+msgstr "1 minute"
+
+#: vpsr.rs1week
+msgid "1 week"
+msgstr "1 semaine"
+
+#: vpsr.rsaddnewresource
+msgid "No resources have been defined. Would you like to add one now?"
+msgstr "Aucune ressource à été defini. Voulez-vous ajouter une maintenant?"
+
+#: vpsr.rsaddresslbl
+msgid "Address:"
+msgstr "Adresse:"
+
+#: vpsr.rsafriday
+msgid "Fri"
+msgstr "Ven"
+
+#: vpsr.rsalarmset
+msgid "&Reminder"
+msgstr "&Rappel"
+
+#: vpsr.rsalldayevent
+msgid "&All Day Event"
+msgstr "&Événement d'une journée"
+
+#: vpsr.rsamonday
+msgid "Mon"
+msgstr "Lun"
+
+#: vpsr.rsappointmentgroupbox
+msgid "Appointment"
+msgstr "Rendevous"
+
+#: vpsr.rsasaturday
+msgid "Sat"
+msgstr "Sam"
+
+#: vpsr.rsasunday
+msgid "Sun"
+msgstr "Dim"
+
+#: vpsr.rsathursday
+msgid "Thu"
+msgstr "Jeu"
+
+#: vpsr.rsatuesday
+msgid "Tue"
+msgstr "Mar"
+
+#: vpsr.rsawednesday
+msgid "Wed"
+msgstr "Mer"
+
+#: vpsr.rsbackwardtimeserror
+msgid "The end time cannot precede the start time."
+msgstr "L'heure de la fin ne peut pas être avant l'heure du début"
+
+#: vpsr.rsbaditemtype
+msgid "Invalid item type "
+msgstr "Type d'élément non valide"
+
+#: vpsr.rsbadmeasurement
+msgid "Invalid measurement"
+msgstr "Measure non valide"
+
+#: vpsr.rsbadprintformat
+msgid "Invalid print format "
+msgstr "Format d'impression non valide"
+
+#: vpsr.rsbadtriggerhandle
+msgid "Invalid trigger handle."
+msgstr "Poignée de déclenchement non valide"
+
+#: vpsr.rsbirthdatelbl
+msgid "Birth date:"
+msgstr "Date de naissance:"
+
+#: vpsr.rsbrowsererror
+msgid ""
+"Unable to start web browser. Make sure you have it properly setup on your "
+"system."
+msgstr ""
+"Échec de démarrage de votre browser internet. Veuillez verifier que vous l'"
+"avez bien configuré sur votre système."
+
+#: vpsr.rscalendarnextmonth
+msgctxt "vpsr.rscalendarnextmonth"
+msgid "Next Month"
+msgstr "Mois prochain"
+
+#: vpsr.rscalendarnextyear
+msgctxt "vpsr.rscalendarnextyear"
+msgid "Next Year"
+msgstr "Année prochain"
+
+#: vpsr.rscalendarpopupnextmonth
+msgctxt "vpsr.rscalendarpopupnextmonth"
+msgid "Next Month"
+msgstr "Mois prochain"
+
+#: vpsr.rscalendarpopupnextyear
+msgctxt "vpsr.rscalendarpopupnextyear"
+msgid "Next Year"
+msgstr "Année prochain"
+
+#: vpsr.rscalendarpopupprevmonth
+msgctxt "vpsr.rscalendarpopupprevmonth"
+msgid "Previous Month"
+msgstr "Mois dernière"
+
+#: vpsr.rscalendarpopupprevyear
+msgctxt "vpsr.rscalendarpopupprevyear"
+msgid "Previous Year"
+msgstr "Année dernière"
+
+#: vpsr.rscalendarpopuprevert
+msgctxt "vpsr.rscalendarpopuprevert"
+msgid "Revert"
+msgstr "Revenir en arrière"
+
+#: vpsr.rscalendarpopuptoday
+msgctxt "vpsr.rscalendarpopuptoday"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: vpsr.rscalendarprevmonth
+msgctxt "vpsr.rscalendarprevmonth"
+msgid "Previous Month"
+msgstr "Mois dernière"
+
+#: vpsr.rscalendarprevyear
+msgctxt "vpsr.rscalendarprevyear"
+msgid "Previous Year"
+msgstr "Année dernière"
+
+#: vpsr.rscalendarrevert
+msgctxt "vpsr.rscalendarrevert"
+msgid "Revert"
+msgstr "Revenir en arrière"
+
+#: vpsr.rscalendartoday
+msgctxt "vpsr.rscalendartoday"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: vpsr.rscalendarweekabbr
+msgid "CW"
+msgstr ""
+
+#: vpsr.rscancelbtn
+msgctxt "vpsr.rscancelbtn"
+msgid "Cancel"
+msgstr "Annuler"
+
+#: vpsr.rscategory
+msgid "Category"
+msgstr "Catégorie"
+
+#: vpsr.rscategorydesc
+msgid "Category %d"
+msgstr "Catégorie %d"
+
+#: vpsr.rscategorylabel1
+msgid "Business"
+msgstr "Professionnel"
+
+#: vpsr.rscategorylabel2
+msgid "Clients"
+msgstr "Clients"
+
+#: vpsr.rscategorylabel3
+msgid "Family"
+msgstr "Famille"
+
+#: vpsr.rscategorylabel4
+msgid "Personal"
+msgstr "Personnel"
+
+#: vpsr.rscategorylabel5
+msgctxt "vpsr.rscategorylabel5"
+msgid "Other"
+msgstr "Autre"
+
+#: vpsr.rscategorylbl
+msgid "Category:"
+msgstr "Catégorie:"
+
+#: vpsr.rscitylbl
+msgid "City:"
+msgstr "Ville:"
+
+#: vpsr.rsclosebtn
+msgid "&Close"
+msgstr "&Fermer"
+
+#: vpsr.rscompany
+msgctxt "vpsr.rscompany"
+msgid "Company"
+msgstr "Société"
+
+#: vpsr.rscompanylbl
+msgid "Company:"
+msgstr "Société:"
+
+#: vpsr.rscompletedon
+msgid "Completed on"
+msgstr "Terminé le"
+
+#: vpsr.rsconfirmdeletecontact
+msgid "Delete contact %s?"
+msgstr "Supprimer le contact %s?"
+
+#: vpsr.rsconfirmdeleteevent
+msgctxt "vpsr.rsconfirmdeleteevent"
+msgid "Delete event from schedule?"
+msgstr "Supprimer l'événement du calendrier"
+
+#: vpsr.rsconfirmdeletetask
+msgid "Delete this task from your list?"
+msgstr "Supprimer la tache de votre liste?"
+
+#: vpsr.rscontactpopupadd
+msgid "Add Contact..."
+msgstr "Ajouter un contact..."
+
+#: vpsr.rscontactpopupdelete
+msgid "Delete Contact..."
+msgstr "Supprimer un contact..."
+
+#: vpsr.rscontactpopupedit
+msgid "Edit Contact..."
+msgstr "Modifier un contact..."
+
+#: vpsr.rscountry
+msgid "Country"
+msgstr "Pays"
+
+#: vpsr.rscountrylbl
+msgid "Country:"
+msgstr "Pays:"
+
+#: vpsr.rscreatedon
+msgid "Created on"
+msgstr "Crée le"
+
+#: vpsr.rscustom
+msgid "Custom"
+msgstr "Personnalisé"
+
+#: vpsr.rscustom1
+msgid "Custom 1"
+msgstr "Personnalisé 1"
+
+#: vpsr.rscustom2
+msgid "Custom 2"
+msgstr "Personnalisé 2"
+
+#: vpsr.rscustom3
+msgid "Custom 3"
+msgstr "Personnalisé 3"
+
+#: vpsr.rscustom4
+msgid "Custom 4"
+msgstr "Personnalisé 4"
+
+#: vpsr.rsdaily
+msgid "Daily"
+msgstr "Quotidien"
+
+#: vpsr.rsdayisrequired
+msgid "Error: Day is required."
+msgstr "Erreur: Il faut choisir un jour"
+
+#: vpsr.rsdaypopupadd
+msgctxt "vpsr.rsdaypopupadd"
+msgid "Add Event..."
+msgstr "Ajouter un événement"
+
+#: vpsr.rsdaypopupdelete
+msgid "Delete Event..."
+msgstr "Supprimer un événement"
+
+#: vpsr.rsdaypopupedit
+msgctxt "vpsr.rsdaypopupedit"
+msgid "Edit Event..."
+msgstr "Modifier un événement"
+
+#: vpsr.rsdaypopupnav
+msgctxt "vpsr.rsdaypopupnav"
+msgid "Change Date"
+msgstr "Changez la date"
+
+#: vpsr.rsdaypopupnavnextday
+msgid "Next Day"
+msgstr "Jour suivant"
+
+#: vpsr.rsdaypopupnavnextmonth
+msgctxt "vpsr.rsdaypopupnavnextmonth"
+msgid "Next Month"
+msgstr "Mois prochain"
+
+#: vpsr.rsdaypopupnavnextweek
+msgctxt "vpsr.rsdaypopupnavnextweek"
+msgid "Next Week"
+msgstr "Semaine prochaine"
+
+#: vpsr.rsdaypopupnavnextyear
+msgctxt "vpsr.rsdaypopupnavnextyear"
+msgid "Next Year"
+msgstr "Année prochaine"
+
+#: vpsr.rsdaypopupnavprevday
+msgid "Previous Day"
+msgstr "Jour précedent"
+
+#: vpsr.rsdaypopupnavprevmonth
+msgctxt "vpsr.rsdaypopupnavprevmonth"
+msgid "Previous Month"
+msgstr "Mois dernière"
+
+#: vpsr.rsdaypopupnavprevweek
+msgctxt "vpsr.rsdaypopupnavprevweek"
+msgid "Previous Week"
+msgstr "Semaine dernière"
+
+#: vpsr.rsdaypopupnavprevyear
+msgctxt "vpsr.rsdaypopupnavprevyear"
+msgid "Previous Year"
+msgstr "Année dernière"
+
+#: vpsr.rsdaypopupnavtoday
+msgctxt "vpsr.rsdaypopupnavtoday"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: vpsr.rsdaypopupnavtomorrow
+msgctxt "vpsr.rsdaypopupnavtomorrow"
+msgid "Tomorrow"
+msgstr "Demain"
+
+#: vpsr.rsdaypopupnavyesterday
+msgctxt "vpsr.rsdaypopupnavyesterday"
+msgid "Yesterday"
+msgstr "Hier"
+
+#: vpsr.rsdays
+msgid "Days"
+msgstr "Jours"
+
+#: vpsr.rsdbposterror
+msgid "Error posting data to the database."
+msgstr "Erreur lors de l'enregistrement des données dans la base des données"
+
+#: vpsr.rsdefaultsound
+msgid "Use the default sound"
+msgstr "Utilisez le son par défaut"
+
+#: vpsr.rsdelete
+msgid "Delete"
+msgstr "Supprimer"
+
+#: vpsr.rsdescriptionlbl
+msgctxt "vpsr.rsdescriptionlbl"
+msgid "Subject:"
+msgstr "Sujet:"
+
+#: vpsr.rsdetails
+msgid "Details:"
+msgstr "Détails:"
+
+#: vpsr.rsdismissbtn
+msgid "&Dismiss"
+msgstr "&Révoquez"
+
+#: vpsr.rsdlgcontactedit
+msgctxt "vpsr.rsdlgcontactedit"
+msgid "Contact"
+msgstr "Contact"
+
+#: vpsr.rsdlgeventedit
+msgid "Event"
+msgstr "Événement"
+
+#: vpsr.rsdlgprintpreview
+msgid "Print preview"
+msgstr "Aperçu avant impression"
+
+#: vpsr.rsdlgreseditcaption
+msgid "Resource Edit"
+msgstr "Modifier la resource"
+
+#: vpsr.rsdlgreseditdescription
+msgctxt "vpsr.rsdlgreseditdescription"
+msgid "Description"
+msgstr "Déscription"
+
+#: vpsr.rsdlgtaskedit
+msgid "Task"
+msgstr "Tache"
+
+#: vpsr.rsduedate
+msgid "Due Date:"
+msgstr "Date d'échéance:"
+
+#: vpsr.rsduplicateresource
+msgid "Error: Duplicate Resource."
+msgstr "Erreur: ressource en doublon"
+
+#: vpsr.rseditingfolders
+msgid "Folder Editor."
+msgstr "Editeur de dossier."
+
+#: vpsr.rseditingitems
+msgid "Folder Items Editor."
+msgstr "Editeur d'éléments de dossier"
+
+#: vpsr.rseditprintformat
+msgid "Edit Print Formats..."
+msgstr "Modifier les formats d'impression"
+
+#: vpsr.rsemail
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: vpsr.rsendtimelbl
+msgid "End time:"
+msgstr "Fin:"
+
+#: vpsr.rsexclusiveeventconflict
+msgid "Conflicts with another exclusive event."
+msgstr "Cette événement est en conflit avec une autre événement exclusif"
+
+#: vpsr.rsfailtocreatecontact
+msgid "Error: Failure while creating Contact."
+msgstr "Erreur: échec lors de la création d'un contact"
+
+#: vpsr.rsfailtocreateevent
+msgid "Error: Failure while creating Event."
+msgstr "Erreur: échec lors de la création d'une événement"
+
+#: vpsr.rsfailtocreateresource
+msgid "Error: Failure while creating Resource."
+msgstr "Erreur: échec lors de la création d'un ressource"
+
+#: vpsr.rsfailtocreatetask
+msgid "Error: Failure while creating Task."
+msgstr "Erreur: échec lors de la création d'une tache"
+
+#: vpsr.rsfalse
+msgctxt "vpsr.rsfalse"
+msgid "F"
+msgstr ""
+
+#: vpsr.rsfirstnamelbl
+msgid "First name:"
+msgstr "Prénom:"
+
+#: vpsr.rsfriday
+msgid "Friday"
+msgstr "Vendredi"
+
+#: vpsr.rsfromschedule
+msgid "from your schedule?"
+msgstr "de votre agenda?"
+
+#: vpsr.rshintnextday
+msgid "Next day"
+msgstr "Jour suivant"
+
+#: vpsr.rshintnextweek
+msgctxt "vpsr.rshintnextweek"
+msgid "Next week"
+msgstr "Semaine prochaine"
+
+#: vpsr.rshintprevday
+msgid "Previous day"
+msgstr "Jour précédent"
+
+#: vpsr.rshintprevweek
+msgctxt "vpsr.rshintprevweek"
+msgid "Previous week"
+msgstr "Semaine précédent"
+
+#: vpsr.rshinttoday
+msgctxt "vpsr.rshinttoday"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: vpsr.rshinttomorrow
+msgctxt "vpsr.rshinttomorrow"
+msgid "Tomorrow"
+msgstr "Demain"
+
+#: vpsr.rshintyesterday
+msgctxt "vpsr.rshintyesterday"
+msgid "Yesterday"
+msgstr "Hier"
+
+#: vpsr.rshours
+msgid "Hours"
+msgstr "Heures"
+
+#: vpsr.rsinifilestructure
+msgid "Incorrect structure of ini file."
+msgstr "Structure du fichier d'ini incorrect"
+
+#: vpsr.rsintervallbl
+msgid "Interval (days):"
+msgstr "Intervale (en jours)"
+
+#: vpsr.rsinvaliddate
+msgid "Error: Invalid Date."
+msgstr "Erreur: date non valide"
+
+#: vpsr.rsinvalidday
+msgid "Error: Invalid Day."
+msgstr "Erreur: jour non valide"
+
+#: vpsr.rsinvalidmonth
+msgid "Error: Invalid Month."
+msgstr "Erreur: mois non valide"
+
+#: vpsr.rsinvalidmonthname
+msgid "Error: Invalid Month Name."
+msgstr "Erreur: nom du mois non valide"
+
+#: vpsr.rsinvalidtablespecified
+msgid "Error: Invalid table specified."
+msgstr "Erreur: table non valide specifié"
+
+#: vpsr.rsinvalidyear
+msgid "Error: Invalid Year."
+msgstr "Erreur: année non valide"
+
+#: vpsr.rslastnamelbl
+msgid "Last name:"
+msgstr "Nom:"
+
+#: vpsr.rslfriday
+msgctxt "vpsr.rslfriday"
+msgid "F"
+msgstr ""
+
+#: vpsr.rslmonday
+msgid "M"
+msgstr ""
+
+#: vpsr.rslocationlbl
+msgid "Location:"
+msgstr "Lieu:"
+
+#: vpsr.rslsaturday
+msgctxt "vpsr.rslsaturday"
+msgid "S"
+msgstr ""
+
+#: vpsr.rslsunday
+msgctxt "vpsr.rslsunday"
+msgid "S"
+msgstr ""
+
+#: vpsr.rslthursday
+msgctxt "vpsr.rslthursday"
+msgid "T"
+msgstr "A"
+
+#: vpsr.rsltuesday
+msgctxt "vpsr.rsltuesday"
+msgid "T"
+msgstr "A"
+
+#: vpsr.rslwednesday
+msgid "W"
+msgstr ""
+
+#: vpsr.rsmasterdata
+msgid "Master data"
+msgstr "Données de base"
+
+#: vpsr.rsminutes
+msgid "Minutes"
+msgstr "Minutes"
+
+#: vpsr.rsmonday
+msgid "Monday"
+msgstr "Lundi"
+
+#: vpsr.rsmonthconverterror
+msgid "Error converting the month number."
+msgstr "Erreur de convertion du nombre de mois"
+
+#: vpsr.rsmonthisrequired
+msgid "Error: Month Is Required."
+msgstr "Erreur: le mois est obligatoire"
+
+#: vpsr.rsmonthlybydate
+msgid "Monthly By Date"
+msgstr "Mensuel par date"
+
+#: vpsr.rsmonthlybyday
+msgid "Monthly By Day"
+msgstr "Mensuel par jour"
+
+#: vpsr.rsmonthpopupnextmonth
+msgctxt "vpsr.rsmonthpopupnextmonth"
+msgid "Next Month"
+msgstr "Mois suivant"
+
+#: vpsr.rsmonthpopupnextyear
+msgctxt "vpsr.rsmonthpopupnextyear"
+msgid "Next Year"
+msgstr "Année suivante"
+
+#: vpsr.rsmonthpopupprevmonth
+msgctxt "vpsr.rsmonthpopupprevmonth"
+msgid "Previous Month"
+msgstr "Mois précédent"
+
+#: vpsr.rsmonthpopupprevyear
+msgctxt "vpsr.rsmonthpopupprevyear"
+msgid "Previous Year"
+msgstr "Année précedent"
+
+#: vpsr.rsmonthpopuptoday
+msgctxt "vpsr.rsmonthpopuptoday"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: vpsr.rsnameisrequired
+msgid "Error: Name cannot be empty."
+msgstr "Erreur: le nom ne peut pas être vide. "
+
+#: vpsr.rsneedelementname
+msgid "Please supply an Element Name"
+msgstr "Veuillez fournir un nom d'élément"
+
+#: vpsr.rsneedformatname
+msgid "FormatName cannot be blank"
+msgstr "Nom du format ne peut pas être vide"
+
+#: vpsr.rsno
+msgid "N"
+msgstr ""
+
+#: vpsr.rsnocanvas
+msgid "TCanvas not assigned"
+msgstr "TCanvas non spécifié"
+
+#: vpsr.rsnocontrollink
+msgid "Component must be linked to a TVpControlLink"
+msgstr "Le composant doit être lié à un TVpControlLink"
+
+#: vpsr.rsnolocalizationfile
+msgid "Localization file not found."
+msgstr "Fichier de localization non-trouvé"
+
+#: vpsr.rsnone
+msgid "None"
+msgstr "Aucun"
+
+#: vpsr.rsnonestr
+msgid "(None)"
+msgstr "(Aucun)"
+
+#: vpsr.rsnoprintformats
+msgid "No print formats have been defined"
+msgstr "Formats d'impression non-défini"
+
+#: vpsr.rsnotdoneyet
+msgid "This feature is not implemented at this time."
+msgstr "Cette fonctionnalité n'est pas mise en œuvre à ce moment"
+
+#: vpsr.rsnotes
+msgid "Notes"
+msgstr "Notes"
+
+#: vpsr.rsnotescaption
+msgctxt "vpsr.rsnotescaption"
+msgid "Notes:"
+msgstr "Notes:"
+
+#: vpsr.rsnoteslbl
+msgctxt "vpsr.rsnoteslbl"
+msgid "Notes:"
+msgstr "Notes:"
+
+#: vpsr.rsnothingtoselectfrom
+msgid "There is nothing to select if default sound is used."
+msgstr "Il n'y a rien à sélectionner si le son par défaut est utilisé."
+
+#: vpsr.rsnotimersavail
+msgid "No Window's timers are available."
+msgstr "Pas de minuteries Windows disponibles."
+
+#: vpsr.rsnotsupported
+msgid "not supported"
+msgstr "non supporté"
+
+#: vpsr.rsokbtn
+msgid "OK"
+msgstr "OK"
+
+#: vpsr.rsopenitembtn
+msgid "&Open Item"
+msgstr "&Item ouvert"
+
+#: vpsr.rsoutofrange
+msgid "Out of range"
+msgstr "Hors de portée"
+
+#: vpsr.rsoverdue
+msgid "OVERDUE!"
+msgstr "EN RETARD!"
+
+#: vpsr.rsownernotwinctrl
+msgid "Owner must be a TWinControl descendent"
+msgstr "Le propriétaire doit être un descendant de TWinControl"
+
+#: vpsr.rspermanent
+msgid "This operation cannot be undone!"
+msgstr "Ce processus est irreversible!"
+
+#: vpsr.rsphonetypelabel1
+msgid "Assistant"
+msgstr "Assistante"
+
+#: vpsr.rsphonetypelabel10
+msgid "Other Fax"
+msgstr "Autre fax"
+
+#: vpsr.rsphonetypelabel11
+msgid "Pager"
+msgstr "Pager"
+
+#: vpsr.rsphonetypelabel12
+msgid "Primary"
+msgstr "Principale"
+
+#: vpsr.rsphonetypelabel13
+msgid "Radio"
+msgstr "Radio"
+
+#: vpsr.rsphonetypelabel14
+msgid "Telex"
+msgstr "Télex"
+
+#: vpsr.rsphonetypelabel15
+msgid "TTY/TDD"
+msgstr "ATS/ATM"
+
+#: vpsr.rsphonetypelabel16
+msgid "Work"
+msgstr "Travail"
+
+#: vpsr.rsphonetypelabel17
+msgid "Work Fax"
+msgstr "Fax (Travail)"
+
+#: vpsr.rsphonetypelabel2
+msgid "Callback"
+msgstr "Rappeler"
+
+#: vpsr.rsphonetypelabel3
+msgid "Car"
+msgstr "Voiture"
+
+#: vpsr.rsphonetypelabel4
+msgctxt "vpsr.rsphonetypelabel4"
+msgid "Company"
+msgstr "Société"
+
+#: vpsr.rsphonetypelabel5
+msgid "Home"
+msgstr "Maison"
+
+#: vpsr.rsphonetypelabel6
+msgid "Home Fax"
+msgstr "Fax (Maison)"
+
+#: vpsr.rsphonetypelabel7
+msgid "ISDN"
+msgstr "ISDN"
+
+#: vpsr.rsphonetypelabel8
+msgid "Mobile"
+msgstr "Portable"
+
+#: vpsr.rsphonetypelabel9
+msgctxt "vpsr.rsphonetypelabel9"
+msgid "Other"
+msgstr "Autre"
+
+#: vpsr.rsposition
+msgid "Position"
+msgstr "Position"
+
+#: vpsr.rspositionlbl
+msgid "Position:"
+msgstr "Position:"
+
+#: vpsr.rsprintbtn
+msgctxt "vpsr.rsprintbtn"
+msgid "&Print"
+msgstr "&Imprimer"
+
+#: vpsr.rsprintprvcancel
+msgctxt "vpsr.rsprintprvcancel"
+msgid "Cancel"
+msgstr "Annuler"
+
+#: vpsr.rsprintprvcancelhint
+msgid "Cancel preview"
+msgstr "Annuler l'aperçu"
+
+#: vpsr.rsprintprvfirstpage
+msgid "&First page"
+msgstr "Première page"
+
+#: vpsr.rsprintprvfirstpagehint
+msgid "Go to first page"
+msgstr "Aller à la première page"
+
+#: vpsr.rsprintprvlastpage
+msgid "&Last page"
+msgstr "&Dernière page"
+
+#: vpsr.rsprintprvlastpagehint
+msgid "Go to last page"
+msgstr "Aller à la dernière page"
+
+#: vpsr.rsprintprvnextpage
+msgid "&Next page"
+msgstr "&Page suivante"
+
+#: vpsr.rsprintprvnextpagehint
+msgid "Go to next page"
+msgstr "Aller à la page suivante"
+
+#: vpsr.rsprintprvprevpage
+msgid "Pre&vious page"
+msgstr "P&age précédent"
+
+#: vpsr.rsprintprvprevpagehint
+msgid "Go to previous page"
+msgstr "Aller à la page précédente"
+
+#: vpsr.rsprintprvprint
+msgctxt "vpsr.rsprintprvprint"
+msgid "&Print"
+msgstr "&Imprimer"
+
+#: vpsr.rsprintprvprinthint
+msgid "Print"
+msgstr "Imprimer"
+
+#: vpsr.rsprtcontrolowner
+msgid "Print controller is not owned by a TVpControlLink!"
+msgstr "Le contrôleur d'impression n'est pas la propriété d'un TVpControlLink!"
+
+#: vpsr.rsrecurrenceendslbl
+msgid "Repeat until:"
+msgstr "Répétez jusqu'au"
+
+#: vpsr.rsrecurringlbl
+msgid "Appointment recurrence:"
+msgstr "Rendevous à répéter:"
+
+#: vpsr.rsreminder
+msgid "Reminder"
+msgstr "Rappel"
+
+#: vpsr.rsresource
+msgid "Resource"
+msgstr "Resource"
+
+#: vpsr.rssaturday
+msgid "Saturday"
+msgstr "Samedi"
+
+#: vpsr.rsselectasound
+msgid "Select A Sound"
+msgstr "Choissisez un son"
+
+#: vpsr.rsselectresource
+msgid "No resource has been selected. Would you like to select one now?"
+msgstr ""
+"Aucune resource selectionnez. Voulez-vous séléctionnez une resource "
+"maintenant?"
+
+#: vpsr.rssnoozebtn
+msgid "&Snooze"
+msgstr "&Sieste"
+
+#: vpsr.rssnoozecaption
+msgid "Click &Snooze to be reminded again in:"
+msgstr "Click &Sieste pour être rappelé à nouveau dans :"
+
+#: vpsr.rssoundfinder
+msgid "Sound Finder"
+msgstr "Trouver le son"
+
+#: vpsr.rssqlupdateerror
+msgid "Error: Unable to update "
+msgstr "Erreur: Modification à echoué"
+
+#: vpsr.rsstartendtimeerror
+msgid "Incorrect order of start and end times. Do you want to flip them?"
+msgstr "Ordre incorrect des heures de début et de fin. Voulez-vous les retourner?"
+
+#: vpsr.rsstarttimelbl
+msgid "Start time:"
+msgstr "Début"
+
+#: vpsr.rsstatelbl
+msgid "State:"
+msgstr "Etat:"
+
+#: vpsr.rssubjectcaption
+msgctxt "vpsr.rssubjectcaption"
+msgid "Subject:"
+msgstr "Sujet:"
+
+#: vpsr.rssunday
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: vpsr.rstallshortchars
+msgid "Wy"
+msgstr ""
+
+#: vpsr.rstaskcomplete
+msgctxt "vpsr.rstaskcomplete"
+msgid "Task complete"
+msgstr "Tache terminé"
+
+#: vpsr.rstaskpopupadd
+msgid "Add Task..."
+msgstr "Ajouter un tâche..."
+
+#: vpsr.rstaskpopupdelete
+msgid "Delete Task..."
+msgstr "Supprimer un tâche..."
+
+#: vpsr.rstaskpopupedit
+msgid "Edit Task..."
+msgstr "Modifier un tâche..."
+
+#: vpsr.rstasktitlenoresource
+msgid "Task List"
+msgstr "Liste des tâches"
+
+#: vpsr.rstasktitleresource
+msgid "Task List - "
+msgstr "Liste des tâches -"
+
+#: vpsr.rsthrough
+msgid "Through"
+msgstr "Par"
+
+#: vpsr.rsthursday
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: vpsr.rstitle
+msgid "Title"
+msgstr "Titre"
+
+#: vpsr.rstitlelbl
+msgid "Title:"
+msgstr "Titre:"
+
+#: vpsr.rstrue
+msgctxt "vpsr.rstrue"
+msgid "T"
+msgstr "A"
+
+#: vpsr.rstuesday
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: vpsr.rsunabletoopen
+msgid "Error: Unable to open "
+msgstr "Erreur: Incapable d'ouvrir"
+
+#: vpsr.rsuntitled
+msgid "Untitled"
+msgstr "Sans titre"
+
+#: vpsr.rswednesday
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: vpsr.rsweekly
+msgid "Weekly"
+msgstr "Hebdomadaire"
+
+#: vpsr.rsweekof
+msgid "Week of"
+msgstr "Semaine du"
+
+#: vpsr.rsweekpopupadd
+msgctxt "vpsr.rsweekpopupadd"
+msgid "Add Event..."
+msgstr "Ajouter un événement..."
+
+#: vpsr.rsweekpopupdelete
+msgid "&Delete Event..."
+msgstr "&Supprimer un événement..."
+
+#: vpsr.rsweekpopupedit
+msgctxt "vpsr.rsweekpopupedit"
+msgid "Edit Event..."
+msgstr "Modifier un événement..."
+
+#: vpsr.rsweekpopupnav
+msgctxt "vpsr.rsweekpopupnav"
+msgid "Change Date"
+msgstr "Changer la date"
+
+#: vpsr.rsweekpopupnavnextmonth
+msgctxt "vpsr.rsweekpopupnavnextmonth"
+msgid "Next Month"
+msgstr "Mois prochain"
+
+#: vpsr.rsweekpopupnavnextweek
+msgctxt "vpsr.rsweekpopupnavnextweek"
+msgid "Next Week"
+msgstr "Semaine prochaine"
+
+#: vpsr.rsweekpopupnavnextyear
+msgctxt "vpsr.rsweekpopupnavnextyear"
+msgid "Next Year"
+msgstr "Année prochain"
+
+#: vpsr.rsweekpopupnavprevmonth
+msgctxt "vpsr.rsweekpopupnavprevmonth"
+msgid "Previous Month"
+msgstr "Mois précédent"
+
+#: vpsr.rsweekpopupnavprevweek
+msgctxt "vpsr.rsweekpopupnavprevweek"
+msgid "Previous Week"
+msgstr "Semaine précédente"
+
+#: vpsr.rsweekpopupnavprevyear
+msgctxt "vpsr.rsweekpopupnavprevyear"
+msgid "Previous Year"
+msgstr "Année précédente"
+
+#: vpsr.rsweekpopupnavtoday
+msgctxt "vpsr.rsweekpopupnavtoday"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: vpsr.rsxdays
+msgid "%d days"
+msgstr "%d jours"
+
+#: vpsr.rsxhours
+msgid "%d hours"
+msgstr "%d heures"
+
+#: vpsr.rsxminutes
+msgid "%d minutes"
+msgstr "%d minutes"
+
+#: vpsr.rsyearisrequired
+msgid "Error: Year is required."
+msgstr "Erreur: l'année est obligatoire"
+
+#: vpsr.rsyearlybydate
+msgid "Yearly By Date"
+msgstr "Annuel par date"
+
+#: vpsr.rsyearlybyday
+msgid "Yearly By Day"
+msgstr "Annuel par jour"
+
+#: vpsr.rsyes
+msgid "Y"
+msgstr ""
+
+#: vpsr.rszipcodelbl
+msgid "Zip code:"
+msgstr "Code postal:"
+
+#: vpsr.sallocsrcmemfailed
+msgid "Unable to allocate memory for XML source"
+msgstr "Impossible d' allouer de la mémoire pour la source XML"
+
+#: vpsr.sattrnotnum
+msgid "Attribute %s of element %s does not have an integer value."
+msgstr "Attribut %s de l'élément %s n'a pas une valeur entière."
+
+#: vpsr.sbadparamentnesting
+msgid "Parameter-entity text must be properly nested: "
+msgstr ""
+
+#: vpsr.sbadsepinmodel
+msgid "Bad separator in content model: "
+msgstr "Mauvais separateur dans le modèle de contenu"
+
+#: vpsr.sbadutf8char
+msgid "Badly formed UTF-8 character in stream"
+msgstr "Caractères UTF-8 mal formé dans le flux"
+
+#: vpsr.scircularentref
+msgid "Circular reference to: "
+msgstr "Référence circulaire vers:"
+
+#: vpsr.scommentbeforexmldecl
+msgid ""
+"Document cannot start with a comment if it also contains an XML declaration"
+msgstr ""
+"Le document ne peut pas commencer par un commentaire si elle contient "
+"également une déclaration XML"
+
+#: vpsr.sdataaftervaldoc
+msgid "There is invalid data after valid XML document"
+msgstr "Il y a des données non valides après le document XML valide"
+
+#: vpsr.serrendofdocument
+msgid "Unexpected end of document stream"
+msgstr "Fin inattendue du flux de document"
+
+#: vpsr.sexpcommentorcdata
+msgid "Expected comment or CDATA section "
+msgstr "Commentaire ou section CDATA attendu"
+
+#: vpsr.sexpectedstring
+msgid "Expected String: "
+msgstr "Chaîne prévue :"
+
+#: vpsr.sexpmarkupdecl
+msgid "Expected markup declaration, but found: "
+msgstr "Déclaration balisage attendu, mais a constaté :"
+
+#: vpsr.sextmodifmissing
+msgid "External modifier missing: "
+msgstr "Modificateur externe manquant"
+
+#: vpsr.sfilenotfound
+msgid "File %s could not be found"
+msgstr "Fichier %s n'a pas pu être trouvé"
+
+#: vpsr.sfmterrormsg
+msgid "Line: %d Col: %d Error: %s"
+msgstr "Ligne: %d Colonne: %d Erreur: %s"
+
+#: vpsr.sftpdatanotavail
+msgid "Ftp data not available"
+msgstr "Données de ftp non disponible"
+
+#: vpsr.sftpopenfilefailed
+msgid "Unable to open ftp file"
+msgstr "Impossible d'ouvrir le fichier ftp"
+
+#: vpsr.sftpputfilefailed
+msgid "Could not save file via ftp to %s"
+msgstr "Impossible d'enregistrer le fichier via ftp à %s"
+
+#: vpsr.sftpreadreqfailed
+msgid "Ftp read request failed"
+msgstr "Ftp demande de lecture a échoué"
+
+#: vpsr.shttpdatanotavail
+msgid "Http data not available"
+msgstr "Données de http non disponible"
+
+#: vpsr.shttpreadreqfailed
+msgid "Http read request failed"
+msgstr "Http demande de lecture a échoué"
+
+#: vpsr.shttpreqopenfailed
+msgid "Unable to open http request"
+msgstr "Impossible d'ouvrir la requête http"
+
+#: vpsr.shttpreqsendfailed
+msgid "Unable to send http request"
+msgstr "Impossible d'envoyer des requêtes http"
+
+#: vpsr.sienotinstalled
+msgid "Cannot open WININET, Microsoft IE required"
+msgstr "Vous ne pouvez pas ouvrir WININET, Microsoft IE requis"
+
+#: vpsr.sillattrdefkeyw
+msgid "Illegal keyword for attribute default value: "
+msgstr "Mot-clé illégale pour la valeur par défaut de l'attribut:"
+
+#: vpsr.sillattrtype
+msgid "Illegal attribute type: "
+msgstr "Type d'attribut illégal:"
+
+#: vpsr.sillcharinref
+msgid "Illegal character in reference"
+msgstr "Caractère illégal dans la référence"
+
+#: vpsr.sillcondsectstart
+msgid "Conditional section must begin with INCLUDE or IGNORE"
+msgstr "La section conditionnel doit commencer avec INCLUDE ou IGNORE"
+
+#: vpsr.sindexoutofbounds
+msgid "ERROR INDEX OUT OF BOUNDS"
+msgstr "ERREUR INDEX HORS DES LIMITES"
+
+#: vpsr.sinetconnectfailed
+msgid "Unable to make Internet connection"
+msgstr "Impossible d'avoir une connection Internet"
+
+#: vpsr.sinetopenfailed
+msgid "Unable to open Internet"
+msgstr "Impossible d'ouvrir l'Internet"
+
+#: vpsr.sinvalidbechar
+msgid "Invalid (big-endian) UTF-16 character encoding"
+msgstr "UTF-16 (big-endian) codage de caractères non valide"
+
+#: vpsr.sinvalidcdatasection
+msgid "Invalid characters in CDATA section"
+msgstr "Caractères non valides dans le section CDATA"
+
+#: vpsr.sinvalidcharencoding
+msgid "Invalid character encoding specified."
+msgstr "Encodage de caractères spécifié non valide."
+
+#: vpsr.sinvalidcommenttext
+msgid "Invalid comment text"
+msgstr "Texte de commentaire non valide"
+
+#: vpsr.sinvalidelementname
+msgid "Invalid element name: "
+msgstr "Nom de l'élément non valide:"
+
+#: vpsr.sinvalidftpdir
+msgid "Invalid ftp directory"
+msgstr "Répertoire ftp non valide"
+
+#: vpsr.sinvalidftploc
+msgid "Invalid ftp location"
+msgstr "Lieu de ftp non valide"
+
+#: vpsr.sinvalidlechar
+msgid "Invalid (little-endian) UTF-16 character encoding"
+msgstr "UTF-16 (little-endian) codage de caractères non valide"
+
+#: vpsr.sinvalidmemptr
+msgid "Invalid memory Pointer"
+msgstr "Pointeur mémoire non valide"
+
+#: vpsr.sinvalidname
+msgid "Invalid XML name: "
+msgstr "Nom XML non valide:"
+
+#: vpsr.sinvalidxmlchar
+msgid "Invalid XML Character found"
+msgstr "Caractère XML non valide trouvé"
+
+#: vpsr.sinvalidxmlversion
+msgid "XMLPartner does not support XML specification greater than %s"
+msgstr "XMLPartner ne supporte pas la spécification XML supérieure à"
+
+#: vpsr.sinvattrchar
+msgid "Invalid character in attribute value: "
+msgstr "Caractère non valide dans la valeur de l'attribut:"
+
+#: vpsr.sinvencname
+msgid "Invalid encoding declaration: "
+msgstr "Déclaration de codage non valide:"
+
+#: vpsr.sinventityvalue
+msgid "Invalid character in entity value: "
+msgstr "Caractère non valide dans la valeur de l'entité:"
+
+#: vpsr.sinvpcdata
+msgid "Invalid characters in element's character data: "
+msgstr "Caractères non valides dans les données de caractère d' élément :"
+
+#: vpsr.sinvpubidchar
+msgid "Invalid PublicID character: "
+msgstr "PublicID caractère non valide"
+
+#: vpsr.sinvstandaloneval
+msgid "Standalone value must equal 'yes' or 'no'"
+msgstr "La valeur autonome doit être egal à «oui» ou «non»"
+
+#: vpsr.sinvvernum
+msgid "Invalid XML version number: "
+msgstr "Numéro de version XML non valide:"
+
+#: vpsr.smismatchendtag
+msgid "Mismatched end tag: "
+msgstr ""
+
+#: vpsr.snocommentinmarkup
+msgid "Comments can not be placed within other markup"
+msgstr "Les commentaires ne peuvent pas être placés dans un autre balisage"
+
+#: vpsr.snointconditional
+msgid ""
+"Conditional sections not allowed in internal subset of document type "
+"declaration"
+msgstr ""
+
+#: vpsr.snondatainpedecl
+msgid "NDATA not allowed in parameter entity declaration"
+msgstr "NDATA n'est pas autorisés dans le paramètre déclaration d'entité"
+
+#: vpsr.snopeinintdtd
+msgid "Parameter entities not allowed in DTD internal subset"
+msgstr ""
+
+#: vpsr.snotationnotdeclared
+msgid "Notation not declared: "
+msgstr "Notation non déclaré:"
+
+#: vpsr.sopenfilefailed
+msgid "Unable to open file "
+msgstr "Impossible d'ouvrir ftp"
+
+#: vpsr.squoteexpected
+msgid "Expected \" or '"
+msgstr "\\\" or ' attendu"
+
+#: vpsr.sredefinedattr
+msgid "Attributes cannot be redefined in a start tag"
+msgstr "Les attributs ne peuvent pas être redéfinies dans une balise de début"
+
+#: vpsr.sspaceexpectedat
+msgid "Whitespace expected at byte "
+msgstr "Espace prévu à l'octet"
+
+#: vpsr.ssrcloadfailed
+msgid "Unable to load source "
+msgstr "Impossible de charger la source"
+
+#: vpsr.ssysidmissing
+msgid "System identifier missing "
+msgstr "Identifiant système manquant"
+
+#: vpsr.sucs_isoconverterr
+msgid "Cannot convert UCS-4 character to ISO-8859-1"
+msgstr "Vous ne pouvez pas convertir des caractères UCS-4 en ISO -8859-1"
+
+#: vpsr.sucs_u16converterr
+msgid "Cannot convert UCS-4 character to UTF-16"
+msgstr "Vous ne pouvez pas convertir des caractères UCS-4 en UTF-16"
+
+#: vpsr.sucs_u8convererr
+msgid "Cannot convert UCS-4 character to UTF-8"
+msgstr "Vous ne pouvez pas convertir des caractères UCS-4 en UTF-8"
+
+#: vpsr.sunablecreatestr
+msgid "Unable to create stream for input."
+msgstr "Impossible de créer le flux en entrée."
+
+#: vpsr.sundeclaredentity
+msgid "Reference to undeclared entity: "
+msgstr "Référence à une entité non déclaré:"
+
+#: vpsr.sunexpectedeof
+msgid "Unexpected end of file "
+msgstr "Fin de fichier inattendu"
+
+#: vpsr.sunexpendofinput
+msgid "End of input while looking for delimiter: "
+msgstr "Fin de l'entrée tout en recherchant delimiter:"
+
+#: vpsr.sunknownaxis
+msgid "Unknown axis specifier: %s"
+msgstr "Spécificateur d'axe inconnu"
+
+#: vpsr.sxmldecnotatbeg
+msgid "The XML declaration must appear before the first element"
+msgstr "La déclaration XML doit apparaître avant le premier élément"

@@ -1,0 +1,275 @@
+object frmPrnFormat: TfrmPrnFormat
+  Left = 250
+  Height = 471
+  Top = 165
+  Width = 694
+  HorzScrollBar.Page = 639
+  VertScrollBar.Page = 479
+  ActiveControl = lbFormats
+  Caption = 'Print Format Designer'
+  ClientHeight = 471
+  ClientWidth = 694
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.7'
+  object LblFormats: TLabel
+    Left = 8
+    Height = 15
+    Top = 5
+    Width = 46
+    Caption = '&Formats:'
+    FocusControl = lbFormats
+    ParentColor = False
+  end
+  object LblElements: TLabel
+    Left = 8
+    Height = 15
+    Top = 225
+    Width = 51
+    Caption = 'Ele&ments:'
+    FocusControl = lbElements
+    ParentColor = False
+  end
+  object btnMoveElementUp: TSpeedButton
+    Left = 305
+    Height = 22
+    Top = 375
+    Width = 23
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      0400000000000001000000000000000000001000000010000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333333333
+      333333333333333333333333337777733333333333FFFFF33333333334444473
+      33333333377777F3333333333CCCC47333333333377777F3333333333CCCC473
+      33333333377777F3333333333CCCC47333333333377777F3333333333CCCC473
+      33333333377777F3333333333CCCC47773333333377777FFF333333CCCCCCCCC
+      333333377777777733333333CCCCCCC33333333377777773333333333CCCCC33
+      33333333377777333333333333CCC333333333333377733333333333333C3333
+      3333333333373333333333333333333333333333333333333333
+    }
+    NumGlyphs = 2
+    OnClick = btnMoveElementUpClick
+  end
+  object btnMoveElementDn: TSpeedButton
+    Left = 304
+    Height = 22
+    Top = 403
+    Width = 23
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      0400000000000001000000000000000000001000000010000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333333333333333333333333333333333333333337333
+      333333333333F3333333333333347733333333333337FF333333333333CC4773
+      3333333333777FF3333333333CCCC47733333333377777FF33333333CCCCCC47
+      733333337777777FF333333CCCCCC4443333333777777777333333333CCCC473
+      33333333377777F3333333333CCCC47333333333377777F3333333333CCCC473
+      33333333377777F3333333333CCCC47333333333377777F3333333333CCCC473
+      33333333377777F3333333333CCCC43333333333377777333333333333333333
+      3333333333333333333333333333333333333333333333333333
+    }
+    NumGlyphs = 2
+    OnClick = btnMoveElementDnClick
+  end
+  object LblPrintOrder: TLabel
+    Left = 289
+    Height = 15
+    Top = 355
+    Width = 58
+    Caption = 'Print Order'
+    ParentColor = False
+  end
+  object btnNewFormat: TButton
+    Left = 280
+    Height = 25
+    Top = 25
+    Width = 75
+    Caption = '&New'
+    Enabled = False
+    OnClick = btnNewFormatClick
+    TabOrder = 1
+  end
+  object PrintPreviewPanel: TPanel
+    Left = 368
+    Height = 430
+    Top = 0
+    Width = 320
+    Align = alRight
+    BevelOuter = bvNone
+    ClientHeight = 430
+    ClientWidth = 320
+    TabOrder = 8
+    object PrintPreview: TVpPrintPreview
+      Left = 0
+      Height = 401
+      Top = 21
+      Width = 320
+      CurPage = 0
+      DrawingStyle = dsFlat
+      EndDate = 37377.6447728357
+      StartDate = 37370.6447728357
+      Parent = PrintPreviewPanel
+      TabOrder = 0
+    end
+    object LblPrintPreview: TLabel
+      Left = 1
+      Height = 15
+      Top = 2
+      Width = 44
+      Caption = 'Preview:'
+      ParentColor = False
+    end
+  end
+  object lbFormats: TListBox
+    Left = 8
+    Height = 191
+    Top = 25
+    Width = 257
+    Columns = 1
+    ItemHeight = 0
+    OnClick = lbFormatsClick
+    Sorted = True
+    TabOrder = 0
+  end
+  object lbElements: TListBox
+    Left = 8
+    Height = 179
+    Top = 246
+    Width = 257
+    ItemHeight = 0
+    OnClick = lbElementsClick
+    OnDragDrop = lbElementsDragDrop
+    OnDragOver = lbElementsDragOver
+    OnMouseDown = lbElementsMouseDown
+    TabOrder = 4
+  end
+  object btnEditFormat: TButton
+    Left = 280
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = '&Edit'
+    Enabled = False
+    OnClick = btnEditFormatClick
+    TabOrder = 2
+  end
+  object btnDeleteFormat: TButton
+    Left = 280
+    Height = 25
+    Top = 88
+    Width = 75
+    Caption = '&Delete'
+    Enabled = False
+    OnClick = btnDeleteFormatClick
+    TabOrder = 3
+  end
+  object btnNewElement: TButton
+    Left = 280
+    Height = 25
+    Top = 246
+    Width = 75
+    Caption = 'Ne&w'
+    Enabled = False
+    OnClick = btnNewElementClick
+    TabOrder = 5
+  end
+  object btnEditElement: TButton
+    Left = 280
+    Height = 25
+    Top = 280
+    Width = 75
+    Caption = 'E&dit'
+    Enabled = False
+    OnClick = btnEditElementClick
+    TabOrder = 6
+  end
+  object btnDeleteElement: TButton
+    Left = 280
+    Height = 25
+    Top = 312
+    Width = 75
+    Caption = 'De&lete'
+    Enabled = False
+    OnClick = btnDeleteElementClick
+    TabOrder = 7
+  end
+  object ButtonPanel: TPanel
+    Left = 0
+    Height = 41
+    Top = 430
+    Width = 694
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 41
+    ClientWidth = 694
+    TabOrder = 9
+    object btnLoadFile: TButton
+      Left = 88
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'L&oad File...'
+      OnClick = btnLoadFileClick
+      TabOrder = 1
+    end
+    object btnSaveFile: TButton
+      Left = 168
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = '&Save File...'
+      OnClick = btnSaveFileClick
+      TabOrder = 2
+    end
+    object btnNewFile: TButton
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'New &File'
+      OnClick = btnNewFileClick
+      TabOrder = 0
+    end
+    object btnOk: TButton
+      Left = 610
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'OK'
+      Default = True
+      OnClick = btnOkClick
+      TabOrder = 3
+    end
+  end
+  object Bevel1: TBevel
+    Left = 688
+    Height = 430
+    Top = 0
+    Width = 6
+    Align = alRight
+    Shape = bsSpacer
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Open filter file'
+    DefaultExt = '.xml'
+    FileName = '*.xml'
+    Filter = 'Filter Files (.xml)|*.xml|All Files (*.*)|*.*'
+    left = 400
+    top = 128
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Save formats as'
+    DefaultExt = '.xml'
+    FileName = '*.xml'
+    Filter = 'Filter Files (.xml)|*.xml|All Files (*.*)|*.*'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    left = 400
+    top = 200
+  end
+end

@@ -1,0 +1,333 @@
+object Form1: TForm1
+  Left = 225
+  Height = 686
+  Top = 155
+  Width = 980
+  Caption = 'Form1'
+  ClientHeight = 686
+  ClientWidth = 980
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 980
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 34
+    ClientWidth = 980
+    TabOrder = 0
+    object VpResourceCombo1: TVpResourceCombo
+      Left = 8
+      Height = 23
+      Top = 5
+      Width = 208
+      DataStore = VpFirebirdDatastore1
+      Style = csDropDownList
+    end
+    object BtnNewRes: TButton
+      Left = 222
+      Height = 25
+      Top = 4
+      Width = 99
+      Caption = 'New resource'
+      OnClick = BtnNewResClick
+      TabOrder = 1
+    end
+    object BtnEditRes: TButton
+      Left = 328
+      Height = 25
+      Top = 4
+      Width = 96
+      Caption = 'Edit resource'
+      OnClick = BtnEditResClick
+      TabOrder = 2
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 652
+    Top = 34
+    Width = 980
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Events and tasks'
+      ClientHeight = 624
+      ClientWidth = 972
+      object VpDayView1: TVpDayView
+        Left = 0
+        Height = 624
+        Top = 0
+        Width = 301
+        DataStore = VpFirebirdDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alLeft
+        ReadOnly = False
+        TabStop = True
+        TabOrder = 0
+        AllDayEventAttributes.BackgroundColor = clBtnShadow
+        AllDayEventAttributes.EventBorderColor = cl3DDkShadow
+        AllDayEventAttributes.EventBackgroundColor = clBtnFace
+        ShowEventTimes = False
+        DrawingStyle = dsFlat
+        TimeSlotColors.Active = clWhite
+        TimeSlotColors.Inactive = 8454143
+        TimeSlotColors.Holiday = 16744703
+        TimeSlotColors.Weekday = clWhite
+        TimeSlotColors.Weekend = 16777088
+        TimeSlotColors.ActiveRange.RangeBegin = h_00
+        TimeSlotColors.ActiveRange.RangeEnd = h_00
+        HeadAttributes.Font.Height = -13
+        HeadAttributes.Color = clBtnFace
+        RowHeadAttributes.HourFont.Height = -24
+        RowHeadAttributes.MinuteFont.Height = -12
+        RowHeadAttributes.Color = clBtnFace
+        ShowResourceName = True
+        LineColor = clGray
+        GutterWidth = 7
+        DateLabelFormat = 'dddd, mmmm dd, yyyy'
+        Granularity = gr30Min
+        DefaultTopHour = h_07
+        TimeFormat = tf12Hour
+      end
+      object Panel2: TPanel
+        Left = 306
+        Height = 624
+        Top = 0
+        Width = 386
+        Align = alLeft
+        BevelOuter = bvNone
+        Caption = 'Panel2'
+        ClientHeight = 624
+        ClientWidth = 386
+        TabOrder = 1
+        object VpWeekView1: TVpWeekView
+          Left = 0
+          Height = 378
+          Top = 0
+          Width = 386
+          DataStore = VpFirebirdDatastore1
+          ControlLink = VpControlLink1
+          Color = clWindow
+          AllDayEventAttributes.BackgroundColor = clWindow
+          AllDayEventAttributes.EventBorderColor = clGray
+          AllDayEventAttributes.EventBackgroundColor = clBtnFace
+          DateLabelFormat = 'dddd, mmmm dd, yyyy'
+          DayHeadAttributes.Color = clBtnFace
+          DayHeadAttributes.DateFormat = 'dddd mmmm, dd'
+          DayHeadAttributes.Font.Height = -13
+          DayHeadAttributes.Font.Name = 'Tahoma'
+          DayHeadAttributes.Bordered = True
+          DrawingStyle = dsFlat
+          HeadAttributes.Color = clBtnFace
+          LineColor = clGray
+          TimeFormat = tf12Hour
+          ShowEventTime = True
+          WeekStartsOn = dtMonday
+          Align = alClient
+          TabStop = True
+          TabOrder = 0
+        end
+        object VpMonthView1: TVpMonthView
+          Left = 0
+          Height = 241
+          Top = 383
+          Width = 386
+          DataStore = VpFirebirdDatastore1
+          ControlLink = VpControlLink1
+          Color = clWindow
+          Align = alBottom
+          TabStop = True
+          TabOrder = 1
+          KBNavigation = True
+          DateLabelFormat = 'mmmm yyyy'
+          DayHeadAttributes.Color = clBtnFace
+          DayHeadAttributes.Font.Height = -13
+          DayHeadAttributes.Font.Name = 'Tahoma'
+          DayNameStyle = dsShort
+          DrawingStyle = dsFlat
+          EventDayStyle = []
+          HeadAttributes.Color = clBtnFace
+          LineColor = clGray
+          TimeFormat = tf12Hour
+          TodayAttributes.Color = clSilver
+          TodayAttributes.BorderPen.Color = clRed
+          TodayAttributes.BorderPen.Width = 3
+          OffDayColor = clSilver
+          SelectedDayColor = clRed
+          ShowEvents = True
+          ShowEventTime = False
+          WeekStartsOn = dtSunday
+        end
+        object Splitter2: TSplitter
+          Cursor = crVSplit
+          Left = 0
+          Height = 5
+          Top = 378
+          Width = 386
+          Align = alBottom
+          ResizeAnchor = akBottom
+        end
+      end
+      object VpTaskList1: TVpTaskList
+        Left = 697
+        Height = 624
+        Top = 0
+        Width = 275
+        DataStore = VpFirebirdDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alClient
+        TabStop = True
+        TabOrder = 2
+        ReadOnly = False
+        DisplayOptions.CheckBGColor = clWindow
+        DisplayOptions.CheckColor = cl3DDkShadow
+        DisplayOptions.CheckStyle = csCheck
+        DisplayOptions.DueDateFormat = 'dd.MM.yyyy'
+        DisplayOptions.ShowCompletedTasks = False
+        DisplayOptions.ShowAll = False
+        DisplayOptions.ShowDueDate = True
+        DisplayOptions.OverdueColor = clRed
+        DisplayOptions.NormalColor = clBlack
+        DisplayOptions.CompletedColor = clGray
+        LineColor = clGray
+        MaxVisibleTasks = 250
+        TaskHeadAttributes.Color = clSilver
+        DrawingStyle = dsFlat
+        ShowResourceName = True
+      end
+      object Splitter1: TSplitter
+        Left = 692
+        Height = 624
+        Top = 0
+        Width = 5
+      end
+      object Splitter3: TSplitter
+        Left = 301
+        Height = 624
+        Top = 0
+        Width = 5
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Contacts'
+      ClientHeight = 594
+      ClientWidth = 928
+      object VpContactButtonBar1: TVpContactButtonBar
+        Left = 0
+        Height = 594
+        Top = 0
+        Width = 40
+        DrawingStyle = dsFlat
+        RadioStyle = False
+        Align = alLeft
+      end
+      object VpContactGrid1: TVpContactGrid
+        Left = 40
+        Height = 594
+        Top = 0
+        Width = 888
+        DataStore = VpFirebirdDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alClient
+        TabStop = True
+        TabOrder = 1
+        AllowInPlaceEditing = True
+        BarWidth = 3
+        BarColor = clSilver
+        ColumnWidth = 200
+        ContactHeadAttributes.Color = clSilver
+        ContactHeadAttributes.Bordered = True
+        DrawingStyle = dsFlat
+      end
+    end
+  end
+  object VpControlLink1: TVpControlLink
+    DataStore = VpFirebirdDatastore1
+    Printer.BottomMargin = 0
+    Printer.DayStart = h_08
+    Printer.DayEnd = h_05
+    Printer.Granularity = gr30Min
+    Printer.LeftMargin = 0
+    Printer.MarginUnits = imAbsolutePixel
+    Printer.PrintFormats = <>
+    Printer.RightMargin = 0
+    Printer.TopMargin = 0
+    left = 136
+    top = 264
+  end
+  object VpResourceEditDialog1: TVpResourceEditDialog
+    Version = 'v1.04'
+    DataStore = VpFirebirdDatastore1
+    Options = []
+    Placement.Position = mpCenter
+    Placement.Top = 10
+    Placement.Left = 10
+    Placement.Height = 250
+    Placement.Width = 400
+    left = 136
+    top = 335
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Action = caCommit
+    Database = IBConnection1
+    Options = []
+    left = 256
+    top = 120
+  end
+  object VpFirebirdDatastore1: TVpFirebirdDatastore
+    CategoryColorMap.Category0.Color = clNavy
+    CategoryColorMap.Category0.Description = 'Category 0'
+    CategoryColorMap.Category1.Color = clRed
+    CategoryColorMap.Category1.Description = 'Category 1'
+    CategoryColorMap.Category2.Color = clYellow
+    CategoryColorMap.Category2.Description = 'Category 2'
+    CategoryColorMap.Category3.Color = clLime
+    CategoryColorMap.Category3.Description = 'Category 3'
+    CategoryColorMap.Category4.Color = clPurple
+    CategoryColorMap.Category4.Description = 'Category 4'
+    CategoryColorMap.Category5.Color = clTeal
+    CategoryColorMap.Category5.Description = 'Category 5'
+    CategoryColorMap.Category6.Color = clFuchsia
+    CategoryColorMap.Category6.Description = 'Category 6'
+    CategoryColorMap.Category7.Color = clOlive
+    CategoryColorMap.Category7.Description = 'Category 7'
+    CategoryColorMap.Category8.Color = clAqua
+    CategoryColorMap.Category8.Description = 'Category 8'
+    CategoryColorMap.Category9.Color = clMaroon
+    CategoryColorMap.Category9.Description = 'Category 9'
+    EnableEventTimer = True
+    PlayEventSounds = True
+    Connection = IBConnection1
+    AutoConnect = False
+    AutoCreate = True
+    DayBuffer = 31
+    left = 136
+    top = 200
+  end
+  object IBConnection1: TIBConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    Options = []
+    left = 136
+    top = 120
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Options = []
+    Params = <>
+    left = 149
+    top = 511
+  end
+end

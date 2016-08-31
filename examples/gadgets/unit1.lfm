@@ -1,0 +1,162 @@
+object Form1: TForm1
+  Left = 262
+  Height = 283
+  Top = 155
+  Width = 461
+  Caption = 'Form1'
+  ClientHeight = 283
+  ClientWidth = 461
+  Font.Color = clWindowText
+  OnCreate = FormCreate
+  LCLVersion = '1.7'
+  object VpLEDLabel1: TVpLEDLabel
+    Left = 9
+    Height = 60
+    Top = 6
+    Width = 442
+    Caption = 'Visual PlanIt'
+    Columns = 13
+    OffColor = 930866
+    OnColor = clLime
+    Size = 3
+  end
+  object VpClock1: TVpClock
+    Left = 11
+    Height = 200
+    Top = 72
+    Width = 200
+    Active = False
+    Color = clForm
+    ClockMode = cmClock
+    DigitalOptions.MilitaryTime = False
+    DigitalOptions.OnColor = clLime
+    DigitalOptions.OffColor = 930866
+    DigitalOptions.BgColor = clBlack
+    DigitalOptions.Size = 2
+    DigitalOptions.ShowSeconds = True
+    DisplayMode = dmAnalog
+    AnalogOptions.DrawMarks = True
+    AnalogOptions.HourHandColor = clBlack
+    AnalogOptions.HourHandLength = 60
+    AnalogOptions.HourHandWidth = 4
+    AnalogOptions.MinuteHandColor = clBlack
+    AnalogOptions.MinuteHandLength = 80
+    AnalogOptions.MinuteHandWidth = 3
+    AnalogOptions.SecondHandColor = clRed
+    AnalogOptions.SecondHandLength = 90
+    AnalogOptions.SecondHandWidth = 1
+    AnalogOptions.ShowSecondHand = True
+    AnalogOptions.SolidHands = True
+    MinuteOffset = 0
+    ParentColor = False
+    SecondOffset = 0
+    HourOffset = 0
+    OnCountdownDone = VpClock1CountdownDone
+    OnSecondChange = VpClockTimeChange
+  end
+  object BtnStartStop: TButton
+    Left = 351
+    Height = 51
+    Top = 189
+    Width = 99
+    Caption = 'Start'
+    OnClick = BtnStartStopClick
+    TabOrder = 6
+  end
+  object RgClockMode: TRadioGroup
+    Left = 224
+    Height = 89
+    Top = 151
+    Width = 116
+    AutoFill = True
+    Caption = 'Clock mode'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 69
+    ClientWidth = 112
+    ItemIndex = 0
+    Items.Strings = (
+      'Clock'
+      'Counter'
+      'Count-down'
+    )
+    OnClick = RgClockModeClick
+    TabOrder = 2
+  end
+  object LblCountDownTime: TLabel
+    Left = 351
+    Height = 15
+    Top = 72
+    Width = 98
+    Caption = 'Count-down time:'
+    FocusControl = EdCountDownTime
+    ParentColor = False
+    Visible = False
+  end
+  object CbNewClockFace: TCheckBox
+    Left = 351
+    Height = 19
+    Top = 141
+    Width = 100
+    Caption = 'New clock face'
+    OnChange = CbNewClockFaceChange
+    TabOrder = 5
+  end
+  object LblElapsedTime: TLabel
+    Left = 224
+    Height = 15
+    Top = 256
+    Width = 49
+    Caption = 'Elapsed...'
+    ParentColor = False
+  end
+  object RgDisplayMode: TRadioGroup
+    Left = 224
+    Height = 63
+    Top = 72
+    Width = 115
+    AutoFill = True
+    Caption = 'Display mode'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 43
+    ClientWidth = 111
+    ItemIndex = 0
+    Items.Strings = (
+      'Analog'
+      'Digital'
+    )
+    OnClick = RgDisplayModeClick
+    TabOrder = 1
+  end
+  object CbMilitaryTime: TCheckBox
+    Left = 351
+    Height = 19
+    Top = 128
+    Width = 87
+    Caption = 'Military time'
+    OnChange = CbMilitaryTimeChange
+    TabOrder = 4
+    Visible = False
+  end
+  object EdCountDownTime: TEdit
+    Left = 351
+    Height = 23
+    Top = 92
+    Width = 99
+    OnChange = EdCountDownTimeChange
+    TabOrder = 3
+    Text = '00:00:30'
+    Visible = False
+  end
+end

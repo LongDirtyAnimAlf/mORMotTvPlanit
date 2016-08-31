@@ -1,0 +1,314 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: demomain.rs10min
+msgid "10 min"
+msgstr "10 минут"
+
+#: demomain.rs12hours
+msgid "12 hours AM/PM"
+msgstr "12 часовой AM/PM"
+
+#: demomain.rs15min
+msgid "15 min"
+msgstr "15 минут"
+
+#: demomain.rs20min
+msgid "20 min"
+msgstr "20 минут"
+
+#: demomain.rs24hours
+msgid "24 hours"
+msgstr "24 часа"
+
+#: demomain.rs30min
+msgid "30 min"
+msgstr "30 минут"
+
+#: demomain.rs3d
+msgid "3D"
+msgstr ""
+
+#: demomain.rs5min
+msgid "5 min"
+msgstr "5 минут"
+
+#: demomain.rs60min
+msgid "60 min"
+msgstr "60 минут"
+
+#: demomain.rs6min
+msgid "6 min"
+msgstr "6 минут"
+
+#: demomain.rsborderless
+msgid "no border"
+msgstr ""
+
+#: demomain.rsconfirmdeleteres
+msgid "Do you really want to delete resource %s?"
+msgstr "Вы действительно хотите удалить ресурс  %s?"
+
+#: demomain.rscontacts
+msgctxt "demomain.rscontacts"
+msgid "Contacts"
+msgstr "Контакты"
+
+#: demomain.rseventsoverview
+msgid "Events overview"
+msgstr "Обзор событий"
+
+#: demomain.rseventsperday
+msgid "Events per day"
+msgstr "События за день"
+
+#: demomain.rseventspermonth
+msgid "Events per month"
+msgstr "События за месяц"
+
+#: demomain.rseventsperweek
+msgid "Events per week"
+msgstr "События за неделю"
+
+#: demomain.rsflat
+msgid "flat"
+msgstr ""
+
+#: demomain.rsfriday
+msgid "Friday"
+msgstr "Пятница"
+
+#: demomain.rsmaintenance
+msgctxt "demomain.rsmaintenance"
+msgid "Maintenance"
+msgstr "Обслуживание"
+
+#: demomain.rsmonday
+msgid "Monday"
+msgstr "Понедельник"
+
+#: demomain.rsplanner
+msgid "Planner"
+msgstr "Планировщик"
+
+#: demomain.rsresources
+msgctxt "demomain.rsresources"
+msgid "Resources"
+msgstr "Ресурсы"
+
+#: demomain.rssaturday
+msgid "Saturday"
+msgstr "Суббота"
+
+#: demomain.rssettings
+msgid "Program settings"
+msgstr "Настройки программы"
+
+#: demomain.rssettings_short
+msgctxt "demomain.rssettings_short"
+msgid "Settings"
+msgstr "Настройки"
+
+#: demomain.rssunday
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: demomain.rstasks
+msgctxt "demomain.rstasks"
+msgid "Tasks"
+msgstr "Задачи"
+
+#: demomain.rsthursday
+msgid "Thursday"
+msgstr "Четверг"
+
+#: demomain.rstuesday
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: demomain.rswednesday
+msgid "Wednesday"
+msgstr "Среда"
+
+#: demomain.rsxmlfiles
+msgid "XML files (*.xml)"
+msgstr ""
+
+#: tfrmreportsetup.btncancel.caption
+#, fuzzy
+msgctxt "tfrmreportsetup.btncancel.caption"
+msgid "Cancel"
+msgstr "Отмена"
+
+#: tfrmreportsetup.btnok.caption
+msgctxt "tfrmreportsetup.btnok.caption"
+msgid "OK"
+msgstr ""
+
+#: tfrmreportsetup.caption
+msgid "Report Setup"
+msgstr "Параметры отчёта"
+
+#: tfrmreportsetup.lblenddate.caption
+#, fuzzy
+msgctxt "tfrmreportsetup.lblenddate.caption"
+msgid "End Date:"
+msgstr "Дата окончания:"
+
+#: tfrmreportsetup.lblformat.caption
+#, fuzzy
+msgctxt "tfrmreportsetup.lblformat.caption"
+msgid "Format:"
+msgstr "Формат:"
+
+#: tfrmreportsetup.lblstartdate.caption
+#, fuzzy
+msgctxt "tfrmreportsetup.lblstartdate.caption"
+msgid "Start Date:"
+msgstr "Дата начала:"
+
+#: tmainform.btndeleteres.caption
+msgid "Delete"
+msgstr "Удалить"
+
+#: tmainform.btneditres.caption
+msgid "Edit"
+msgstr "Изменить"
+
+#: tmainform.btnnewres.caption
+msgid "New"
+msgstr "Новый"
+
+#: tmainform.caption
+msgid "Turbo Power VisualPlanIt Demo"
+msgstr ""
+
+#: tmainform.cbaddressbuilder.text
+msgid "(default)"
+msgstr "(по умолчанию)"
+
+#: tmainform.cballowdraganddrop.caption
+msgid "Allow drag and drop of events"
+msgstr ""
+
+#: tmainform.cballowinplaceediting.caption
+msgid "Allow inplace editing"
+msgstr "Разрешить редактор по месту"
+
+#: tmainform.cbdragdroptransparent.caption
+msgid "Transparent drag and drop"
+msgstr ""
+
+#: tmainform.cbgranularity.text
+msgid "30 Min"
+msgstr "30 минут"
+
+#: tmainform.lbladdressbuilder.caption
+msgid "Address builder"
+msgstr "Конструктор адреса"
+
+#: tmainform.lbldrawingstyle.caption
+msgid "Drawing style:"
+msgstr "Стиль отрисовки:"
+
+#: tmainform.lblfirstdayofweek.caption
+msgid "First day of week"
+msgstr "Первый день недели"
+
+#: tmainform.lblgranularity.caption
+msgid "Granularity"
+msgstr "Точность"
+
+#: tmainform.lbllanguage.caption
+msgctxt "TMAINFORM.LBLLANGUAGE.CAPTION"
+msgid "Language"
+msgstr "Язык"
+
+#: tmainform.lbltimeformat.caption
+msgid "Time format"
+msgstr "Формат времени"
+
+#: tmainform.lblvisibledays.caption
+msgid "Visible days"
+msgstr "Отображаемые дни"
+
+#: tmainform.menuitem1.caption
+msgid "File"
+msgstr "Файл"
+
+#: tmainform.menuitem2.caption
+msgid "Help"
+msgstr "Справка"
+
+#: tmainform.menuitem3.caption
+msgctxt "tmainform.menuitem3.caption"
+msgid "-"
+msgstr ""
+
+#: tmainform.menuitem4.caption
+msgctxt "tmainform.menuitem4.caption"
+msgid "-"
+msgstr ""
+
+#: tmainform.mnuabout.caption
+msgid "About Visual PlanIt"
+msgstr "О Visual PlanIt"
+
+#: tmainform.mnueditprintformats.caption
+msgid "Edit print formats..."
+msgstr "Редактор формата печати..."
+
+#: tmainform.mnuloadprintformats.caption
+msgid "Load print formats..."
+msgstr ""
+
+#: tmainform.mnumaintenance.caption
+msgctxt "TMAINFORM.MNUMAINTENANCE.CAPTION"
+msgid "Maintenance"
+msgstr "Обслуживание"
+
+#: tmainform.mnuprint.caption
+msgid "Print..."
+msgstr "Печать..."
+
+#: tmainform.mnuprintpreview.caption
+msgid "Print preview..."
+msgstr "Предварительный просмотр печати..."
+
+#: tmainform.mnuquit.caption
+msgid "Quit"
+msgstr "Выход"
+
+#: tmainform.mnuresources.caption
+msgctxt "TMAINFORM.MNURESOURCES.CAPTION"
+msgid "Resources"
+msgstr "Ресурсы"
+
+#: tmainform.mnusettings.caption
+msgctxt "TMAINFORM.MNUSETTINGS.CAPTION"
+msgid "Settings"
+msgstr "Настройки"
+
+#: tmainform.rballtasks.caption
+msgid "All tasks"
+msgstr "Все задачи"
+
+#: tmainform.rbhidecompletedtasks.caption
+msgid "Hide completed tasks"
+msgstr "Скрыть исполненные задачи"
+
+# No need to translate
+#: tmainform.titlelbl.caption
+msgid "TitleLbl"
+msgstr ""
+

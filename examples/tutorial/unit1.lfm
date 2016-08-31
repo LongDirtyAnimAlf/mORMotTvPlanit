@@ -1,0 +1,227 @@
+object Form1: TForm1
+  Left = 262
+  Height = 559
+  Top = 155
+  Width = 804
+  Caption = 'Form1'
+  ClientHeight = 559
+  ClientWidth = 804
+  OnCreate = FormCreate
+  LCLVersion = '1.7'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 559
+    Top = 0
+    Width = 804
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Events'
+      ClientHeight = 531
+      ClientWidth = 796
+      object VpDayView1: TVpDayView
+        Left = 0
+        Height = 526
+        Top = 4
+        Width = 490
+        DataStore = VpXmlDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        ReadOnly = False
+        TabStop = True
+        TabOrder = 0
+        AllDayEventAttributes.BackgroundColor = clBtnShadow
+        AllDayEventAttributes.EventBorderColor = cl3DDkShadow
+        AllDayEventAttributes.EventBackgroundColor = clBtnFace
+        ShowEventTimes = False
+        DrawingStyle = dsFlat
+        TimeSlotColors.Active = clWhite
+        TimeSlotColors.Inactive = 8454143
+        TimeSlotColors.Holiday = 16744703
+        TimeSlotColors.Weekday = clWhite
+        TimeSlotColors.Weekend = 16777088
+        TimeSlotColors.ActiveRange.RangeBegin = h_00
+        TimeSlotColors.ActiveRange.RangeEnd = h_00
+        HeadAttributes.Font.Height = -13
+        HeadAttributes.Color = clBtnFace
+        RowHeadAttributes.HourFont.Height = -24
+        RowHeadAttributes.MinuteFont.Height = -12
+        RowHeadAttributes.Color = clBtnFace
+        ShowResourceName = True
+        LineColor = clGray
+        GutterWidth = 7
+        DateLabelFormat = 'dddd, mmmm dd, yyyy'
+        Granularity = gr30Min
+        DefaultTopHour = h_07
+        TimeFormat = tf24Hour
+        NumDays = 2
+      end
+      object VpWeekView1: TVpWeekView
+        Left = 496
+        Height = 283
+        Top = 4
+        Width = 297
+        DataStore = VpXmlDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        AllDayEventAttributes.BackgroundColor = clWindow
+        AllDayEventAttributes.EventBorderColor = clGray
+        AllDayEventAttributes.EventBackgroundColor = clBtnFace
+        DateLabelFormat = 'dddd, mmmm dd, yyyy'
+        DayHeadAttributes.Color = clBtnFace
+        DayHeadAttributes.DateFormat = 'dddd mmmm, dd'
+        DayHeadAttributes.Font.Height = -13
+        DayHeadAttributes.Bordered = True
+        DrawingStyle = dsFlat
+        HeadAttributes.Color = clBtnFace
+        LineColor = clGray
+        TimeFormat = tf12Hour
+        ShowEventTime = True
+        WeekStartsOn = dtMonday
+        Anchors = [akTop, akRight, akBottom]
+        TabStop = True
+        TabOrder = 1
+      end
+      object VpMonthView1: TVpMonthView
+        Left = 496
+        Height = 240
+        Top = 290
+        Width = 297
+        DataStore = VpXmlDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Anchors = [akRight, akBottom]
+        TabStop = True
+        TabOrder = 2
+        KBNavigation = True
+        DateLabelFormat = 'mmmm yyyy'
+        DayHeadAttributes.Color = clBtnFace
+        DayNameStyle = dsShort
+        DrawingStyle = dsFlat
+        EventDayStyle = []
+        HeadAttributes.Color = clBtnFace
+        LineColor = clGray
+        TimeFormat = tf24Hour
+        TodayAttributes.Color = clSilver
+        TodayAttributes.BorderPen.Color = clRed
+        TodayAttributes.BorderPen.Width = 3
+        OffDayColor = clSilver
+        SelectedDayColor = clRed
+        ShowEvents = True
+        ShowEventTime = False
+        WeekStartsOn = dtMonday
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Tasks'
+      ClientHeight = 531
+      ClientWidth = 796
+      object VpTaskList1: TVpTaskList
+        Left = 0
+        Height = 531
+        Top = 0
+        Width = 796
+        DataStore = VpXmlDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alClient
+        TabStop = True
+        TabOrder = 0
+        ReadOnly = False
+        DisplayOptions.CheckBGColor = clWindow
+        DisplayOptions.CheckColor = cl3DDkShadow
+        DisplayOptions.CheckStyle = csCheck
+        DisplayOptions.DueDateFormat = 'dd.MM.yyyy'
+        DisplayOptions.ShowCompletedTasks = False
+        DisplayOptions.ShowAll = False
+        DisplayOptions.ShowDueDate = True
+        DisplayOptions.OverdueColor = clRed
+        DisplayOptions.NormalColor = clBlack
+        DisplayOptions.CompletedColor = clGray
+        LineColor = clGray
+        MaxVisibleTasks = 250
+        TaskHeadAttributes.Color = clSilver
+        DrawingStyle = dsFlat
+        ShowResourceName = True
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Contacts'
+      ClientHeight = 531
+      ClientWidth = 796
+      object VpContactGrid1: TVpContactGrid
+        Left = 40
+        Height = 531
+        Top = 0
+        Width = 756
+        DataStore = VpXmlDatastore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alClient
+        TabStop = True
+        TabOrder = 0
+        AllowInPlaceEditing = True
+        BarWidth = 1
+        BarColor = clSilver
+        ColumnWidth = 145
+        ContactHeadAttributes.Color = clSilver
+        ContactHeadAttributes.Bordered = True
+        DrawingStyle = dsFlat
+      end
+      object VpContactButtonBar1: TVpContactButtonBar
+        Left = 0
+        Height = 531
+        Top = 0
+        Width = 40
+        DrawingStyle = dsFlat
+        RadioStyle = False
+        Align = alLeft
+      end
+    end
+  end
+  object VpControlLink1: TVpControlLink
+    DataStore = VpXmlDatastore1
+    Printer.BottomMargin = 0
+    Printer.DayStart = h_08
+    Printer.DayEnd = h_05
+    Printer.Granularity = gr30Min
+    Printer.LeftMargin = 0
+    Printer.MarginUnits = imAbsolutePixel
+    Printer.PrintFormats = <>
+    Printer.RightMargin = 0
+    Printer.TopMargin = 0
+    left = 143
+    top = 184
+  end
+  object VpXmlDatastore1: TVpXmlDatastore
+    CategoryColorMap.Category0.BackgroundColor = 16777175
+    CategoryColorMap.Category0.Color = clTeal
+    CategoryColorMap.Category0.Description = 'Business'
+    CategoryColorMap.Category1.BackgroundColor = 15200743
+    CategoryColorMap.Category1.Color = clMoneyGreen
+    CategoryColorMap.Category1.Description = 'Personal'
+    CategoryColorMap.Category2.Color = clYellow
+    CategoryColorMap.Category2.Description = 'Category 2'
+    CategoryColorMap.Category3.Color = clLime
+    CategoryColorMap.Category3.Description = 'Category 3'
+    CategoryColorMap.Category4.Color = clPurple
+    CategoryColorMap.Category4.Description = 'Category 4'
+    CategoryColorMap.Category5.Color = clTeal
+    CategoryColorMap.Category5.Description = 'Category 5'
+    CategoryColorMap.Category6.Color = clFuchsia
+    CategoryColorMap.Category6.Description = 'Category 6'
+    CategoryColorMap.Category7.Color = clOlive
+    CategoryColorMap.Category7.Description = 'Category 7'
+    CategoryColorMap.Category8.Color = clAqua
+    CategoryColorMap.Category8.Description = 'Category 8'
+    CategoryColorMap.Category9.Color = clMaroon
+    CategoryColorMap.Category9.Description = 'Category 9'
+    EnableEventTimer = True
+    PlayEventSounds = True
+    left = 143
+    top = 107
+  end
+end

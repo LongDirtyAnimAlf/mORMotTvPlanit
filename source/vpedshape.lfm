@@ -1,0 +1,278 @@
+object frmEditShape: TfrmEditShape
+  Left = 772
+  Height = 243
+  Top = 248
+  Width = 426
+  HorzScrollBar.Page = 362
+  VertScrollBar.Page = 313
+  BorderStyle = bsDialog
+  Caption = 'Edit Shape'
+  ClientHeight = 243
+  ClientWidth = 426
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '1.7'
+  object btnOk: TButton
+    AnchorSideBottom.Control = gbPen
+    AnchorSideBottom.Side = asrBottom
+    Left = 253
+    Height = 25
+    Top = 203
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    Caption = 'OK'
+    Default = True
+    OnClick = btnOkClick
+    TabOrder = 3
+  end
+  object btnCancel: TButton
+    AnchorSideBottom.Control = gbPen
+    AnchorSideBottom.Side = asrBottom
+    Left = 333
+    Height = 25
+    Top = 203
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Right = 8
+    Cancel = True
+    Caption = 'Cancel'
+    OnClick = btnCancelClick
+    TabOrder = 4
+  end
+  object gbBrush: TGroupBox
+    Left = 216
+    Height = 86
+    Top = 88
+    Width = 192
+    BorderSpacing.Right = 8
+    Caption = ' Brush '
+    ClientHeight = 66
+    ClientWidth = 188
+    TabOrder = 2
+    object lblBrushStyle: TLabel
+      Left = 8
+      Height = 15
+      Top = 35
+      Width = 28
+      BorderSpacing.Left = 8
+      Caption = 'Style:'
+      FocusControl = cbBrushStyle
+      ParentColor = False
+    end
+    object cbBrushStyle: TComboBox
+      Left = 52
+      Height = 21
+      Top = 32
+      Width = 129
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      ItemHeight = 15
+      OnChange = cbBrushStyleChange
+      OnDrawItem = cbBrushStyleDrawItem
+      Style = csOwnerDrawFixed
+      TabOrder = 0
+    end
+    object lblBrushColor: TLabel
+      Left = 8
+      Height = 15
+      Top = 5
+      Width = 32
+      BorderSpacing.Left = 8
+      Caption = 'Color:'
+      FocusControl = cbBrushColor
+      ParentColor = False
+    end
+    object cbBrushColor: TColorBox
+      Left = 52
+      Height = 22
+      Top = 1
+      Width = 124
+      Style = [cbStandardColors, cbExtendedColors, cbPrettyNames, cbCustomColors]
+      BorderSpacing.Right = 8
+      ItemHeight = 16
+      OnChange = cbBrushColorChange
+      TabOrder = 1
+    end
+  end
+  object gbPen: TGroupBox
+    Left = 8
+    Height = 140
+    Top = 88
+    Width = 192
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 8
+    Caption = ' Pen '
+    ClientHeight = 120
+    ClientWidth = 188
+    TabOrder = 1
+    object lblPenStyle: TLabel
+      Left = 8
+      Height = 15
+      Top = 35
+      Width = 28
+      BorderSpacing.Left = 8
+      Caption = 'Style:'
+      FocusControl = cbPenStyle
+      ParentColor = False
+    end
+    object lblPenWidth: TLabel
+      Left = 8
+      Height = 15
+      Top = 64
+      Width = 35
+      BorderSpacing.Left = 8
+      Caption = 'Width:'
+      FocusControl = edPenWidth
+      ParentColor = False
+    end
+    object lblPenMode: TLabel
+      Left = 8
+      Height = 15
+      Top = 92
+      Width = 34
+      BorderSpacing.Left = 8
+      Caption = 'Mode:'
+      FocusControl = cbPenMode
+      ParentColor = False
+    end
+    object cbPenStyle: TComboBox
+      Left = 52
+      Height = 21
+      Top = 32
+      Width = 124
+      BorderSpacing.Right = 8
+      ItemHeight = 15
+      OnChange = cbPenStyleChange
+      OnDrawItem = cbPenStyleDrawItem
+      ReadOnly = True
+      Style = csOwnerDrawFixed
+      TabOrder = 1
+    end
+    object cbPenMode: TComboBox
+      Left = 52
+      Height = 23
+      Top = 88
+      Width = 124
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      ItemHeight = 15
+      TabOrder = 4
+    end
+    object udPenWidth: TUpDown
+      Left = 98
+      Height = 23
+      Top = 60
+      Width = 12
+      Associate = edPenWidth
+      Min = 0
+      Position = 0
+      TabOrder = 3
+      Wrap = False
+    end
+    object edPenWidth: TEdit
+      Left = 52
+      Height = 23
+      Top = 60
+      Width = 46
+      OnChange = edPenWidthChange
+      TabOrder = 2
+      Text = '0'
+    end
+    object cbPenColor: TColorBox
+      Left = 52
+      Height = 22
+      Top = 1
+      Width = 124
+      Style = [cbStandardColors, cbExtendedColors, cbPrettyNames, cbCustomColors]
+      BorderSpacing.Right = 8
+      ItemHeight = 16
+      OnChange = cbPenColorChange
+      TabOrder = 0
+    end
+    object lblPenColor: TLabel
+      Left = 8
+      Height = 15
+      Top = 5
+      Width = 29
+      BorderSpacing.Left = 8
+      Caption = 'Color'
+      FocusControl = cbPenColor
+      ParentColor = False
+    end
+  end
+  object gbShapes: TGroupBox
+    Left = 8
+    Height = 67
+    Top = 8
+    Width = 400
+    BorderSpacing.Right = 8
+    Caption = 'gbShapes'
+    ClientHeight = 47
+    ClientWidth = 396
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Left = 12
+      Height = 32
+      Top = 4
+      Width = 32
+      BorderSpacing.Left = 8
+      BorderSpacing.Bottom = 8
+      Down = True
+      GroupIndex = 1
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 49
+      Height = 32
+      Top = 4
+      Width = 32
+      GroupIndex = 1
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 86
+      Height = 32
+      Top = 4
+      Width = 32
+      GroupIndex = 1
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 123
+      Height = 32
+      Top = 4
+      Width = 32
+      GroupIndex = 1
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 160
+      Height = 32
+      Top = 4
+      Width = 32
+      GroupIndex = 1
+    end
+    object SpeedButton6: TSpeedButton
+      Left = 197
+      Height = 32
+      Top = 4
+      Width = 32
+      GroupIndex = 1
+    end
+    object SpeedButton7: TSpeedButton
+      Left = 234
+      Height = 32
+      Top = 4
+      Width = 32
+      GroupIndex = 1
+    end
+    object SpeedButton8: TSpeedButton
+      Left = 271
+      Height = 32
+      Top = 4
+      Width = 32
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 8
+      GroupIndex = 1
+    end
+  end
+end

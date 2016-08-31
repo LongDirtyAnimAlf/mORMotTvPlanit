@@ -1,0 +1,177 @@
+object frmFieldMapper: TfrmFieldMapper
+  Left = 281
+  Height = 533
+  Top = 112
+  Width = 409
+  HorzScrollBar.Page = 408
+  VertScrollBar.Page = 536
+  BorderStyle = bsToolWindow
+  Caption = 'FlexDataStore Field Mapping Designer'
+  ClientHeight = 533
+  ClientWidth = 409
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 45
+    Top = 488
+    Width = 409
+    Align = alBottom
+    ClientHeight = 45
+    ClientWidth = 409
+    TabOrder = 1
+    object BtnOK: TButton
+      Left = 240
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'OK'
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object BtnCancel: TButton
+      Left = 320
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 488
+    Top = 0
+    Width = 409
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Field Mapping Designer'
+      ClientHeight = 460
+      ClientWidth = 401
+      object Bevel1: TBevel
+        Left = 5
+        Height = 315
+        Top = 4
+        Width = 390
+      end
+      object lblDBFieldsAvail: TLabel
+        Left = 11
+        Height = 15
+        Top = 36
+        Width = 126
+        Caption = 'Available Dataset Fields:'
+        ParentColor = False
+      end
+      object lblFieldMappings: TLabel
+        Left = 35
+        Height = 15
+        Top = 329
+        Width = 84
+        Caption = 'Field Mappings:'
+        ParentColor = False
+      end
+      object lblVPFieldsAvail: TLabel
+        Left = 242
+        Height = 15
+        Top = 36
+        Width = 151
+        Caption = 'Available Visual PlanIt Fields:'
+        ParentColor = False
+      end
+      object lblDataset: TLabel
+        Left = 11
+        Height = 15
+        Top = 13
+        Width = 42
+        Caption = 'Dataset:'
+        ParentColor = False
+      end
+      object DatasetFieldLB: TListBox
+        Left = 11
+        Height = 255
+        Top = 56
+        Width = 145
+        ItemHeight = 0
+        OnClick = DBFieldSelected
+        OnKeyPress = DatasetFieldLBKeyPress
+        TabOrder = 1
+      end
+      object VPFieldLB: TListBox
+        Left = 243
+        Height = 255
+        Top = 56
+        Width = 145
+        ItemHeight = 0
+        OnClick = VpFieldSelected
+        OnKeyPress = VPFieldLBKeyPress
+        TabOrder = 3
+      end
+      object FieldMappingsLB: TListBox
+        Left = 35
+        Height = 100
+        Top = 349
+        Width = 217
+        ItemHeight = 0
+        OnClick = FieldMappingsLBClick
+        OnKeyPress = FieldMappingsLBKeyPress
+        TabOrder = 4
+      end
+      object btnDeleteMapping: TButton
+        Left = 259
+        Height = 25
+        Top = 349
+        Width = 109
+        Caption = 'Delete Mapping'
+        Enabled = False
+        OnClick = btnDeleteMappingClick
+        TabOrder = 5
+      end
+      object DatasetCombo: TComboBox
+        Left = 64
+        Height = 23
+        Top = 10
+        Width = 145
+        ItemHeight = 15
+        OnChange = DatasetComboChange
+        TabOrder = 0
+        Text = 'DatasetCombo'
+      end
+      object btnAddMapping: TBitBtn
+        Left = 166
+        Height = 48
+        Top = 128
+        Width = 69
+        Caption = 'Add'
+        Enabled = False
+        OnClick = btnAddMappingClick
+        TabOrder = 2
+      end
+      object btnClearMappings: TButton
+        Left = 259
+        Height = 25
+        Top = 381
+        Width = 109
+        Caption = 'Clear All '
+        Enabled = False
+        OnClick = btnClearMappingsClick
+        TabOrder = 6
+      end
+      object btnAddAll: TButton
+        Left = 166
+        Height = 48
+        Top = 184
+        Width = 69
+        Caption = 'Add all'
+        Enabled = False
+        OnClick = btnAddAllClick
+        TabOrder = 7
+      end
+    end
+  end
+end

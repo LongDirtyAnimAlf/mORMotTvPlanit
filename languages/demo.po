@@ -1,0 +1,299 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: demomain.rs10min
+msgid "10 min"
+msgstr ""
+
+#: demomain.rs12hours
+msgid "12 hours AM/PM"
+msgstr ""
+
+#: demomain.rs15min
+msgid "15 min"
+msgstr ""
+
+#: demomain.rs20min
+msgid "20 min"
+msgstr ""
+
+#: demomain.rs24hours
+msgid "24 hours"
+msgstr ""
+
+#: demomain.rs30min
+msgid "30 min"
+msgstr ""
+
+#: demomain.rs3d
+msgid "3D"
+msgstr ""
+
+#: demomain.rs5min
+msgid "5 min"
+msgstr ""
+
+#: demomain.rs60min
+msgid "60 min"
+msgstr ""
+
+#: demomain.rs6min
+msgid "6 min"
+msgstr ""
+
+#: demomain.rsborderless
+msgid "no border"
+msgstr ""
+
+#: demomain.rsconfirmdeleteres
+msgid "Do you really want to delete resource %s?"
+msgstr ""
+
+#: demomain.rscontacts
+msgctxt "demomain.rscontacts"
+msgid "Contacts"
+msgstr ""
+
+#: demomain.rseventsoverview
+msgid "Events overview"
+msgstr ""
+
+#: demomain.rseventsperday
+msgid "Events per day"
+msgstr ""
+
+#: demomain.rseventspermonth
+msgid "Events per month"
+msgstr ""
+
+#: demomain.rseventsperweek
+msgid "Events per week"
+msgstr ""
+
+#: demomain.rsflat
+msgid "flat"
+msgstr ""
+
+#: demomain.rsfriday
+msgid "Friday"
+msgstr ""
+
+#: demomain.rsmaintenance
+msgctxt "demomain.rsmaintenance"
+msgid "Maintenance"
+msgstr ""
+
+#: demomain.rsmonday
+msgid "Monday"
+msgstr ""
+
+#: demomain.rsplanner
+msgid "Planner"
+msgstr ""
+
+#: demomain.rsresources
+msgctxt "demomain.rsresources"
+msgid "Resources"
+msgstr ""
+
+#: demomain.rssaturday
+msgid "Saturday"
+msgstr ""
+
+#: demomain.rssettings
+msgid "Program settings"
+msgstr ""
+
+#: demomain.rssettings_short
+msgctxt "demomain.rssettings_short"
+msgid "Settings"
+msgstr ""
+
+#: demomain.rssunday
+msgid "Sunday"
+msgstr ""
+
+#: demomain.rstasks
+msgctxt "demomain.rstasks"
+msgid "Tasks"
+msgstr ""
+
+#: demomain.rsthursday
+msgid "Thursday"
+msgstr ""
+
+#: demomain.rstuesday
+msgid "Tuesday"
+msgstr ""
+
+#: demomain.rswednesday
+msgid "Wednesday"
+msgstr ""
+
+#: demomain.rsxmlfiles
+msgid "XML files (*.xml)"
+msgstr ""
+
+#: tfrmreportsetup.btncancel.caption
+msgctxt "tfrmreportsetup.btncancel.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tfrmreportsetup.btnok.caption
+msgctxt "tfrmreportsetup.btnok.caption"
+msgid "OK"
+msgstr ""
+
+#: tfrmreportsetup.caption
+msgid "Report Setup"
+msgstr ""
+
+#: tfrmreportsetup.lblenddate.caption
+msgctxt "tfrmreportsetup.lblenddate.caption"
+msgid "End Date:"
+msgstr ""
+
+#: tfrmreportsetup.lblformat.caption
+msgctxt "tfrmreportsetup.lblformat.caption"
+msgid "Format:"
+msgstr ""
+
+#: tfrmreportsetup.lblstartdate.caption
+msgctxt "tfrmreportsetup.lblstartdate.caption"
+msgid "Start Date:"
+msgstr ""
+
+#: tmainform.btndeleteres.caption
+msgid "Delete"
+msgstr ""
+
+#: tmainform.btneditres.caption
+msgid "Edit"
+msgstr ""
+
+#: tmainform.btnnewres.caption
+msgid "New"
+msgstr ""
+
+#: tmainform.caption
+msgid "Turbo Power VisualPlanIt Demo"
+msgstr ""
+
+#: tmainform.cbaddressbuilder.text
+msgid "(default)"
+msgstr ""
+
+#: tmainform.cballowdraganddrop.caption
+msgid "Allow drag and drop of events"
+msgstr ""
+
+#: tmainform.cballowinplaceediting.caption
+msgid "Allow inplace editing"
+msgstr ""
+
+#: tmainform.cbdragdroptransparent.caption
+msgid "Transparent drag and drop"
+msgstr ""
+
+#: tmainform.cbgranularity.text
+msgid "30 Min"
+msgstr ""
+
+#: tmainform.lbladdressbuilder.caption
+msgid "Address builder"
+msgstr ""
+
+#: tmainform.lbldrawingstyle.caption
+msgid "Drawing style:"
+msgstr ""
+
+#: tmainform.lblfirstdayofweek.caption
+msgid "First day of week"
+msgstr ""
+
+#: tmainform.lblgranularity.caption
+msgid "Granularity"
+msgstr ""
+
+#: tmainform.lbllanguage.caption
+msgctxt "TMAINFORM.LBLLANGUAGE.CAPTION"
+msgid "Language"
+msgstr ""
+
+#: tmainform.lbltimeformat.caption
+msgid "Time format"
+msgstr ""
+
+#: tmainform.lblvisibledays.caption
+msgid "Visible days"
+msgstr ""
+
+#: tmainform.menuitem1.caption
+msgid "File"
+msgstr ""
+
+#: tmainform.menuitem2.caption
+msgid "Help"
+msgstr ""
+
+#: tmainform.menuitem3.caption
+msgctxt "TMAINFORM.MENUITEM3.CAPTION"
+msgid "-"
+msgstr ""
+
+#: tmainform.menuitem4.caption
+msgctxt "tmainform.menuitem4.caption"
+msgid "-"
+msgstr ""
+
+#: tmainform.mnuabout.caption
+msgid "About Visual PlanIt"
+msgstr ""
+
+#: tmainform.mnueditprintformats.caption
+msgid "Edit print formats..."
+msgstr ""
+
+#: tmainform.mnuloadprintformats.caption
+msgid "Load print formats..."
+msgstr ""
+
+#: tmainform.mnumaintenance.caption
+msgctxt "TMAINFORM.MNUMAINTENANCE.CAPTION"
+msgid "Maintenance"
+msgstr ""
+
+#: tmainform.mnuprint.caption
+msgid "Print..."
+msgstr ""
+
+#: tmainform.mnuprintpreview.caption
+msgid "Print preview..."
+msgstr ""
+
+#: tmainform.mnuquit.caption
+msgid "Quit"
+msgstr ""
+
+#: tmainform.mnuresources.caption
+msgctxt "TMAINFORM.MNURESOURCES.CAPTION"
+msgid "Resources"
+msgstr ""
+
+#: tmainform.mnusettings.caption
+msgctxt "TMAINFORM.MNUSETTINGS.CAPTION"
+msgid "Settings"
+msgstr ""
+
+#: tmainform.rballtasks.caption
+msgid "All tasks"
+msgstr ""
+
+#: tmainform.rbhidecompletedtasks.caption
+msgid "Hide completed tasks"
+msgstr ""
+
+#: tmainform.titlelbl.caption
+msgid "TitleLbl"
+msgstr ""
+

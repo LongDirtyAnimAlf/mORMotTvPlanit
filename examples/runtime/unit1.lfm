@@ -1,0 +1,19 @@
+object Form1: TForm1
+  Left = 262
+  Height = 441
+  Top = 155
+  Width = 934
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 934
+  OnCreate = FormCreate
+  LCLVersion = '1.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 934
+    Align = alTop
+    TabOrder = 0
+  end
+end

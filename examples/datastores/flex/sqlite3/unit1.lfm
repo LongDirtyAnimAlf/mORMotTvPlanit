@@ -1,0 +1,988 @@
+object Form1: TForm1
+  Left = 344
+  Height = 686
+  Top = 169
+  Width = 980
+  Caption = 'Form1'
+  ClientHeight = 686
+  ClientWidth = 980
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.7'
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 980
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 34
+    ClientWidth = 980
+    TabOrder = 0
+    object VpResourceCombo1: TVpResourceCombo
+      Left = 8
+      Height = 23
+      Top = 5
+      Width = 208
+      DataStore = VpFlexDataStore1
+      Style = csDropDownList
+    end
+    object BtnNewRes: TButton
+      Left = 222
+      Height = 25
+      Top = 4
+      Width = 99
+      Caption = 'New resource'
+      OnClick = BtnNewResClick
+      TabOrder = 1
+    end
+    object BtnEditRes: TButton
+      Left = 328
+      Height = 25
+      Top = 4
+      Width = 96
+      Caption = 'Edit resource'
+      OnClick = BtnEditResClick
+      TabOrder = 2
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 652
+    Top = 34
+    Width = 980
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Events and tasks'
+      ClientHeight = 624
+      ClientWidth = 972
+      object VpDayView1: TVpDayView
+        Left = 0
+        Height = 624
+        Top = 0
+        Width = 301
+        DataStore = VpFlexDataStore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alLeft
+        ReadOnly = False
+        TabStop = True
+        TabOrder = 0
+        AllDayEventAttributes.BackgroundColor = clBtnShadow
+        AllDayEventAttributes.EventBorderColor = cl3DDkShadow
+        AllDayEventAttributes.EventBackgroundColor = clBtnFace
+        ShowEventTimes = False
+        DrawingStyle = dsFlat
+        TimeSlotColors.Active = clWhite
+        TimeSlotColors.Inactive = 8454143
+        TimeSlotColors.Holiday = 16744703
+        TimeSlotColors.Weekday = clWhite
+        TimeSlotColors.Weekend = 16777088
+        TimeSlotColors.ActiveRange.RangeBegin = h_00
+        TimeSlotColors.ActiveRange.RangeEnd = h_00
+        HeadAttributes.Font.Height = -13
+        HeadAttributes.Color = clBtnFace
+        RowHeadAttributes.HourFont.Height = -24
+        RowHeadAttributes.MinuteFont.Height = -12
+        RowHeadAttributes.Color = clBtnFace
+        ShowResourceName = True
+        LineColor = clGray
+        GutterWidth = 7
+        DateLabelFormat = 'dddd, mmmm dd, yyyy'
+        Granularity = gr30Min
+        DefaultTopHour = h_07
+        TimeFormat = tf12Hour
+      end
+      object Panel2: TPanel
+        Left = 306
+        Height = 624
+        Top = 0
+        Width = 386
+        Align = alLeft
+        BevelOuter = bvNone
+        Caption = 'Panel2'
+        ClientHeight = 624
+        ClientWidth = 386
+        TabOrder = 1
+        object VpWeekView1: TVpWeekView
+          Left = 0
+          Height = 378
+          Top = 0
+          Width = 386
+          DataStore = VpFlexDataStore1
+          ControlLink = VpControlLink1
+          Color = clWindow
+          AllDayEventAttributes.BackgroundColor = clWindow
+          AllDayEventAttributes.EventBorderColor = clGray
+          AllDayEventAttributes.EventBackgroundColor = clBtnFace
+          DateLabelFormat = 'dddd, mmmm dd, yyyy'
+          DayHeadAttributes.Color = clBtnFace
+          DayHeadAttributes.DateFormat = 'dddd mmmm, dd'
+          DayHeadAttributes.Font.Height = -13
+          DayHeadAttributes.Font.Name = 'Tahoma'
+          DayHeadAttributes.Bordered = True
+          DrawingStyle = dsFlat
+          HeadAttributes.Color = clBtnFace
+          LineColor = clGray
+          TimeFormat = tf12Hour
+          ShowEventTime = True
+          WeekStartsOn = dtMonday
+          Align = alClient
+          TabStop = True
+          TabOrder = 0
+        end
+        object VpMonthView1: TVpMonthView
+          Left = 0
+          Height = 241
+          Top = 383
+          Width = 386
+          DataStore = VpFlexDataStore1
+          ControlLink = VpControlLink1
+          Color = clWindow
+          Align = alBottom
+          TabStop = True
+          TabOrder = 1
+          KBNavigation = True
+          DateLabelFormat = 'mmmm yyyy'
+          DayHeadAttributes.Color = clBtnFace
+          DayHeadAttributes.Font.Height = -13
+          DayHeadAttributes.Font.Name = 'Tahoma'
+          DayNameStyle = dsShort
+          DrawingStyle = dsFlat
+          EventDayStyle = []
+          HeadAttributes.Color = clBtnFace
+          LineColor = clGray
+          TimeFormat = tf12Hour
+          TodayAttributes.Color = clSilver
+          TodayAttributes.BorderPen.Color = clRed
+          TodayAttributes.BorderPen.Width = 3
+          OffDayColor = clSilver
+          SelectedDayColor = clRed
+          ShowEvents = True
+          ShowEventTime = False
+          WeekStartsOn = dtMonday
+        end
+        object Splitter2: TSplitter
+          Cursor = crVSplit
+          Left = 0
+          Height = 5
+          Top = 378
+          Width = 386
+          Align = alBottom
+          ResizeAnchor = akBottom
+        end
+      end
+      object VpTaskList1: TVpTaskList
+        Left = 697
+        Height = 624
+        Top = 0
+        Width = 275
+        DataStore = VpFlexDataStore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alClient
+        TabStop = True
+        TabOrder = 2
+        ReadOnly = False
+        DisplayOptions.CheckBGColor = clWindow
+        DisplayOptions.CheckColor = cl3DDkShadow
+        DisplayOptions.CheckStyle = csCheck
+        DisplayOptions.DueDateFormat = 'dd.MM.yyyy'
+        DisplayOptions.ShowCompletedTasks = True
+        DisplayOptions.ShowAll = False
+        DisplayOptions.ShowDueDate = True
+        DisplayOptions.OverdueColor = clRed
+        DisplayOptions.NormalColor = clBlack
+        DisplayOptions.CompletedColor = clGray
+        LineColor = clGray
+        MaxVisibleTasks = 250
+        TaskHeadAttributes.Color = clSilver
+        DrawingStyle = dsFlat
+        ShowResourceName = True
+      end
+      object Splitter1: TSplitter
+        Left = 692
+        Height = 624
+        Top = 0
+        Width = 5
+      end
+      object Splitter3: TSplitter
+        Left = 301
+        Height = 624
+        Top = 0
+        Width = 5
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Contacts'
+      ClientHeight = 624
+      ClientWidth = 972
+      object VpContactButtonBar1: TVpContactButtonBar
+        Left = 0
+        Height = 624
+        Top = 0
+        Width = 40
+        DrawingStyle = dsFlat
+        RadioStyle = False
+        Align = alLeft
+      end
+      object VpContactGrid1: TVpContactGrid
+        Left = 40
+        Height = 624
+        Top = 0
+        Width = 932
+        DataStore = VpFlexDataStore1
+        ControlLink = VpControlLink1
+        Color = clWindow
+        Align = alClient
+        TabStop = True
+        TabOrder = 1
+        AllowInPlaceEditing = True
+        BarWidth = 3
+        BarColor = clSilver
+        ColumnWidth = 200
+        ContactHeadAttributes.Color = clSilver
+        ContactHeadAttributes.Bordered = True
+        DrawingStyle = dsFlat
+      end
+    end
+  end
+  object VpControlLink1: TVpControlLink
+    DataStore = VpFlexDataStore1
+    Printer.BottomMargin = 0
+    Printer.DayStart = h_08
+    Printer.DayEnd = h_05
+    Printer.Granularity = gr30Min
+    Printer.LeftMargin = 0
+    Printer.MarginUnits = imAbsolutePixel
+    Printer.PrintFormats = <>
+    Printer.RightMargin = 0
+    Printer.TopMargin = 0
+    left = 136
+    top = 168
+  end
+  object VpResourceEditDialog1: TVpResourceEditDialog
+    Version = 'v1.04'
+    DataStore = VpFlexDataStore1
+    Options = []
+    Placement.Position = mpCenter
+    Placement.Top = 10
+    Placement.Left = 10
+    Placement.Height = 250
+    Placement.Width = 400
+    left = 136
+    top = 232
+  end
+  object VpFlexDataStore1: TVpFlexDataStore
+    CategoryColorMap.Category0.Color = clNavy
+    CategoryColorMap.Category0.Description = 'Category 0'
+    CategoryColorMap.Category1.Color = clRed
+    CategoryColorMap.Category1.Description = 'Category 1'
+    CategoryColorMap.Category2.Color = clYellow
+    CategoryColorMap.Category2.Description = 'Category 2'
+    CategoryColorMap.Category3.Color = clLime
+    CategoryColorMap.Category3.Description = 'Category 3'
+    CategoryColorMap.Category4.Color = clPurple
+    CategoryColorMap.Category4.Description = 'Category 4'
+    CategoryColorMap.Category5.Color = clTeal
+    CategoryColorMap.Category5.Description = 'Category 5'
+    CategoryColorMap.Category6.Color = clFuchsia
+    CategoryColorMap.Category6.Description = 'Category 6'
+    CategoryColorMap.Category7.Color = clOlive
+    CategoryColorMap.Category7.Description = 'Category 7'
+    CategoryColorMap.Category8.Color = clAqua
+    CategoryColorMap.Category8.Description = 'Category 8'
+    CategoryColorMap.Category9.Color = clMaroon
+    CategoryColorMap.Category9.Description = 'Category 9'
+    EnableEventTimer = True
+    PlayEventSounds = True
+    AutoConnect = False
+    AutoCreate = False
+    DayBuffer = 31
+    DataSources.ResourceDataSource = DsResources
+    DataSources.EventsDataSource = DsEvents
+    DataSources.ContactsDataSource = DsContacts
+    DataSources.TasksDataSource = DsTasks
+    ResourceID = 0
+    left = 136
+    top = 101
+    ResourceFieldMappings = (
+      'ResourceID'
+      'ResourceID'
+      'Description'
+      'Description'
+      'Notes'
+      'Notes'
+      'ImageIndex'
+      'ImageIndex'
+      'ResourceActive'
+      'ResourceActive'
+      'UserField0'
+      'UserField0'
+      'UserField1'
+      'UserField1'
+      'UserField2'
+      'UserField2'
+      'UserField3'
+      'UserField3'
+      'UserField4'
+      'UserField4'
+      'UserField5'
+      'UserField5'
+      'UserField6'
+      'UserField6'
+      'UserField7'
+      'UserField7'
+      'UserField8'
+      'UserField8'
+      'UserField9'
+      'UserField9'
+    )
+    EventFieldMappings = (
+      'RecordID'
+      'RecordID'
+      'ResourceID'
+      'ResourceID'
+      'StartTime'
+      'StartTime'
+      'EndTime'
+      'EndTime'
+      'Description'
+      'Description'
+      'Location'
+      'Location'
+      'Notes'
+      'Notes'
+      'Category'
+      'Category'
+      'AllDayEvent'
+      'AllDayEvent'
+      'DingPath'
+      'DingPath'
+      'AlarmSet'
+      'AlarmSet'
+      'AlarmAdvance'
+      'AlarmAdvance'
+      'AlarmAdvanceType'
+      'AlarmAdvanceType'
+      'SnoozeTime'
+      'SnoozeTime'
+      'RepeatCode'
+      'RepeatCode'
+      'RepeatRangeEnd'
+      'RepeatRangeEnd'
+      'CustomInterval'
+      'CustomInterval'
+    )
+    ContactFieldMappings = (
+      'RecordID'
+      'RecordID'
+      'ResourceID'
+      'ResourceID'
+      'FirstName'
+      'FirstName'
+      'LastName'
+      'LastName'
+      'Birthdate'
+      'Birthdate'
+      'Anniversary'
+      'Anniversary'
+      'Title'
+      'Title'
+      'Company'
+      'Company'
+      'Job_Position'
+      'Job_Position'
+      'Address'
+      'Address'
+      'City'
+      'City'
+      'State'
+      'State'
+      'Zip'
+      'Zip'
+      'Country'
+      'Country'
+      'Notes'
+      'Notes'
+      'Phone1'
+      'Phone1'
+      'Phone2'
+      'Phone2'
+      'Phone3'
+      'Phone3'
+      'Phone4'
+      'Phone4'
+      'Phone5'
+      'Phone5'
+      'PhoneType1'
+      'PhoneType1'
+      'PhoneType2'
+      'PhoneType2'
+      'PhoneType3'
+      'PhoneType3'
+      'PhoneType4'
+      'PhoneType4'
+      'PhoneType5'
+      'PhoneType5'
+      'Category'
+      'Category'
+      'EMail'
+      'EMail'
+      'Custom1'
+      'Custom1'
+      'Custom2'
+      'Custom2'
+      'Custom3'
+      'Custom3'
+      'Custom4'
+      'Custom4'
+    )
+    TaskFieldMappings = (
+      'RecordID'
+      'RecordID'
+      'ResourceID'
+      'ResourceID'
+      'Complete'
+      'Complete'
+      'Description'
+      'Description'
+      'Details'
+      'Details'
+      'CreatedOn'
+      'CreatedOn'
+      'Priority'
+      'Priority'
+      'Category'
+      'Category'
+      'CompletedOn'
+      'CompletedOn'
+      'DueDate'
+      'DueDate'
+    )
+  end
+  object DsResources: TDataSource
+    DataSet = QryResources
+    left = 240
+    top = 428
+  end
+  object DsContacts: TDataSource
+    DataSet = QryContacts
+    left = 240
+    top = 496
+  end
+  object DsEvents: TDataSource
+    DataSet = QryEvents
+    left = 240
+    top = 560
+  end
+  object DsTasks: TDataSource
+    DataSet = QryTasks
+    left = 240
+    top = 621
+  end
+  object QryResources: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <    
+      item
+        Name = 'ResourceID'
+        Attributes = [faReadonly]
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'Description'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'ImageIndex'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'ResourceActive'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'UserField0'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField1'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField2'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField3'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField4'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField5'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField6'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField7'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField8'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'UserField9'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM Resources'
+    )
+    UpdateSQL.Strings = (
+      ''
+    )
+    DeleteSQL.Strings = (
+      ''
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    left = 136
+    top = 428
+  end
+  object QryContacts: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <    
+      item
+        Name = 'RecordID'
+        Attributes = [faReadonly]
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'ResourceID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'FirstName'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'LastName'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Birthdate'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'Anniversary'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'Title'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Company'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'Job_Position'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'Address'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'City'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'State'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Zip'
+        DataType = ftString
+        Precision = -1
+        Size = 10
+      end    
+      item
+        Name = 'Country'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'Phone1'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Phone2'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Phone3'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Phone4'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'Phone5'
+        DataType = ftString
+        Precision = -1
+        Size = 25
+      end    
+      item
+        Name = 'PhoneType1'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'PhoneType2'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'PhoneType3'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'PhoneType4'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'PhoneType5'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'Category'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'EMail'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'Custom1'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'Custom2'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'Custom3'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'Custom4'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM Contacts'
+    )
+    UpdateSQL.Strings = (
+      ''
+    )
+    DeleteSQL.Strings = (
+      ''
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    left = 136
+    top = 496
+  end
+  object QryEvents: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <    
+      item
+        Name = 'RecordID'
+        Attributes = [faReadonly]
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'ResourceID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'StartTime'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'EndTime'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'Description'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'Location'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'Notes'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'Category'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'AllDayEvent'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'DingPath'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'AlarmSet'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'AlarmAdvance'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'AlarmAdvanceType'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'SnoozeTime'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'RepeatCode'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'RepeatRangeEnd'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'CustomInterval'
+        DataType = ftInteger
+        Precision = -1
+      end>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM Events'
+    )
+    UpdateSQL.Strings = (
+      ''
+    )
+    DeleteSQL.Strings = (
+      ''
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    left = 136
+    top = 560
+  end
+  object QryTasks: TSQLQuery
+    PacketRecords = -1
+    FieldDefs = <    
+      item
+        Name = 'RecordID'
+        Attributes = [faReadonly]
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'ResourceID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'Complete'
+        DataType = ftBoolean
+        Precision = -1
+      end    
+      item
+        Name = 'Description'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'Details'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'CreatedOn'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'Priority'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'Category'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'CompletedOn'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'DueDate'
+        DataType = ftDateTime
+        Precision = -1
+      end>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM Tasks'
+    )
+    UpdateSQL.Strings = (
+      ''
+    )
+    DeleteSQL.Strings = (
+      ''
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit]
+    Params = <>
+    left = 136
+    top = 621
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    Options = []
+    left = 136
+    top = 368
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'data.db'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    Options = []
+    left = 136
+    top = 312
+  end
+end
