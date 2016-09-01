@@ -57,7 +57,7 @@ object MainForm: TMainForm
       Height = 528
       Top = 48
       Width = 834
-      PageIndex = 0
+      PageIndex = 3
       Align = alClient
       TabOrder = 1
       TabStop = True

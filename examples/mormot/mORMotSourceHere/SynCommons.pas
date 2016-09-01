@@ -3391,6 +3391,9 @@ function RawUTF8ArrayToQuotedCSV(const Values: array of RawUTF8; const Sep: RawU
 function AddPrefixToCSV(CSV: PUTF8Char; const Prefix: RawUTF8;
   Sep: AnsiChar = ','): RawUTF8;
 
+/// append a Value to a CSV string
+procedure AddToCSV(const Value: RawUTF8; var CSV: RawUTF8; const Sep: RawUTF8 = ',');
+
 /// quick helper to initialize a dynamic array of RawUTF8 from some constants
 // - can be used e.g. as:
 // ! MyArray := TRawUTF8DynArrayFrom(['a','b','c']);
@@ -10055,6 +10058,13 @@ var
   // - returns 255 for any character out of 0..9,A..Z,a..z range
   // - used e.g. by HexToBin() function
   ConvertHexToBin: array[byte] of byte;
+  /// naive but efficient cache to avoid string memory allocation for
+  // 0..999 small numbers by Int32ToUTF8/UInt32ToUTF8
+  // - use around 16KB of heap, but increase multi-thread abilities
+  // - is especially useful when strings are used as array indexes (e.g.
+  // in SynMongoDB BSON)
+  SmallUInt32UTF8: array[0..999] of RawUTF8;
+
 
 /// fast conversion from hexa chars into binary data
 // - BinBytes contain the bytes count to be converted: Hex^ must contain
@@ -10337,11 +10347,11 @@ function ExtractInlineParameters(const SQL: RawUTF8;
 procedure YearToPChar(Y: cardinal; P: PUTF8Char);
   {$ifdef PUREPASCAL} {$ifdef HASINLINE}inline;{$endif} {$endif}
 
-/// creates a 3 digits string from a 0..999 value
+/// creates a 3 digits string from a 0..999 value as '000'..'999'
 function UInt3DigitsToUTF8(Value: Cardinal): RawUTF8;
   {$ifdef HASINLINE}inline;{$endif}
 
-/// creates a 4 digits string from a 0..9999 value
+/// creates a 4 digits string from a 0..9999 value as '0000'.'9999'
 function UInt4DigitsToUTF8(Value: Cardinal): RawUTF8;
   {$ifdef HASINLINE}inline;{$endif}
 
@@ -15409,7 +15419,7 @@ type
     property RefCount: integer read fRefCount write fRefCount;
   end;
 
-{$ifdef MSWINDOWS}
+{$ifdef CPUINTEL}
 {$ifndef DELPHI5OROLDER}
   /// a simple class which will set FPU exception flags for a code block
   // - using an IUnknown interface to let the compiler auto-generate a
@@ -15447,9 +15457,8 @@ type
     // - this method is thread-safe and re-entrant (by reference-counting)
     class function ForDelphiCode: IUnknown;
   end;
-
 {$endif DELPHI5OROLDER}
-{$endif MSWINDOWS}
+{$endif CPUINTEL}
 
   /// interface for TAutoFree to register another TObject instance
   // to an existing IAutoFree local variable
@@ -18373,12 +18382,15 @@ begin
   GUIDToText(pointer(result),@guid);
 end;
 
-procedure Int32ToUTF8(Value : integer; var result: RawUTF8);
+procedure Int32ToUTF8(Value: integer; var result: RawUTF8);
 var tmp: array[0..15] of AnsiChar;
     P: PAnsiChar;
 begin
-  P := StrInt32(@tmp[15],Value);
-  SetRawUTF8(result,P,@tmp[15]-P);
+  if cardinal(Value)<=high(SmallUInt32UTF8) then
+    result := SmallUInt32UTF8[Value] else begin
+    P := StrInt32(@tmp[15],Value);
+    SetRawUTF8(result,P,@tmp[15]-P);
+  end;
 end;
 
 procedure Int64ToUtf8(Value: Int64; var result: RawUTF8);
@@ -22331,12 +22343,15 @@ end;
 
 {$ifndef DEFINED_INT32TOUTF8}
 
-function Int32ToUTF8(Value : integer): RawUTF8; // faster than SysUtils.IntToStr
+function Int32ToUTF8(Value: integer): RawUTF8; // faster than SysUtils.IntToStr
 var tmp: array[0..15] of AnsiChar;
     P: PAnsiChar;
 begin
-  P := StrInt32(@tmp[15],Value);
-  SetString(result,P,@tmp[15]-P);
+  if cardinal(Value)<=high(SmallUInt32UTF8) then
+    result := SmallUInt32UTF8[Value] else begin
+    P := StrInt32(@tmp[15],Value);
+    SetString(result,P,@tmp[15]-P);
+  end;
 end;
 
 function Int64ToUtf8(Value: Int64): RawUTF8; // faster than SysUtils.IntToStr
@@ -22386,16 +22401,22 @@ function UInt32ToUTF8(Value: Cardinal): RawUTF8;
 var tmp: array[0..15] of AnsiChar;
     P: PAnsiChar;
 begin
-  P := StrUInt32(@tmp[15],Value);
-  SetString(result,P,@tmp[15]-P);
+  if Value<=high(SmallUInt32UTF8) then
+    result := SmallUInt32UTF8[Value] else begin
+    P := StrUInt32(@tmp[15],Value);
+    SetString(result,P,@tmp[15]-P);
+  end;
 end;
 
 procedure UInt32ToUtf8(Value: cardinal; var result: RawUTF8);
 var tmp: array[0..15] of AnsiChar;
     P: PAnsiChar;
 begin
-  P := StrUInt32(@tmp[15],Value);
-  SetRawUTF8(result,P,@tmp[15]-P);
+  if Value<=high(SmallUInt32UTF8) then
+    result := SmallUInt32UTF8[Value] else begin
+    P := StrUInt32(@tmp[15],Value);
+    SetRawUTF8(result,P,@tmp[15]-P);
+  end;
 end;
 
 {$ifndef EXTENDEDTOSTRING_USESTR}
@@ -25065,7 +25086,7 @@ type TWordRec = packed record YDiv100, YMod100: byte; end;
 {$ifdef FPC_OR_PUREPASCAL} // Alf reported asm below fails with FPC/Linux32
 function Div100(Y: word): TWordRec; {$ifdef HASINLINE}inline;{$endif}
 begin
-  result.YDiv100 := Y div 100;
+  result.YDiv100 := Y div 100;  
   result.YMod100 := Y-(result.YDiv100*100); // * is always faster than div
 end;
 {$else}
@@ -28788,6 +28809,13 @@ begin
   end;
 end;
 
+procedure AddToCSV(const Value: RawUTF8; var CSV: RawUTF8; const Sep: RawUTF8 = ',');
+begin
+  if CSV='' then
+    CSV := Value else
+    CSV := CSV+Sep+Value;
+end;
+
 function RawUTF8ArrayToCSV(const Values: array of RawUTF8; const Sep: RawUTF8 = ','): RawUTF8;
 var i, len, seplen, L: Integer;
     P: PAnsiChar;
@@ -30890,7 +30918,7 @@ procedure TTimeLogBits.FromUTCTime;
 var Ticks: cardinal;
     Now: TSystemTime;
 begin
-  Ticks := GetTickCount64 shr 8; // 256 ms resolution
+  Ticks := GetTickCount64 shr 7; // 128 ms resolution
   if Ticks=UTCTimeTicks then begin
     Value := UTCTimeCache;
     exit;
@@ -39052,7 +39080,7 @@ begin
         raise EDocVariant.CreateUTF8('Out of range [%] property in an array',[aName]);
       exit;
     end;
-    // simple lookup for object names -> hashing may be needed for huge count
+    // simple lookup for object names -> hashing (may be) needed for huge count
     if aCaseSensitive then begin
       for result := 0 to VCount-1 do
         if (length(VName[result])=aNameLen) and
@@ -46078,7 +46106,8 @@ begin
   vtUnicodeString:
     if VUnicodeString<>nil then // convert to UTF-8
       AddW(VUnicodeString,length(UnicodeString(VUnicodeString)),Escape);
-  {$endif} end;
+  {$endif}
+  end;
 end;
 
 {$ifndef NOVARIANTS}
@@ -49760,7 +49789,7 @@ begin
   result := E_NOINTERFACE;
 end;
 
-{$ifdef MSWINDOWS}
+{$ifdef CPUINTEL}
 {$ifndef DELPHI5OROLDER}
 
 { TSynFPUException }
@@ -49794,25 +49823,31 @@ begin // $1332=Delphi $133F=library (mask all exceptions)
 end;
 
 class function TSynFPUException.ForLibraryCode: IUnknown;
+var obj: TSynFPUException;
 begin
-  if GlobalSynFPUExceptionLibrary=nil then begin
-    GlobalSynFPUExceptionLibrary := TSynFPUException.Create($133F);
-    GarbageCollector.Add(GlobalSynFPUExceptionLibrary);
-  end;
   result := GlobalSynFPUExceptionLibrary;
+  if result<>nil then
+    exit;
+  obj := TSynFPUException.Create($133F);
+  GarbageCollector.Add(obj);
+  GlobalSynFPUExceptionLibrary := obj;
+  result := obj;
 end;
 
 class function TSynFPUException.ForDelphiCode: IUnknown;
+var obj: TSynFPUException;
 begin
-  if GlobalSynFPUExceptionDelphi=nil then begin
-    GlobalSynFPUExceptionDelphi := TSynFPUException.Create($1332);
-    GarbageCollector.Add(GlobalSynFPUExceptionDelphi);
-  end;
   result := GlobalSynFPUExceptionDelphi;
+  if result<>nil then
+    exit;
+  obj := TSynFPUException.Create($1332);
+  GarbageCollector.Add(obj);
+  GlobalSynFPUExceptionDelphi := obj;
+  result := obj;
 end;
 
 {$endif DELPHI5OROLDER}
-{$endif MSWINDOWS}
+{$endif CPUINTEL}
 
 
 { TAutoFree }
@@ -58445,6 +58480,8 @@ procedure InitSynCommonsConversionTables;
 var i,n: integer;
     v: byte;
     crc: cardinal;
+    tmp: array[0..15] of AnsiChar;
+    P: PAnsiChar;
 {$ifdef OWNNORMTOUPPER}
     d: integer;
 const n2u: array[138..255] of byte =
@@ -58535,6 +58572,10 @@ begin
       crc := (crc shr 8) xor crc32ctab[0,ToByte(crc)];
       crc32ctab[n,i] := crc;
     end;
+  end;
+  for i := 0 to high(SmallUInt32UTF8) do begin
+    P := StrUInt32(@tmp[15],i);
+    SetString(SmallUInt32UTF8[i],P,@tmp[15]-P);
   end;
   UpperCopy255Buf := @UpperCopy255BufPas;
   {$ifdef CPUINTEL}

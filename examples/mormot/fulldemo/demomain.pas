@@ -275,8 +275,10 @@ begin
   if res = nil then
     exit;
 
-  if MessageDlg(Format(RSConfirmDeleteRes, [res.Description]), mtConfirmation, [mbYes, mbNo], 0) = mrOK then
+  if MessageDlg(Format(RSConfirmDeleteRes, [res.Description]), mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+  begin
     VpControlLink1.Datastore.Resources.RemoveResource(res);
+  end;
 end;
 
 // Edits the currently selected resource

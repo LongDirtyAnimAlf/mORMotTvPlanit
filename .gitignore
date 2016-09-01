@@ -62,5 +62,19 @@ __history/
 __recovery/
 *.~*
 
+# FPC backups
+backup/
+lib/
+
+# FPC compiler-generated binaries (safe to delete)
+*.ppu
+*.or
+*.compiled
+*.dbg
+
+# mORMot SQLite3 db3files and logfiles
+*.db3
+*.log
+
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat

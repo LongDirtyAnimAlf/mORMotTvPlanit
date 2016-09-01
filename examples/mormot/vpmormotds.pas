@@ -44,7 +44,7 @@ uses
 type
   TSynSQLTableDataSetWithLocate = class(TSynSQLTableDataSet)
   public
-    function Locate(const KeyFields: string; const KeyValues: Variant; Options: TLocateOptions) : boolean; override;
+    procedure Delete; override;
   end;
 
 
@@ -171,53 +171,23 @@ begin
 end;
 {$endif}
 
-function  TSynSQLTableDataSetWithLocate.Locate(const KeyFields: string;
-  const KeyValues: Variant; Options: TLocateOptions): boolean;
-function SearchForField(const aLookupFieldName:RawUTF8;aLookupValue:variant):boolean;
-var
-  f,r: integer;
+procedure TSynSQLTableDataSetWithLocate.Delete;
 begin
-  result:=false;
-  f := Table.FieldIndex(aLookupFieldName);
-  if (f<0) then exit;
-  r := Table.SearchFieldEquals(VariantToString(aLookupValue),f);
-  result:=(r>0);
-
-  if result then RecNo:=r;
-end;
-
-var
-  i, l, h : Integer;
-  FieldList: TList;
-begin
-  Result := inherited;
   CheckActive;
   if IsEmpty then exit;
-
-  Result:=True;
-
-  if VarIsArray(KeyValues) then
-  begin
-    FieldList := TList.Create;
-    try
-      GetFieldList(FieldList, KeyFields);
-      l := VarArrayLowBound(KeyValues, 1);
-      h := VarArrayHighBound(KeyValues, 1);
-      if (FieldList.Count = 1) and (l < h) then
-      begin
-        if SearchForField(KeyFields,KeyValues) then exit;
-      end
-      else for i := 0 to FieldList.Count - 1 do
-      begin
-        if SearchForField(TField(FieldList[i]).FieldName,KeyValues[l+i]) then exit;
-      end;
-    finally
-      FieldList.Free;
-    end;
-  end else
-    if SearchForField(KeyFields,KeyValues) then exit;
-
-  Result:=False;
+  if State in [dsInsert] then
+   begin
+     Cancel;
+   end else begin
+     DataEvent(deCheckBrowseMode,0);
+     DoBeforeDelete;
+     DoBeforeScroll;
+     Table.DeleteRow(RecNo);
+     SetState(dsBrowse);
+     Resync([]);
+     DoAfterDelete;
+     DoAfterScroll;
+   end;
 end;
 
 (*****************************************************************************)
@@ -259,16 +229,11 @@ var
   aResourceTable: TSQLRecordClass;
   aRecord: TSQLRecord;
   aNewID:TID;
-  Changed:boolean;
-  ChangedCurrent:boolean;
 begin
 
   Loading := true;
 
   try
-
-    Changed:=false;
-    ChangedCurrent:=false;
 
     if (Resources.Count > 0) then
     begin
@@ -288,11 +253,19 @@ begin
 
         if Res.Deleted then
         begin
-          Changed:=true;
           PurgeEvents(Res);
           PurgeContacts(Res);
           PurgeTasks(Res);
-          if (aResourceTable<>nil) then FDatabase.Delete(aResourceTable,Res.ResourceID);
+          if (aResourceTable<>nil) then
+          begin
+            // delete record from database
+            if FDatabase.Delete(aResourceTable,Res.ResourceID) then
+            begin
+              // delete record from dataset
+              if ResourceTable.Locate('ResourceID', Res.ResourceID, [])
+                 then ResourceTable.Delete;
+            end;
+          end;
           if Resource = Res then
             ResourceID := -1;
           Res.Free;
@@ -301,8 +274,6 @@ begin
 
         else if Res.Changed then
         begin
-
-          Changed:=true;
 
           aRecord := aResourceTable.Create(FDatabase,Res.ResourceID,true);
           try
@@ -351,21 +322,16 @@ begin
             aRecord.Free;
           end;
 
-          ChangedCurrent:=(Res.ResourceID = ResourceID);
+          RefreshTable(FResourceTable);
+          if (Res.ResourceID = ResourceID) then
+          begin
+            PostEvents;
+            PostContacts;
+            PostTasks;
+          end;
 
           Res.Changed := false;
 
-        end;
-      end;
-
-      if (Changed) then
-      begin
-        RefreshTable(FResourceTable);
-        if ChangedCurrent then
-        begin
-          PostEvents;
-          PostContacts;
-          PostTasks;
         end;
       end;
 
@@ -391,14 +357,11 @@ var
   aEventTable: TSQLRecordClass;
   aRecord: TSQLRecord;
   aNewID:TID;
-  Changed:boolean;
 begin
   if (Resource <> nil) and Resource.EventsDirty then
   begin
     if ResourceTable.Locate('ResourceID', Resource.ResourceID, []) then
     begin
-
-      Changed:=false;
 
       aEventTable := aSQLEventTable.QueryRecordType;
 
@@ -411,16 +374,22 @@ begin
         { and free the event instance }
         if Event.Deleted then
         begin
-          Changed:=true;
-          FDatabase.Delete(aEventTable,Event.RecordID);
+          if (aEventTable<>nil) then
+          begin
+            // delete record from database
+            if FDatabase.Delete(aEventTable,Event.RecordID) then
+            begin
+              // delete record from dataset
+              if EventsTable.Locate('RecordID', Event.RecordID, [])
+                 then EventsTable.Delete;
+            end;
+          end;
           Event.Free;
           Continue;
         end;
 
         if Event.Changed then
         begin
-
-          Changed:=true;
 
           aRecord:=aEventTable.Create(FDatabase, Event.RecordID, true);
           try
@@ -483,11 +452,11 @@ begin
             aRecord.Free;
           end;
 
+          RefreshTable(FEventsTable);
+
           Event.Changed := false;
         end;
       end;
-
-      if (Changed) then RefreshTable(FEventsTable);
 
     end;
 
@@ -510,14 +479,11 @@ var
   aContactTable: TSQLRecordClass;
   aRecord: TSQLRecord;
   aNewID:TID;
-  Changed:boolean;
 begin
   if (Resource <> nil) and Resource.ContactsDirty then
   begin
     if ResourceTable.Locate('ResourceID', Resource.ResourceID, []) then
     begin
-
-      Changed:=false;
 
       aContactTable := aSQLContactTable.QueryRecordType;
 
@@ -529,16 +495,22 @@ begin
         { and free the Contact instance }
         if Contact.Deleted then
         begin
-          Changed:=true;
-          FDatabase.Delete(aContactTable,Contact.RecordID);
+          if (aContactTable<>nil) then
+          begin
+            // delete record from database
+            if FDatabase.Delete(aContactTable,Contact.RecordID) then
+            begin
+              // delete record from dataset
+              if ContactsTable.Locate('RecordID', Contact.RecordID, [])
+                 then ContactsTable.Delete;
+            end;
+          end;
           Contact.Free;
           Continue;
         end;
 
         if Contact.Changed then
         begin
-
-          Changed:=true;
 
           aRecord:=aContactTable.Create(FDatabase, Contact.RecordID, true);
           try
@@ -615,11 +587,12 @@ begin
             aRecord.Free;
           end;
 
+          RefreshTable(FContactsTable);
+
           Contact.Changed := false;
         end;
       end;
 
-      if (Changed) then RefreshTable(FContactsTable);
 
     end;
 
@@ -641,14 +614,11 @@ var
   aTaskTable: TSQLRecordClass;
   aRecord: TSQLRecord;
   aNewID:TID;
-  Changed:boolean;
 begin
   if (Resource <> nil) and Resource.TasksDirty then
   begin
     if ResourceTable.Locate('ResourceID', Resource.ResourceID, []) then
     begin
-
-      Changed:=false;
 
       aTaskTable := aSQLTaskTable.QueryRecordType;
 
@@ -660,16 +630,22 @@ begin
         { and free the Task instance }
         if Task.Deleted then
         begin
-          Changed:=true;
-          FDatabase.Delete(aTaskTable,Task.RecordID);
+          if (aTaskTable<>nil) then
+          begin
+            // delete record from database
+            if FDatabase.Delete(aTaskTable,Task.RecordID) then
+            begin
+              // delete record from dataset
+              if TasksTable.Locate('RecordID', Task.RecordID, [])
+                 then TasksTable.Delete;
+            end;
+          end;
           Task.Free;
           Continue;
         end;
 
         if Task.Changed then
         begin
-
-          Changed:=true;
 
           aRecord:=aTaskTable.Create(FDatabase, Task.RecordID, true);
           try
@@ -726,11 +702,12 @@ begin
             aRecord.Free;
           end;
 
+          RefreshTable(FTasksTable);
+
           Task.Changed := false;
         end;
       end;
 
-      if (Changed) then RefreshTable(FTasksTable);
 
     end;
 
@@ -747,7 +724,6 @@ end;
 
 procedure TVpmORMotDataStore.PurgeResource(Res: TVpResource);
 begin
-
   RefreshTable(FResourceTable);
   inherited;
 end;
@@ -845,7 +821,6 @@ begin
         if aFieldType in [sftAnsiText,sftUTF8Text,sftUTF8Custom] then aSQLTable.SetFieldType(i,aFieldType,nil,100);
         if aSQLTable.FieldNames[i]='Notes' then aSQLTable.SetFieldType(i,aFieldType,nil,500);
       end;
-
 
       case j of
        0:aSQLResourceTable:=aSQLTable;
@@ -959,6 +934,8 @@ begin
      else aSQLTable:=FDatabase.MultiFieldValues(aSQLRecordClass,'*','%=?',['ResourceID'],[ResourceID]);
 
   TSynSQLTableDatasetWithLocate(aTable).Table:=aSQLTable;
+
+  aTable.Refresh;
 
 end;
 {=====}

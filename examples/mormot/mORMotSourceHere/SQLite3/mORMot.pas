@@ -4591,9 +4591,11 @@ const
   HTTP_NONAUTHORIZEDINFO = 203;
   /// HTTP Status Code for "No Content"
   HTTP_NOCONTENT = 204;
+  /// HTTP Status Code for "Reset Content"
+  HTTP_RESETCONTENT = 205;
   /// HTTP Status Code for "Partial Content"
   HTTP_PARTIALCONTENT = 206;
-    /// HTTP Status Code for "Multiple Choices"
+  /// HTTP Status Code for "Multiple Choices"
   HTTP_MULTIPLECHOICES = 300;
   /// HTTP Status Code for "Moved Permanently"
   HTTP_MOVEDPERMANENTLY = 301;
@@ -4668,8 +4670,11 @@ procedure StatusCodeToErrorMsg(Code: integer; var result: RawUTF8); overload;
 // - see @http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
 function StatusCodeToErrorMsg(Code: integer): RawUTF8; overload;
 
-/// returns true for SUCCESS (200), CREATED (201), NOCONTENT (204),
+/// returns true for successful HTTP status codes, i.e. in 200..399 range
+// - will map mainly SUCCESS (200), CREATED (201), NOCONTENT (204),
 // PARTIALCONTENT (206), NOTMODIFIED (304) or TEMPORARYREDIRECT (307) codes
+// - any HTTP status not part of this range will be identified as an erronous
+// requests in the internal server statistics
 function StatusCodeIsSuccess(Code: integer): boolean;
   {$ifdef HASINLINE}inline;{$endif}
 
@@ -4777,7 +4782,7 @@ type
     /// change the resolution of the stored information
     procedure Truncate(gran: TSynMonitorUsageGranularity);
     /// low-level read of a time field stored in this ID, per granularity
-    function GetTime(gran: TSynMonitorUsageGranularity): integer;
+    function GetTime(gran: TSynMonitorUsageGranularity; monthdaystartat0: boolean=false): integer;
       {$ifdef HASINLINE}inline;{$endif}
     /// low-level modification of a time field stored in this ID, per granularity
     procedure SetTime(gran: TSynMonitorUsageGranularity; aValue: integer);
@@ -4862,7 +4867,7 @@ const
   // - would recognize TSynMonitorTotalMicroSec, TSynMonitorTotalBytes,
   // TSynMonitorOneBytes, TSynMonitorBytesPerSec, TSynMonitorCount and
   // TSynMonitorCount64 types
-  SYNMONITORVALUE_CUMULATIVE = [smvMicroSec,smvBytes,smvCount, smvCount64];
+  SYNMONITORVALUE_CUMULATIVE = [smvMicroSec,smvBytes,smvCount,smvCount64];
 
 
 function ToText(gran: TSynMonitorUsageGranularity): PShortString; overload;
@@ -8321,9 +8326,14 @@ type
     function SearchValue(const aUpperValue: RawUTF8; StartRow: integer;
       FieldIndex: PInteger; Client: TObject; Lang: TSynSoundExPronunciation=sndxNone;
       UnicodeComparison: boolean=false): integer; overload;
-    /// search for a value inside the raw table data
+    /// search for a value inside the raw table data, using UTF8IComp/StrComp()
     // - returns 0 if not found, or the matching Row number otherwise
-    function SearchFieldEquals(const aValue: RawUTF8; FieldIndex: integer): integer;
+    function SearchFieldEquals(const aValue: RawUTF8; FieldIndex: integer;
+      StartRow: integer=1; CaseSensitive: boolean=false): integer;
+    /// search for a value inside the raw table data, using IdemPChar()
+    // - returns 0 if not found, or the matching Row number otherwise
+    function SearchFieldIdemPChar(const aValue: RawUTF8; FieldIndex: integer;
+      StartRow: integer=1): integer;
 
     /// if the ID column is available, hides it from fResults[]
     // - useful for simplier UI, with a hidden ID field
@@ -15504,7 +15514,6 @@ type
   /// would store TSynMonitorUsage information in TSQLMonitorUsage ORM tables
   // - the TSQLRecord.ID would be the TSynMonitorUsageID shifted by 16 bits
   TSynMonitorUsageRest = class(TSynMonitorUsage)
-  private
   protected
     fStorage: TSQLRest;
     fProcessID: TSynUniqueIdentifierProcess;
@@ -17710,8 +17719,10 @@ type
   // - so that you may have a single entry point for all client-side issues
   // - information would be available in Sender's LastErrorCode and
   // LastErrorMessage properties
-  // - if the error comes from an Execption, it would be supplied as parameter
-  // - the REST context (if any) would be supplied within the Call parameter
+  // - if the error comes from an Exception, it would be supplied as parameter
+  // - the REST context (if any) would be supplied within the Call parameter,
+  // and in this case Call^.OutStatus=HTTP_NOTIMPLEMENTED indicates a broken
+  // connection
   TOnClientFailed = procedure(Sender: TSQLRestClientURI; E: Exception;
     Call: PSQLRestURIParams) of object;
 
@@ -18298,6 +18309,7 @@ type
       read fOnAuthentificationFailed write fOnAuthentificationFailed;
     /// this Event is called if URI() was not successfull
     // - the callback would have all needed information
+    // - e.g. Call^.OutStatus=HTTP_NOTIMPLEMENTED indicates a broken connection
     property OnFailed: TOnClientFailed read fOnFailed write fOnFailed;
     /// this Event is called when a user is authenticated
     // - is called always, on each TSQLRestClientURI.SetUser call
@@ -22998,6 +23010,7 @@ begin // see http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
     HTTP_ACCEPTED:            result := 'Accepted';
     HTTP_NONAUTHORIZEDINFO:   result := 'Non-Authoritative Information';
     HTTP_NOCONTENT:           result := 'No Content';
+    HTTP_RESETCONTENT:        result := 'Reset Content';
     HTTP_PARTIALCONTENT:      result := 'Partial Content';
     HTTP_MULTIPLECHOICES:     result := 'Multiple Choices';
     HTTP_MOVEDPERMANENTLY:    result := 'Moved Permanently';
@@ -23031,13 +23044,7 @@ end;
 
 function StatusCodeIsSuccess(Code: integer): boolean;
 begin
-  case Code of
-  HTTP_SUCCESS, HTTP_NOCONTENT, HTTP_PARTIALCONTENT, HTTP_CREATED,
-  HTTP_NOTMODIFIED, HTTP_TEMPORARYREDIRECT:
-    result := true;
-  else
-    result := false;
-  end;
+  result := (Code>=HTTP_SUCCESS) and (Code<HTTP_BADREQUEST); // 200..399
 end;
 
 function StringToMethod(const method: RawUTF8): TSQLURIMethod;
@@ -23106,7 +23113,7 @@ function TSynMonitorUsage.Track(Instance: TObject; const Name: RawUTF8): integer
           ShortStringToAnsi7String(nfo^.Name,p^.Name);
           if (parent<>nil) and (FindPropName(['Bytes','MicroSec'],p^.Name)>=0) then
             p^.Name := RawUTF8(parent.ClassName); // meaningful property name
-          for g := mugHour to mugYear do
+          for g := low(p^.Values) to high(p^.Values) do
             SetLength(p^.Values[g],USAGE_VALUE_LEN[g]);
           if k in SYNMONITORVALUE_CUMULATIVE then
             p^.CumulativeLast := nfo^.GetInt64Value(Instance);
@@ -23245,8 +23252,8 @@ procedure TSynMonitorUsage.Modified(Instance: TObject;
             CumulativeLast := v;
             inc(Values[mugHour][min],diff);
             inc(Values[mugDay][time.Hour],diff); // propagate
-            inc(Values[mugMonth][time.Day],diff);
-            inc(Values[mugYear][time.Month],diff);
+            inc(Values[mugMonth][time.Day-1],diff);
+            inc(Values[mugYear][time.Month-1],diff);
           end;
         end else
           for k := min to 59 do // make instant values continous
@@ -23300,6 +23307,8 @@ var t,n,p: Integer;
     track: PSynMonitorUsageTrack;
     data,val: TDocVariantData;
 begin
+  if Gran<low(fValues) then
+    raise ESynException.CreateUTF8('%.Save(%) unexpected',[self,ToText(Gran)^]);
   TDocVariant.IsOfTypeOrNewFast(fValues[Gran]);
   for t := 0 to length(fTracked)-1 do begin
     track := @fTracked[t];
@@ -23319,8 +23328,8 @@ begin
         end else begin
           if Gran<mugYear then // propagate instant values
             // e.g. Values[mugDay][hour] := Values[mugHour][minute] (=v)
-            Values[succ(Gran)][ID.GetTime(Gran)] :=
-              Values[Gran][ID.GetTime(pred(Gran))];
+            Values[succ(Gran)][ID.GetTime(Gran,true)] :=
+              Values[Gran][ID.GetTime(pred(Gran),true)];
         end;
       end;
     _Safe(fValues[Gran]).AddOrUpdateValue(track^.Name,variant(data));
@@ -23412,7 +23421,8 @@ begin
   From(now.Value);
 end;
 
-function TSynMonitorUsageID.GetTime(gran: TSynMonitorUsageGranularity): integer;
+function TSynMonitorUsageID.GetTime(gran: TSynMonitorUsageGranularity;
+  monthdaystartat0: boolean): integer;
 begin
   if not (gran in [low(USAGE_ID_SHIFT)..high(USAGE_ID_SHIFT)]) then
     result := 0 else begin
@@ -23421,7 +23431,8 @@ begin
     mugYear:
       inc(result,USAGE_ID_YEAROFFSET);
     mugDay, mugMonth:
-      inc(result);
+      if not monthdaystartat0 then
+        inc(result);
     mugHour:
       if cardinal(result)>USAGE_ID_MAX[mugHour] then
         result := 0; // stored fake USAGE_ID_HOURMARKER[mugDay..mugYear] value
@@ -25940,14 +25951,38 @@ begin
   end;
 end;
 
-function TSQLTable.SearchFieldEquals(const aValue: RawUTF8; FieldIndex: integer): integer;
+function TSQLTable.SearchFieldEquals(const aValue: RawUTF8; FieldIndex, StartRow: integer;
+  CaseSensitive: boolean): integer;
+var U: PPUTF8Char;
 begin
+  if (self<>nil) and (aValue<>'') and (cardinal(FieldIndex)<cardinal(fFieldCount)) then begin
+    U := @fResults[FieldCount*StartRow+FieldIndex];
+    if CaseSensitive then
+      for result := StartRow to fRowCount do
+        if StrComp(U^,pointer(aValue))=0 then
+          exit else
+          inc(U,FieldCount) else
+      for result := StartRow to fRowCount do
+        if UTF8IComp(U^,pointer(aValue))=0 then
+          exit else
+          inc(U,FieldCount);
+  end;
   result := 0;
-  if (self=nil) or (aValue='') or (cardinal(FieldIndex)>cardinal(fFieldCount)) then
-    exit;
-  for result := 1 to fRowCount do
-    if UTF8IComp(Get(result,FieldIndex),pointer(aValue))=0 then
-      exit;
+end;
+
+function TSQLTable.SearchFieldIdemPChar(const aValue: RawUTF8;
+  FieldIndex, StartRow: integer): integer;
+var U: PPUTF8Char;
+    up: RawUTF8;
+begin
+  if (self<>nil) and (aValue<>'') and (cardinal(FieldIndex)<cardinal(fFieldCount)) then begin
+    UpperCaseCopy(aValue,up);
+    U := @fResults[FieldCount*StartRow+FieldIndex];
+    for result := StartRow to fRowCount do
+      if IdemPChar(U^,pointer(up)) then
+        exit else
+        inc(U,FieldCount);
+  end;
   result := 0;
 end;
 
@@ -36718,13 +36753,13 @@ end;
 
 procedure TSQLRestServer.Shutdown(const aStateFileName: TFileName);
 {$ifdef WITHLOG}
-var Log: ISynLog; // for Enter auto-leave to work with FPC
+var log: ISynLog; // for Enter auto-leave to work with FPC
 {$endif}
 begin
   if fSessions=nil then
     exit; // avoid GPF e.g. in case of missing sqlite3-64.dll
   {$ifdef WITHLOG}
-  Log := fLogClass.Enter('Shutdown CurrentRequestCount=% File=%',
+  log := fLogClass.Enter('Shutdown CurrentRequestCount=% File=%',
     [fStats.AddCurrentRequestCount(0),aStateFileName],self);
   {$endif}
   OnNotifyCallback := nil;
@@ -41949,6 +41984,7 @@ begin
   end;
 end;
 
+
 { TSQLMonitorUsage }
 
 const
@@ -41963,6 +41999,7 @@ procedure TSQLMonitorUsage.SetUsageID(Value: integer);
 begin
   fID := (Int64(Value) shl SQLMONITORSHIFT) or Int64(fProcess);
 end;
+
 
 { TSynMonitorUsageRest }
 
@@ -41998,7 +42035,7 @@ function TSynMonitorUsageRest.LoadDB(ID: integer; Gran: TSynMonitorUsageGranular
 var recid: TID;
     rec: TSQLMonitorUsage;
 begin
-  if (ID=0) or (Gran<Low(fStoredCache)) then begin
+  if (ID=0) or (Gran<Low(fStoredCache)) or (Gran>high(fStoredCache)) then begin
     result := false;
     exit;
   end;
@@ -42026,7 +42063,7 @@ var update: boolean;
     recid: TID;
     rec: TSQLMonitorUsage;
 begin
-  if (ID=0) or (Gran<Low(fStoredCache)) then begin
+  if (ID=0) or (Gran<Low(fStoredCache)) or (Gran>high(fStoredCache)) then begin
     result := false;
     exit;
   end;
@@ -54913,7 +54950,7 @@ begin
         'ickFromInjectedResolver: TryResolveInternal(%)=false',
         [fInterface.fInterfaceName]);
     result := TInterfacedObject(ObjectFromInterface(IInterface(dummyObj)));
-    if AndIncreaseRefCount then // RefCount=1 after TryResolveInternal() 
+    if AndIncreaseRefCount then // RefCount=1 after TryResolveInternal()
       AndIncreaseRefCount := false else
       dec(TInterfacedObjectHooked(result).FRefCount);
   end;

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  VpBaseDS,
+  StdCtrls, VpBaseDS,
   //VpBufDS,
   VpmORMotDS,
   VpDayView, VpWeekView, VpMonthView;
@@ -16,8 +16,13 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
+    Button1: TButton;
+    Label1: TLabel;
+    Memo1: TMemo;
     Panel1: TPanel;
+    Panel2: TPanel;
     Timer1: TTimer;
+    procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
   private
@@ -97,6 +102,24 @@ begin
     Datastore.ResourceID := Datastore.Resources.Items[0].ResourceID;
 
   Timer1.Enabled:=True;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  {
+  with DataStore.GetEventsTable do
+  begin
+    Memo1.Lines.Append(InttoStr(RecordCount));
+    if BOF then Memo1.Lines.Append('BOF');
+    if EOF then Memo1.Lines.Append('EOF');
+    Refresh;
+    if BOF then Memo1.Lines.Append('BOF');
+    if EOF then Memo1.Lines.Append('EOF');
+    Resync([]);
+    if BOF then Memo1.Lines.Append('BOF');
+    if EOF then Memo1.Lines.Append('EOF');
+  end;
+  }
 end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);

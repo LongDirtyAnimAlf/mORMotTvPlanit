@@ -59,13 +59,13 @@ unit SynSSPIAuth;
     browser authentication requirements
   - SecPkgName moved to unit interface section, to be used in
     browser authentication code
-  - added support for Kerberos authentication method, to use Kerberos set
-    SecKerberosSPN variable on client-side to the value of SPN for service,
-    see documentation for details
+  - added support for Kerberos authentication method
   - added SecPackageName() to see active Kerberos or NTLM authentication scheme
   - added SecEncrypt() and SecDecrypt() functions
   - added ClientSSPIAuthWithPassword for authentication procedure
     with clear text password
+  - added ServerForceNTLM to force NTLM authentication instead of Negotiate
+    for browser authenticaton
 
 }
 
@@ -164,14 +164,22 @@ function SecDecrypt(var aSecContext: TSecContext; const aEncrypted: RawByteStrin
 /// Free aSecContext on client or server side
 procedure FreeSecContext(var aSecContext: TSecContext);
 
-const
-  /// identification name used for SSPI authentication
-  SECPKGNAMEINTERNAL = 'Negotiate';
-  /// HTTP header to be set for SSPI authentication
-  SECPKGNAMEHTTPWWWAUTHENTICATE = 'WWW-Authenticate: '+SECPKGNAMEINTERNAL;
-  /// HTTP header pattern received for SSPI authentication
-  SECPKGNAMEHTTPAUTHORIZATION = 'AUTHORIZATION: NEGOTIATE ';
+/// Force NTLM authentication instead of Negotiate for browser authenticaton.
+// Use case: SPNs not configured properly in domain
+// - see for details http://synopse.info/forum/viewtopic.php?id=931&p=3
+procedure ServerForceNTLM(IsNTLM: boolean);
 
+const
+  /// SSPI package names. Client always use Negotiate.
+  // Server detect Negotiate or NTLM requests and use appropriate package
+  SECPKGNAMENTLM = 'NTLM';
+  SECPKGNAMENEGOTIATE = 'Negotiate';
+
+var
+  /// HTTP header to be set for SSPI authentication 'WWW-Authenticate: NTLM' or 'WWW-Authenticate: Negotiate';
+  SECPKGNAMEHTTPWWWAUTHENTICATE: RawUTF8;
+  /// HTTP header pattern received for SSPI authentication 'AUTHORIZATION: NTLM ' or 'AUTHORIZATION: NEGOTIATE '
+  SECPKGNAMEHTTPAUTHORIZATION: PAnsiChar;
 
 implementation
 
@@ -327,7 +335,7 @@ begin
 
   if (aSecContext.CredHandle.dwLower = -1) and (aSecContext.CredHandle.dwUpper = -1) then begin
     aSecContext.CreatedTick64 := GetTickCount64();
-    if QuerySecurityPackageInfoW(SECPKGNAMEINTERNAL, SecPkgInfo) <> 0 then
+    if QuerySecurityPackageInfoW(SECPKGNAMENEGOTIATE, SecPkgInfo) <> 0 then
       RaiseLastOSError;
     try
       if AcquireCredentialsHandleW(nil, SecPkgInfo^.Name, SECPKG_CRED_OUTBOUND, nil, pAuthData, nil, nil, @aSecContext.CredHandle, Expiry) <> 0 then
@@ -432,8 +440,13 @@ begin
 
   if (aSecContext.CredHandle.dwLower = -1) and (aSecContext.CredHandle.dwUpper = -1) then begin
     aSecContext.CreatedTick64 := GetTickCount64();
-    if QuerySecurityPackageInfoW(SECPKGNAMEINTERNAL, SecPkgInfo) <> 0 then
-      RaiseLastOSError;
+    if IdemPChar(Pointer(aInData), 'NTLMSSP') then begin
+      if QuerySecurityPackageInfoW(SECPKGNAMENTLM, SecPkgInfo) <> 0 then
+        RaiseLastOSError;
+    end else begin
+      if QuerySecurityPackageInfoW(SECPKGNAMENEGOTIATE, SecPkgInfo) <> 0 then
+        RaiseLastOSError;
+    end;
     try
       if AcquireCredentialsHandleW(nil, SecPkgInfo^.Name, SECPKG_CRED_INBOUND, nil, nil, nil, nil, @aSecContext.CredHandle, Expiry) <> 0 then
           RaiseLastOSError;
@@ -619,4 +632,17 @@ begin
   end;
 end;
 
+procedure ServerForceNTLM(IsNTLM: boolean);
+begin
+  if IsNTLM then begin
+    SECPKGNAMEHTTPWWWAUTHENTICATE := 'WWW-Authenticate: NTLM';
+    SECPKGNAMEHTTPAUTHORIZATION := 'AUTHORIZATION: NTLM ';
+  end else begin
+    SECPKGNAMEHTTPWWWAUTHENTICATE := 'WWW-Authenticate: Negotiate';
+    SECPKGNAMEHTTPAUTHORIZATION := 'AUTHORIZATION: NEGOTIATE ';
+  end;
+end;
+
+initialization
+  ServerForceNTLM(False);
 end.

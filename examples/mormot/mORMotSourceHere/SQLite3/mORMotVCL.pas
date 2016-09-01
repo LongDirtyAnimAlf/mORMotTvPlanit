@@ -85,6 +85,8 @@ type
     function GetRecordCount: Integer; override;
     function GetRowFieldData(Field: TField; RowIndex: integer;
       out ResultLen: Integer; OnlyCheckNull: boolean): Pointer; override;
+    function SearchForField(const aLookupFieldName: RawUTF8; const aLookupValue: variant;
+      aOptions: TLocateOptions): integer; override;
   public
     /// initialize the virtual TDataSet from a TSQLTable
     // - WARNING: the supplied TSQLTable instance shall remain available
@@ -142,8 +144,9 @@ type
     //  freed when this TSynSQLTableDataSet instance will be released
     // - you can also set it after Create(), on purpose
     property TableShouldBeFreed: boolean read fTableShouldBeFreed write fTableShouldBeFreed;
-    /// read-only access to the internal TSQLTable[JSON] data
+    /// access to the internal TSQLTable[JSON] data
     // - you can use e.g. the SortFields() methods
+    // - you may change the table content on the fly, if the column remains the same
     property Table: TSQLTable read fTable write fTable;
   end;
 
@@ -377,6 +380,20 @@ begin
   end;
 end;
 
+function TSynSQLTableDataSet.SearchForField(const aLookupFieldName: RawUTF8;
+  const aLookupValue: variant; aOptions: TLocateOptions): integer;
+var f: integer;
+    val: RawUTF8;
+begin
+  f := Table.FieldIndex(aLookupFieldName);
+  if f<0 then
+    result := 0 else begin
+    VariantToUTF8(aLookupValue,val);
+    if loPartialKey in aOptions then
+      result := Table.SearchFieldIdemPChar(val,f) else
+      result := Table.SearchFieldEquals(val,f,1,not (loCaseInsensitive in aOptions));
+  end;
+end;
 
 end.
 
