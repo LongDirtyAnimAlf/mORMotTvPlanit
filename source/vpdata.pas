@@ -138,17 +138,21 @@ type
     property EventsDirty: Boolean read FEventsDirty write FEventsDirty;
     property ContactsDirty: Boolean read FContactsDirty write FContactsDirty;
     property TasksDirty: Boolean read FTasksDirty write FTasksDirty;
-    property ResourceActive: Boolean read FActive write FActive;
     property Active: Boolean read FActive write FActive; deprecated 'Use "ResourceActive" instead';
     property Owner: TVpResources read FOwner;
     property ItemIndex: integer read FItemIndex;
-    property Notes: string read FNotes write SetNotes;
-    property ResourceID: Integer read FResourceID write SetResourceID;
-    property Description: string read FDescription write SetDescription;
     property Schedule: TVpSchedule read GetSchedule write SetSchedule;
     property Tasks: TVpTasks read FTasks write SetTasks;
     property Contacts: TVpContacts read FContacts write SetContacts;
-    { Reserved for your use }
+{$ifdef WITHRTTI}
+  published
+{$else}
+  public
+{$endif}
+    property ResourceID: Integer read FResourceID write SetResourceID;
+    property Description: string read FDescription write SetDescription;
+    property Notes: string read FNotes write SetNotes;
+    property ResourceActive: Boolean read FActive write FActive;
     property UserField0: string read FUserField0 write FUserField0;
     property UserField1: string read FUserField1 write FUserField1;
     property UserField2: string read FUserField2 write FUserField2;
@@ -246,14 +250,21 @@ type
   public
     constructor Create(Owner: TVpSchedule);
     destructor Destroy; override;
+    property Owner: TVpSchedule read FOwner;
+    property Loading : Boolean read FLoading write FLoading;
+    property Changed: Boolean read FChanged write SetChanged;
+    property Deleted: Boolean read FDeleted write SetDeleted;
+    property ItemIndex: Integer read FItemIndex;
+{$ifdef WITHRTTI}
+  published
+{$else}
+  public
+{$endif}
+    property RecordID : Integer read FRecordID write SetRecordID;
     property DingPath: string read FDingPath write SetDingPath;
     property AlarmWavPath: string read FDingPath write SetDingPath; deprecated 'Use "DingPath" instead';
     property AlertDisplayed: Boolean read FAlertDisplayed write FAlertDisplayed;
     property AllDayEvent: Boolean read FAllDayEvent write SetAllDayEvent;
-    property Changed: Boolean read FChanged write SetChanged;
-    property Deleted: Boolean read FDeleted write SetDeleted;
-    property ItemIndex: Integer read FItemIndex;
-    property RecordID : Integer read FRecordID write SetRecordID;
     property StartTime : TDateTime read FStartTime write SetStartTime;
     property EndTime : TDateTime read FEndTime write SetEndTime;
     property Description : string read FDescription write SetDescription;
@@ -264,7 +275,6 @@ type
     property AlarmAdvance: Integer read FAlarmAdv write SetAlarmAdv;
     property AlarmAdv : Integer read FAlarmAdv write SetAlarmAdv; deprecated 'Use "AlarmAdvance" instead';
     property Location: string read FLocation write SetLocation;
-    property Loading : Boolean read FLoading write FLoading;
     { 0=Minutes, 1=Hours, 2=Days   }
     property AlarmAdvanceType: TVpAlarmAdvType read FAlarmAdvType write SetAlarmAdvType;
     property AlarmAdvType : TVpAlarmAdvType read FAlarmAdvType write SetAlarmAdvType; deprecated 'Use "AlarmAdvanceType" instead';
@@ -277,7 +287,6 @@ type
     { is Zero if IntervalCode <> 7      }
     property CustomInterval : Integer read FCustInterval write SetCustInterval;
     property CustInterval : Integer read FCustInterval write SetCustInterval; deprecated 'Use "CustomInterval" instead';
-    property Owner: TVpSchedule read FOwner;
     { Reserved for your use }
     property UserField0: string read FUserField0 write FUserField0;
     property UserField1: string read FUserField1 write FUserField1;
@@ -361,15 +370,20 @@ type
     property Loading: Boolean read FLoading write FLoading;
     property Changed: Boolean read FChanged write SetChanged;
     property Deleted: Boolean read FDeleted write FDeleted;
+    property Owner: TVpTasks read FOwner;
+{$ifdef WITHRTTI}
+  published
+{$else}
+  public
+{$endif}
+    property RecordID: Integer read FRecordID write FRecordID;
     property DueDate: TDateTime read FDueDate write SetDueDate;
     property Description: string read FDescription write SetDescription;
     property ItemIndex: Integer read FItemIndex;
     property Details: string read FDetails write SetDetails;
     property Complete: Boolean read FComplete write SetComplete;
-    property RecordID: Integer read FRecordID write FRecordID;
     property CreatedOn: TDateTime read FCreatedOn write SetCreatedOn;
     property CompletedOn: TDateTIme read FCompletedOn write SetCompletedOn;
-    property Owner: TVpTasks read FOwner;
 
     { Not implemented yet }
     property Priority: Integer read FPriority write SetPriority;
@@ -502,7 +516,6 @@ type
     procedure SetState(const Value: string);
     procedure SetTitle(const Value: string);
     procedure SetZip(const Value: string);
-
   public
     constructor Create(Owner: TVpContacts);
     destructor Destroy; override;
@@ -510,6 +523,12 @@ type
     property Loading      : Boolean read FLoading write FLoading;
     property Changed      : Boolean read FChanged write SetChanged;
     property Deleted      : Boolean read FDeleted write SetDeleted;
+    property Owner        : TVpContacts read FOwner write FOwner;
+{$ifdef WITHRTTI}
+  published
+{$else}
+  public
+{$endif}
     property RecordID     : Integer read FRecordID write SetRecordID;
     property Job_Position : string read FPosition write SetPosition;
     property Position     : string read FPosition write SetPosition; deprecated 'Use "Job_Position" instead';
@@ -542,7 +561,6 @@ type
     property Custom2      : string read FCustom2 write SetCustom2;
     property Custom3      : string read FCustom3 write SetCustom3;
     property Custom4      : string read FCustom4 write SetCustom4;
-    property Owner        : TVpContacts read FOwner write FOwner;
     { Reserved for your use }
     property UserField0   : string read FUserField0 write FUserField0;
     property UserField1   : string read FUserField1 write FUserField1;
