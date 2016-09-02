@@ -83,8 +83,8 @@ lib/
 !examples/mormot/mORMotSourceHere/fpc-linux32/*.a
 !examples/mormot/mORMotSourceHere/fpc-linux64/*.a
 !examples/mormot/mORMotSourceHere/fpc-win32/*.a
-!examples/mormot/mORMotSourceHere/fpc-win32/*.a
+!examples/mormot/mORMotSourceHere/fpc-win64/*.a
 !examples/mormot/mORMotSourceHere/fpc-linux32/*.o
 !examples/mormot/mORMotSourceHere/fpc-linux64/*.o
 !examples/mormot/mORMotSourceHere/fpc-win32/*.o
-!examples/mormot/mORMotSourceHere/fpc-win32/*.o
+!examples/mormot/mORMotSourceHere/fpc-win64/*.o
