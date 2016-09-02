@@ -3,7 +3,7 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="9"/>
-    <BuildModes Active="LinuxARM"/>
+    <BuildModes Active="Default"/>
     <Units Count="37">
       <Unit0>
         <Filename Value="mormotfulldemo.lpr"/>
@@ -57,11 +57,10 @@
       <Unit6>
         <Filename Value="..\..\..\source\vpdata.pas"/>
         <UnitName Value="VpData"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="678"/>
         <CursorPos Y="696"/>
         <UsageCount Value="12"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit6>
       <Unit7>
@@ -87,7 +86,7 @@
       <Unit9>
         <Filename Value="..\vpmormotds.pas"/>
         <UnitName Value="VpmORMotDS"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="62"/>
         <CursorPos Y="88"/>
         <UsageCount Value="13"/>
@@ -153,11 +152,10 @@
       <Unit17>
         <Filename Value="..\..\..\source\vpbaseds.pas"/>
         <UnitName Value="VpBaseDS"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="576"/>
         <CursorPos X="22" Y="584"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit17>
       <Unit18>
@@ -176,11 +174,10 @@
       </Unit19>
       <Unit20>
         <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
         <CursorPos X="11" Y="9"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
       </Unit20>
       <Unit21>
         <Filename Value="..\..\..\..\fpc\packages\fcl-db\src\base\db.pas"/>
@@ -228,9 +225,8 @@
       </Unit26>
       <Unit27>
         <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="217"/>
-        <CursorPos Y="225"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit27>
@@ -282,11 +278,10 @@
       <Unit34>
         <Filename Value="C:\Development6\lazarus\lcl\controls.pp"/>
         <UnitName Value="Controls"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="30"/>
         <CursorPos X="8" Y="52"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit34>
       <Unit35>
         <Filename Value="..\mORMotSourceHere\SynCrtSock.pas"/>
@@ -297,133 +292,47 @@
       </Unit35>
       <Unit36>
         <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit36>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="768" TopLine="750"/>
+        <Filename Value="demomain.pas"/>
+        <Caret Line="282" TopLine="261"/>
       </Position1>
       <Position2>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="769" TopLine="750"/>
-      </Position2>
-      <Position3>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="770" TopLine="750"/>
-      </Position3>
-      <Position4>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="771" TopLine="750"/>
-      </Position4>
-      <Position5>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="772" TopLine="750"/>
-      </Position5>
-      <Position6>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="775" TopLine="750"/>
-      </Position6>
-      <Position7>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="776" TopLine="750"/>
-      </Position7>
-      <Position8>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="778" TopLine="750"/>
-      </Position8>
-      <Position9>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="779" TopLine="751"/>
-      </Position9>
-      <Position10>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="695" TopLine="678"/>
-      </Position10>
-      <Position11>
-        <Filename Value="..\..\..\source\vpdata.pas"/>
-        <Caret Line="696" TopLine="678"/>
-      </Position11>
-      <Position12>
-        <Filename Value="demomain.pas"/>
-        <Caret Line="282" TopLine="261"/>
-      </Position12>
-      <Position13>
         <Filename Value="..\vpmormotds.pas"/>
         <Caret Line="225" Column="26" TopLine="224"/>
-      </Position13>
-      <Position14>
+      </Position2>
+      <Position3>
         <Filename Value="..\vpmormotds.pas"/>
         <Caret Line="47" Column="19" TopLine="28"/>
-      </Position14>
-      <Position15>
+      </Position3>
+      <Position4>
         <Filename Value="..\vpmormotds.pas"/>
         <Caret Line="174" TopLine="151"/>
-      </Position15>
-      <Position16>
+      </Position4>
+      <Position5>
         <Filename Value="..\vpmormotds.pas"/>
-      </Position16>
-      <Position17>
+      </Position5>
+      <Position6>
         <Filename Value="demomain.pas"/>
         <Caret Line="282" TopLine="261"/>
-      </Position17>
-      <Position18>
+      </Position6>
+      <Position7>
         <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
         <Caret Line="225" TopLine="205"/>
-      </Position18>
-      <Position19>
+      </Position7>
+      <Position8>
         <Filename Value="mormotfulldemo.lpr"/>
         <Caret Line="12" Column="9"/>
-      </Position19>
-      <Position20>
-        <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
-        <Caret Line="69" Column="5" TopLine="62"/>
-      </Position20>
-      <Position21>
-        <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <Caret Line="59" Column="11" TopLine="42"/>
-      </Position21>
-      <Position22>
-        <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <Caret Line="235" Column="17" TopLine="225"/>
-      </Position22>
-      <Position23>
-        <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <Caret Line="240" Column="60" TopLine="225"/>
-      </Position23>
-      <Position24>
-        <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
-        <Caret Line="608" Column="27" TopLine="592"/>
-      </Position24>
-      <Position25>
-        <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
-        <Caret Line="71" Column="3" TopLine="51"/>
-      </Position25>
-      <Position26>
-        <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <Caret Line="294" Column="17" TopLine="215"/>
-      </Position26>
-      <Position27>
-        <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <Caret Line="59" Column="20" TopLine="53"/>
-      </Position27>
-      <Position28>
-        <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
-        <Caret Line="69" Column="26" TopLine="46"/>
-      </Position28>
-      <Position29>
-        <Filename Value="..\mORMotSourceHere\SynVirtualDataSet.pas"/>
-        <Caret Line="610" TopLine="584"/>
-      </Position29>
-      <Position30>
-        <Filename Value="..\mORMotSourceHere\SynDBDataset.pas"/>
-        <Caret Line="59" Column="20" TopLine="167"/>
-      </Position30>
+      </Position8>
+      <Position9>
+        <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
+        <Caret Line="225" TopLine="217"/>
+      </Position9>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
