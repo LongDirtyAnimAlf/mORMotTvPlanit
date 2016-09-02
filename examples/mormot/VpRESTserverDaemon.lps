@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="49">
+      <Unit0>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\RESTData.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="57" Y="1031"/>
+        <UsageCount Value="29"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\RESTServerClass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="235"/>
+        <UsageCount Value="29"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\..\SynCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="657"/>
+        <CursorPos X="9" Y="667"/>
+        <UsageCount Value="26"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\..\Synopse.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="332"/>
+        <CursorPos Y="364"/>
+        <UsageCount Value="26"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\SQLite3\mORMot.pas"/>
+        <UsageCount Value="26"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\SynSQLite3Static.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="260"/>
+        <CursorPos X="28" Y="275"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcMySqlUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="453"/>
+        <CursorPos Y="465"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynCrypto.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3242"/>
+        <CursorPos X="9" Y="3249"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynDBZeos.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="607"/>
+        <CursorPos Y="618"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SQLite3\mORMotHttpServer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="643"/>
+        <CursorPos X="24" Y="655"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcMySqlMetadata.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1180"/>
+        <CursorPos Y="1191"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\development\fpc\rtl\inc\astrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="169"/>
+        <CursorPos Y="189"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\plain\ZPlainMySqlDriver.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1329"/>
+        <CursorPos Y="1341"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcMetadata.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2120"/>
+        <CursorPos Y="2132"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\development\fpc\rtl\objpas\sysutils\syshelph.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <CursorPos X="31" Y="38"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcCache.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4650"/>
+        <CursorPos Y="4669"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcCachedResultSet.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="864"/>
+        <CursorPos Y="876"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SQLite3\mORMotDB.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="702"/>
+        <CursorPos X="17" Y="719"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\..\development\fpc\rtl\inc\objpas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos Y="78"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\..\development\fpc\rtl\objpas\sysutils\sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="913"/>
+        <CursorPos Y="925"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcMySqlStatement.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="988"/>
+        <CursorPos Y="1004"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\..\..\..\development\fpc\rtl\objpas\classes\streams.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="181"/>
+        <CursorPos Y="193"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcMySqlResultSet.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="414"/>
+        <CursorPos Y="426"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\plain\ZPlainMySqlConstants.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="555"/>
+        <CursorPos X="18" Y="570"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\components\zeos\src\dbc\ZDbcResultSet.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1010"/>
+        <CursorPos Y="1022"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\lokosettings.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13" Y="12"/>
+        <UsageCount Value="12"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\RestServerLinux86_64Daemon.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="108"/>
+        <CursorPos X="5" Y="131"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynSQLite3Static.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="233"/>
+        <CursorPos X="31" Y="256"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynFPCSock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1068"/>
+        <CursorPos X="20" Y="1084"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="C:\development\fpc\packages\rtl-extra\src\inc\socketsh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="173"/>
+        <CursorPos X="10" Y="191"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:\development\fpc\packages\fcl-net\src\netdb.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="123"/>
+        <CursorPos X="10" Y="141"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SQLite3\mORMot.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14868"/>
+        <CursorPos X="14" Y="14884"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynFPCLinux.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="106"/>
+        <CursorPos X="25" Y="124"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynCommons.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6206"/>
+        <CursorPos X="79" Y="6223"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="C:\development\fpc\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="428"/>
+        <CursorPos X="27" Y="446"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="C:\development\fpc\rtl\objpas\sysutils\filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="137"/>
+        <CursorPos X="10" Y="164"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4131"/>
+        <CursorPos X="26" Y="4149"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SynCrtSock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1802"/>
+        <CursorPos Y="1829"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="C:\development\fpc\packages\httpd24\src\apr\apr_errno.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="771"/>
+        <CursorPos X="8" Y="789"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="C:\development\fpc\rtl\beos\errno.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="369"/>
+        <CursorPos X="5" Y="387"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="C:\development\fpc\rtl\linux\errno.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="3" Y="150"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\mORMotCurrent\SQLite3\mORMotWrappers.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\RESTCacheServer.pas"/>
+        <UnitName Value="RESTServerClass"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="75"/>
+        <CursorPos X="19" Y="92"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\controller.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="457"/>
+        <CursorPos X="30" Y="474"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\guiclientmain.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="30" Y="68"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\guiclientmainfordelphi.pas"/>
+        <UnitName Value="guiclientmain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="288"/>
+        <CursorPos X="32" Y="304"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="RESTServerClass.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="38"/>
+        <CursorPos X="36" Y="27"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="mORMotSourceHere\SynDprUses.inc"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit48>
+    </Units>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="13" Column="8"/>
+      </Position1>
+      <Position2>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="61" TopLine="31"/>
+      </Position2>
+      <Position3>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="17" Column="20" TopLine="8"/>
+      </Position3>
+      <Position4>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="49" Column="59" TopLine="40"/>
+      </Position4>
+      <Position5>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="54" Column="69"/>
+      </Position5>
+      <Position6>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="56" TopLine="39"/>
+      </Position6>
+      <Position7>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
+        <Caret Line="11" Column="13"/>
+      </Position7>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

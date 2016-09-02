@@ -5,12 +5,12 @@
     <PathDelim Value="\"/>
     <General>
       <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
         <MainUnitHasCreateFormStatements Value="False"/>
-        <MainUnitHasTitleStatement Value="False"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="VpRESTserver"/>
+      <Title Value="VpRESTserverDaemon"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
       <Resources Count="6">
@@ -22,47 +22,14 @@
         <Resource_5 FileName="mORMotSourceHere\CrossPlatform\templates\SmartMobileStudio.pas.mustache" Type="RCDATA" ResourceName="SMARTMOBILESTUDIO.PAS"/>
       </Resources>
     </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
     <VersionInfo>
       <StringTable ProductVersion=""/>
     </VersionInfo>
-    <BuildModes Count="3">
+    <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
-      <Item2 Name="LinuxARM">
-        <CompilerOptions>
-          <Version Value="11"/>
-          <PathDelim Value="\"/>
-          <Target>
-            <Filename Value="VpRESTserver"/>
-          </Target>
-          <SearchPaths>
-            <IncludeFiles Value="$(ProjOutDir);mORMotSourceHere"/>
-            <OtherUnitFiles Value="mORMotSourceHere;mORMotSourceHere\SQLite3"/>
-            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
-          </SearchPaths>
-          <CodeGeneration>
-            <TargetCPU Value="arm"/>
-            <TargetOS Value="linux"/>
-          </CodeGeneration>
-        </CompilerOptions>
-      </Item2>
-      <Item3 Name="Linuxx64">
-        <CompilerOptions>
-          <Version Value="11"/>
-          <PathDelim Value="\"/>
-          <Target>
-            <Filename Value="VpRESTserver"/>
-          </Target>
-          <SearchPaths>
-            <IncludeFiles Value="$(ProjOutDir);mORMotSourceHere"/>
-            <OtherUnitFiles Value="mORMotSourceHere;mORMotSourceHere\SQLite3"/>
-            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
-          </SearchPaths>
-          <CodeGeneration>
-            <TargetCPU Value="x86_64"/>
-            <TargetOS Value="linux"/>
-          </CodeGeneration>
-        </CompilerOptions>
-      </Item3>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -72,24 +39,50 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="1">
+    <Units Count="3">
       <Unit0>
-        <Filename Value="VpRESTserver.lpr"/>
+        <Filename Value="VpRESTserverDaemon.dpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\RESTData.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\..\GitLocal\LOKODatabase\RESTServerClass.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit2>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="VpRESTserver"/>
+      <Filename Value="VpRESTserverDaemon"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir);mORMotSourceHere"/>
       <OtherUnitFiles Value="mORMotSourceHere;mORMotSourceHere\SQLite3"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-Cg-"/>
+    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="3">

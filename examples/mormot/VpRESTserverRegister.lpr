@@ -1,4 +1,4 @@
-{ in order to be able to use http.sys server for VpRESTserverRegister.exe
+{ in order to be able to use http.sys server for VpRESTserver.exe
  under Vista or Seven, call first this program with Administrator rights
   - you can unregister it later with command line parameter /delete }
 program VpRESTserverRegister;

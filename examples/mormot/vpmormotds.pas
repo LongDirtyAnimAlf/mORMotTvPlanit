@@ -60,6 +60,7 @@ type
     FDatabase         : TSQLRest;
     FModel            : TSQLModel;
     FHostIP           : string;
+    FHostPort         : string;
     FDirectory        : string;
 
     aSQLResourceTable : TSQLTable;
@@ -79,6 +80,7 @@ type
     { property setters }
     procedure SetConnected(const Value: boolean); override;
     procedure SetHostIP(const Value: string);
+    procedure SetHostPort(const Value: string);
     procedure SetDirectory(const Value: string);
   public
     constructor Create(AOwner: TComponent); override;
@@ -102,6 +104,7 @@ type
     procedure PurgeTasks(Res: TVpResource); override;
 
     property HostIP: string read FHostIP write SetHostIP;
+    property HostPort: string read FHostPort write SetHostPort;
     property Directory: string read FDirectory write SetDirectory;
 
     property CheckUpdate:boolean read CheckServer;
@@ -116,6 +119,7 @@ uses
   TypInfo,
   {$endif}
   Variants,
+  SynLog,
   SynSQLite3,
   RESTdata;
 
@@ -197,6 +201,7 @@ constructor TVpmORMotDataStore.Create(AOwner: TComponent);
 begin
   inherited;
   FHostIP          := '';
+  FHostPort        := HTTP_PORT;
   FModel           := DataModel;
 end;
 {=====}
@@ -758,6 +763,7 @@ var
   aFieldType : TSQLFieldType;
   i,j        : integer;
   aDBFile    : string;
+  ErrMsg     : string;
 begin
 
   { Don't do anything with live data until run time. }
@@ -778,18 +784,57 @@ begin
 
     if Assigned(FDatabase) then FDatabase.Free;
     if length(HostIP)>0
-       then FDatabase:=TSQLHttpClient.Create(FHostIP,HTTP_PORT,FModel)
+       then FDatabase:=TSQLHttpClient.Create(HostIP,HostPort,FModel)
        else FDatabase:=TSQLRestServerDB.Create(FModel,aDBFile,True);
 
-    if FDatabase.InheritsFrom(TSQLRestClient) then
+    if FDatabase.InheritsFrom(TSQLRestClientURI) then with (FDatabase AS TSQLRestClientURI) do
     begin
-      if NOT TSQLHttpClient(FDatabase).SetUser('User','synopse') then
+
+      with TSQLLog.Family do begin
+        Level := LOG_VERBOSE; // LOG_STACKTRACE;
+        PerThreadLog := ptIdentifiedInOnFile;
+      end;
+
+      TSQLLog.Add.Log(sllInfo,'Going to contact server at IP:'+HostIP+' on port #'+HostPort);
+
+      ErrMsg:=LastErrorMessage;
+      if Length(ErrMsg)>0 then
+      begin
+        TSQLLog.Add.Log(sllError,'Could not contact server due to: '+ErrMsg);
+        FConnected:=False;
+      end;
+
+      if ServerTimeStamp=0 then
+      begin
+        FConnected:=False;
+        TSQLLog.Add.Log(sllError,'Could not connect with server');
+      end;
+
+      if NOT ServerTimeStampSynchronize then
+      begin
+        FConnected:=False;
+        TSQLLog.Add.Log(sllError,'Could not synchronize time with server');
+      end;
+
+      MaximumAuthentificationRetry:=5;
+      RetryOnceOnTimeout:=True;
+
+      if NOT SetUser('User','synopse') then
+      begin
+        FConnected:=False;
+        TSQLLog.Add.Log(sllError,'Authentication failure');
+      end;
+
+      if NOT Connected then
       begin
         inherited SetConnected(False);
-        FConnected:=False;
         exit;
       end;
+
+      TSQLLog.Add.Log(sllInfo,'Connected successfully with server at IP:'+HostIP+' on port #'+HostPort+' !!');
+
     end;
+
 
     if FDatabase.InheritsFrom(TSQLRestServer) then
     begin
@@ -854,6 +899,15 @@ begin
     FHostIP:=Value;
   end;
 end;
+
+procedure TVpmORMotDataStore.SetHostPort(const Value: string);
+begin
+  if FHostPort<>Value then
+  begin
+    FHostPort:=Value;
+  end;
+end;
+
 
 procedure TVpmORMotDataStore.SetDirectory(const Value: string);
 begin

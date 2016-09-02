@@ -4,7 +4,7 @@ interface
 
 {$I Synopse.inc}
 
-{.$define USEWRAPPERS}
+{$define USEWRAPPERS}
 
 uses
   SysUtils,
@@ -72,7 +72,7 @@ begin
   // define the log level
   with TSQLLog.Family do begin
     Level := LOG_VERBOSE; // LOG_STACKTRACE;
-    DestinationPath := fRootFolder+'..\log\';
+    DestinationPath := fRootFolder+'..'+DirectorySeparator+'log'+DirectorySeparator;
     if not FileExists(DestinationPath) then
       CreateDir(DestinationPath);
     PerThreadLog := ptIdentifiedInOnFile;

@@ -396,6 +396,10 @@ begin
 
     //HostIP:='localhost';
 
+    // AWS (amazon web service) tvplanit demoserver
+    HostIP:='54.194.211.233';
+    HostPort:='8888';
+
     Directory:='data';
 
     CategoryColorMap.Category0.BackgroundColor := clSkyBlue;
