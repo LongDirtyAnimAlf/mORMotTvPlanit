@@ -3,7 +3,7 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="9"/>
-    <BuildModes Active="LinuxARM"/>
+    <BuildModes Active="Default"/>
     <Units Count="17">
       <Unit0>
         <Filename Value="VpRESTserver.lpr"/>

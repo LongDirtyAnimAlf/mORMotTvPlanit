@@ -9,7 +9,7 @@
         <Filename Value="mormotfulldemo.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos Y="29"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -22,12 +22,12 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="369"/>
         <CursorPos X="28" Y="373"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit1>
       <Unit2>
         <Filename Value="..\..\fulldemo\sound.pas"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\..\fulldemo\ExVpRptSetup.pas"/>
@@ -35,7 +35,7 @@
         <ComponentName Value="frmReportSetup"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\..\..\source\vpmormotds.pas"/>
@@ -69,6 +69,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="demoMain"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="380"/>
         <CursorPos X="7" Y="397"/>
@@ -225,8 +226,8 @@
       </Unit26>
       <Unit27>
         <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
+        <CursorPos X="11" Y="13"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit27>
