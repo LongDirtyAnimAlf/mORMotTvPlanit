@@ -2,6 +2,15 @@ program mormotfulldemo;
 
 {$mode objfpc}{$H+}
 
+{$ifdef Linux}
+  {$ifdef FPC_CROSSCOMPILING}
+    {$ifdef CPUARM}
+      {$linklib GLESv2}
+    {$endif}
+    {$linklib libc_nonshared.a}
+  {$endif}
+{$endif}
+
 uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,

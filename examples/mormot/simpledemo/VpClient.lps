@@ -8,7 +8,7 @@
       <Unit0>
         <Filename Value="VpClient.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
+        <CursorPos X="13" Y="15"/>
         <UsageCount Value="74"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -489,7 +489,9 @@
       </Unit67>
       <Unit68>
         <Filename Value="..\mORMotSourceHere\Synopse.inc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
+        <TopLine Value="205"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit68>

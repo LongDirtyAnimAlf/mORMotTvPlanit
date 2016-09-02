@@ -4,6 +4,8 @@ interface
 
 {$I Synopse.inc}
 
+{.$define USEWRAPPERS}
+
 uses
   SysUtils,
   Classes,
@@ -27,17 +29,43 @@ type
     property RootFolder: TFileName read fRootFolder;
   end;
 
-
 implementation
 
-
 uses
+  {$ifdef USEWRAPPERS}
+  mORMotWrappers,      // <= allow cross-platform client wrappers
+  SynMustache,
+  {$ifdef Windows}
+  Windows, // needed for RT_RCDATA
+  {$endif}
+  {$endif}
   SynSQLite3;
 
 { TVpServer }
 
 constructor TVpServer.Create(const aRootFolder: TFileName;
   const aRootURI: RawUTF8);
+{$ifdef USEWRAPPERS}
+procedure SaveWrappersFromResource(filename,resourcename:string);
+var
+  fs:Tfilestream;
+begin
+  if (NOT FileExists(filename)) then
+  with TResourceStream.Create(hInstance, resourcename, RT_RCDATA) do
+  try
+    try
+      fs:=Tfilestream.Create(Filename,fmCreate);
+      Savetostream(fs);
+    finally
+      fs.Free;
+    end;
+  finally
+    Free;
+  end;
+end;
+var
+  aDirName:string;
+{$endif}
 begin
   fRootFolder := EnsureDirectoryExists(ExpandFileName(aRootFolder),true);
 
@@ -86,6 +114,23 @@ begin
   Cache.SetTimeOut(TSQLVpResource,60000);
   Cache.SetTimeOut(TSQLVpEvent,60000);
   }
+
+  {$ifdef USEWRAPPERS}
+
+  if Self.InheritsFrom(TSQLRestServer) then
+  begin
+    aDirName := fRootFolder+DirectorySeparator+'templates';
+    if not FileExists(aDirName) then  CreateDir(aDirName);
+    SaveWrappersFromResource(aDirName+DirectorySeparator+'API.adoc.mustache','API.ADOC');
+    SaveWrappersFromResource(aDirName+DirectorySeparator+'CrossPlatform.pas.mustache','CROSSPLATFORM.PAS');
+    SaveWrappersFromResource(aDirName+DirectorySeparator+'Delphi.pas.mustache','DELPHI.PAS');
+    SaveWrappersFromResource(aDirName+DirectorySeparator+'FPC-mORMotInterfaces.pas.mustache','FPC-MORMOTINTERFACES.PAS');
+    SaveWrappersFromResource(aDirName+DirectorySeparator+'FPCServer-mORMotServer.pas.mustache','FPCSERVER-MORMOTSERVER.PAS');
+    SaveWrappersFromResource(aDirName+DirectorySeparator+'SmartMobileStudio.pas.mustache','SMARTMOBILESTUDIO.PAS');
+    AddToServerWrapperMethod(Self,[aDirName]);
+    TSQLLog.Add.Log(sllInfo,'Wrapper in: '+aDirName);
+  end;
+  {$endif}
 
 end;
 

@@ -56,7 +56,10 @@ unit SynDBDataset;
 interface
 
 uses
-  Windows, SysUtils,
+  {$ifdef MsWindows}
+  Windows,
+  {$endif}
+  SysUtils,
   {$IFNDEF DELPHI5OROLDER}
   Variants,
   {$ENDIF}

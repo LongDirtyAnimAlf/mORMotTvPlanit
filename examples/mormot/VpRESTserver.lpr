@@ -22,6 +22,9 @@ uses
 
 var ORMServer: TVpServer;
     HTTPServer: TSQLHttpServer;
+
+{$R *.res}
+
 begin
   ORMServer := TVpServer.Create(ExeVersion.ProgramFilePath+'data','root');
   try
@@ -30,6 +33,7 @@ begin
     try
       sleep(300); // let the HTTP server start (for the console log refresh)
       writeln(#13#10'Background server is running at http://localhost:'+HTTP_PORT+#13#10+
+              // #13#10'Wrappers at http://localhost:'+HTTP_PORT+'/root/wrapper'+#13#10+
               #13#10'Press [Enter] to close the server.');
       readln;
     finally

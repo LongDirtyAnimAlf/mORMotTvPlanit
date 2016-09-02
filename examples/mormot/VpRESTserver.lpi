@@ -13,12 +13,38 @@
       <Title Value="VpRESTserver"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
+      <Resources Count="6">
+        <Resource_0 FileName="mORMotSourceHere\CrossPlatform\templates\API.adoc.mustache" Type="RCDATA" ResourceName="API.ADOC"/>
+        <Resource_1 FileName="mORMotSourceHere\CrossPlatform\templates\CrossPlatform.pas.mustache" Type="RCDATA" ResourceName="CROSSPLATFORM.PAS"/>
+        <Resource_2 FileName="mORMotSourceHere\CrossPlatform\templates\Delphi.pas.mustache" Type="RCDATA" ResourceName="DELPHI.PAS"/>
+        <Resource_3 FileName="mORMotSourceHere\CrossPlatform\templates\FPC-mORMotInterfaces.pas.mustache" Type="RCDATA" ResourceName="FPC-MORMOTINTERFACES.PAS"/>
+        <Resource_4 FileName="mORMotSourceHere\CrossPlatform\templates\FPCServer-mORMotServer.pas.mustache" Type="RCDATA" ResourceName="FPCSERVER-MORMOTSERVER.PAS"/>
+        <Resource_5 FileName="mORMotSourceHere\CrossPlatform\templates\SmartMobileStudio.pas.mustache" Type="RCDATA" ResourceName="SMARTMOBILESTUDIO.PAS"/>
+      </Resources>
     </General>
     <VersionInfo>
       <StringTable ProductVersion=""/>
     </VersionInfo>
-    <BuildModes Count="1">
+    <BuildModes Count="2">
       <Item1 Name="Default" Default="True"/>
+      <Item2 Name="LinuxARM">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="VpRESTserver"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir);mORMotSourceHere"/>
+            <OtherUnitFiles Value="mORMotSourceHere;mORMotSourceHere\SQLite3"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetCPU Value="arm"/>
+            <TargetOS Value="linux"/>
+          </CodeGeneration>
+        </CompilerOptions>
+      </Item2>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>

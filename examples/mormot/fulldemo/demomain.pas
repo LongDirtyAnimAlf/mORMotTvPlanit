@@ -394,7 +394,7 @@ begin
     // if the HostIP is set, it will look for a running server on this IP address when connecting.
     // leave blank (comment out) for a local (and private) database
 
-    HostIP:='localhost';
+    //HostIP:='localhost';
 
     Directory:='data';
 
